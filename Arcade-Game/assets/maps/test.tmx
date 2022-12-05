@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="40" height="20" tilewidth="128" tileheight="128" infinite="0" nextlayerid="5" nextobjectid="1">
+ <tileset firstgid="1" source="Tilesets/MR-Logo.tsx"/>
+ <tileset firstgid="8" source="Tilesets/ground.tsx"/>
+ <layer id="1" name="ground" width="40" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAIA7C9fPhXiw0CbdIEAIBPevny9AGG9wa5
+  </data>
+ </layer>
+ <layer id="2" name="enemies" width="40" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20LL6AAAAA+BgyAAAE=
+  </data>
+ </layer>
+ <layer id="3" name="goals" width="40" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20LL6AAAAA+BgyAAAE=
+  </data>
+ </layer>
+ <layer id="4" name="coins" width="40" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztyrENAAAIw7BO/H8yN6BOSPaaJAAAnSn79QP+WlVwABM=
+  </data>
+ </layer>
+</map>

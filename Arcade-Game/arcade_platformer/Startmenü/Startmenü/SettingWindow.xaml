@@ -31,7 +31,7 @@
         <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="472,423,0,0" VerticalAlignment="Top" Width="60" Click="Button_Click_2" FontFamily="Arial" FontSize="22" FontWeight="Bold" BorderBrush="Black" Background="#FFDDDDDD" Foreground="Black"/>
         <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="737,423,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" FontSize="22" Click="Button_Click_4" RenderTransformOrigin="1.143,0.628"/>
         <Button x:Name="ChoosButton1" Content="Einfachmacher" HorizontalAlignment="Left" Height="40" Margin="402,378,0,0" VerticalAlignment="Top" Width="200"  FontFamily="Arial" FontWeight="Bold" FontSize="18" Background="#FFDDDDDD" Click="Button_Click_6" RenderTransformOrigin="0.579,0.538"/>
-        <Label Content="Window:" HorizontalAlignment="Left" Margin="116,0,0,0" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" FontSize="36"/>
+        <Label Content="Minispiele:" HorizontalAlignment="Left" Margin="116,0,0,0" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" FontSize="36"/>
         <Button x:Name="ChoosButton2" Content="Kundenversteher" HorizontalAlignment="Left" Height="40" Margin="667,378,0,0" VerticalAlignment="Top" Width="200" FontSize="18" FontWeight="Bold" FontFamily="Arial" Click="ChoosButton2_Click" RenderTransformOrigin="0.512,0.612"/>
         <Image Height="100" Width="100"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="461,267,0,0" VerticalAlignment="Top" Width="84" Source="/einfachmacher.png" Visibility="Visible"/>

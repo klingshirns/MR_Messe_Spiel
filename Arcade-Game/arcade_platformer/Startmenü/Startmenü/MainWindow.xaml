@@ -10,7 +10,7 @@
         WindowState="Maximized" 
         Title="MainWindow">
     <Grid Background="White">
-        <Image Height="800" Margin="-4,0,0,0" VerticalAlignment="Center" Source="/background.jpg" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="1000">
+        <Image Height="1077" Margin="-4,0,0,0" VerticalAlignment="Center" Source="/background.jpg" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="2694">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -23,7 +23,7 @@
         <Button Content="Play" HorizontalAlignment="Left" Height="60" Margin="483,472,0,0" VerticalAlignment="Top" Width="600" FontFamily="Arial" FontSize="48" FontWeight="Bold" Click="Button_Click_2" BorderThickness="1,1,1,1" ClickMode="Release"/>
         <Button Content="Settings" HorizontalAlignment="Left" Height="60" Margin="483,564,0,0" VerticalAlignment="Top" Width="600" FontFamily="Arial" FontWeight="Bold" FontSize="48" Click="Button_Click_1"/>
         <Button Content="Exit" HorizontalAlignment="Left" Height="60" Margin="483,644,0,0" VerticalAlignment="Top" Width="600" FontSize="48" FontWeight="Bold" FontFamily="Arial" Click="Button_Click"/>
-        <Rectangle HorizontalAlignment="Left" Height="1080" Margin="1521,0,0,0" VerticalAlignment="Center" Width="400" Fill="White"/>
+        <Rectangle HorizontalAlignment="Left" Height="1070" Margin="1521,0,0,0" VerticalAlignment="Center" Width="400" Fill="White"/>
         <Label Content="Mr. Run" HorizontalAlignment="Left" Height="102" Margin="595,179,0,0" VerticalAlignment="Top" Width="376" FontFamily="Arial" FontSize="100" FontWeight="Bold"/>
         <Image HorizontalAlignment="Left" Height="180" Margin="1637,50,0,0" VerticalAlignment="Top" Width="180
                " Source="/MR-Logo.jpg"/>

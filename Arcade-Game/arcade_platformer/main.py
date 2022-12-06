@@ -38,11 +38,9 @@ PLAYER_START_Y = 500
 # Layer Names from our TileMap
 LAYER_NAME_PLATFORMS = "ground"
 LAYER_NAME_COINS = "coins"
-LAYER_NAME_DONT_TOUCH = "enemies"
 LAYER_NAME_GOALS = "goals"
 #LAYER_NAME_INFO_BOARD = "info-board"
 #LAYER_NAME_PORTAL = "portal"
-#LAYER_NAME_COINS = "coins"
 
 
 class MyGame(arcade.Window):
@@ -66,9 +64,6 @@ class MyGame(arcade.Window):
         # Separate variable that holds the player sprite
         self.player_sprite = None
 
-        #Our life in hearts
-        self.heart  = None
-
         # Our physics engine
         self.physics_engine = None
 
@@ -89,12 +84,6 @@ class MyGame(arcade.Window):
 
         #Reset Level
         self.reset_level = True
-
-        #Life
-        self.life = 3
-
-        #Reset Life
-        self.reset_life = True
         
         # Where is the right edge of the map?
         self.end_of_map = 0
@@ -125,10 +114,6 @@ class MyGame(arcade.Window):
             },
 
             LAYER_NAME_COINS: {
-                "use_spatial_hash": True
-            },
-
-            LAYER_NAME_DONT_TOUCH: {
                 "use_spatial_hash": True
             },
 
@@ -234,17 +219,6 @@ class MyGame(arcade.Window):
         )
 
 
-        # Draw our Life on screen
-        life_text = f"Life: {self.life}"
-        arcade.draw_text(
-            life_text,
-            10,
-            570,
-            arcade.color.WHITE,
-            18
-        )
-
-
     def on_key_press(self, key, modifiers):
         #Called whenever a key is pressed.
 
@@ -325,31 +299,6 @@ class MyGame(arcade.Window):
                 self.score = 0
 
                 self.setup()
-        
-
-        # Did the player touch something they should not?
-        if arcade.check_for_collision_with_list(
-            self.player_sprite, self.scene[LAYER_NAME_DONT_TOUCH]
-        ):  
-            #Remove life
-            self.life -= 1
-
-            #If life is under or equal zero, reset to level 1, life 3 and score 0
-            if self.life <= 0:
-
-                self.level = 1
-                self.life = 3
-                self.score = 0
-                
-                #reload game
-                self.setup()
-            
-            else:
-                #reset player to starting position
-                self.player_sprite.change_x = 0
-                self.player_sprite.change_y = 0
-                self.player_sprite.center_x = PLAYER_START_X
-                self.player_sprite.center_y = PLAYER_START_Y
 
         
         # See if the player got to the goal

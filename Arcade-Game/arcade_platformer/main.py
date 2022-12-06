@@ -11,6 +11,8 @@ import time
 import json
 from select import select
 
+from player import Player
+
 
 # Constants
 SCREEN_WIDTH = 1000
@@ -18,7 +20,6 @@ SCREEN_HEIGHT = 600
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Constants used to scale our sprites from their original size
-CHARACTER_SCALING = 0.8
 TILE_SCALING = 0.5
 COIN_SCALING = 0.5
 GOAL_SCALING = 1
@@ -27,9 +28,9 @@ SPRITE_PIXEL_SIZE =128
 GRID_PIXEL_SIZE = SPRITE_PIXEL_SIZE * TILE_SCALING
 
 # Movement speed of player, in pixels per frame
-PLAYER_MOVEMENT_SPEED = 7
+PLAYER_MOVEMENT_SPEED = 5
 GRAVITY = 0.8
-PLAYER_JUMP_SPEED = 17
+PLAYER_JUMP_SPEED = 11
 
 # Player starting position
 PLAYER_START_X = 64
@@ -39,9 +40,10 @@ PLAYER_START_Y = 500
 LAYER_NAME_PLATFORMS = "ground"
 LAYER_NAME_COINS = "coins"
 LAYER_NAME_GOALS = "goals"
-#LAYER_NAME_INFO_BOARD = "info-board"
-#LAYER_NAME_PORTAL = "portal"
 
+# Creating variable 'player' that holds the class 'Player'
+# -> function does not need to be called seperately because of __init__
+player = Player()
 
 class MyGame(arcade.Window):
     """
@@ -131,41 +133,8 @@ class MyGame(arcade.Window):
 
         self.scene = arcade.Scene.from_tilemap(self.tile_map)
 
-        """
-         # Keep track of the level
-        if self.reset_level:
-            self.level = 1
-        self.reset_level = True
-        
-        # Keep track of the score
-        if self.reset_score:
-            self.score = 0
-        self.reset_score = True
-        """
-
-        
-        #open the .json file, which contains the paths of the players
-        f = open('json/player.json')
-
-        #load the .json file
-        player_file = json.load (f)
-
-        #close the .json file
-        f.close
-
-        #create variable for the "players" container
-        player_container = player_file['players']
-
-        #create variable for the selected player
-        selected_player = player_file['selectedPlayer']
-
-        #checks which charackter is selected by a number [0;1;2;3]
-        if player_file["selectedPlayer"] == selected_player:
-            #loading the image path of the .json file and creating a variable for it
-            player_path = (player_container[selected_player]["Imgpath"])
-
         # Set up the player, specifically placing it at these coordinates.
-        self.player_sprite = arcade.Sprite(player_path, CHARACTER_SCALING)
+        self.player_sprite = Player()
         self.player_sprite.center_x = 128
         self.player_sprite.center_y = 128
         self.scene.add_sprite("Player", self.player_sprite)
@@ -270,6 +239,9 @@ class MyGame(arcade.Window):
         coin_hit_list = arcade.check_for_collision_with_list(
             self.player_sprite, self.scene["coins"]
         )
+
+        #Update all sprites
+        self.player_sprite.update()
 
         # Loop through each coin we hit (if any) and remove it
         for coin in coin_hit_list:

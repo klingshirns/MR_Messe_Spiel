@@ -11,6 +11,8 @@ import time
 import json
 from select import select
 
+from player import Player
+
 
 # Constants
 SCREEN_WIDTH = 1000
@@ -18,7 +20,6 @@ SCREEN_HEIGHT = 600
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Constants used to scale our sprites from their original size
-CHARACTER_SCALING = 0.8
 TILE_SCALING = 0.5
 COIN_SCALING = 0.5
 GOAL_SCALING = 1
@@ -27,9 +28,9 @@ SPRITE_PIXEL_SIZE =128
 GRID_PIXEL_SIZE = SPRITE_PIXEL_SIZE * TILE_SCALING
 
 # Movement speed of player, in pixels per frame
-PLAYER_MOVEMENT_SPEED = 7
+PLAYER_MOVEMENT_SPEED = 5
 GRAVITY = 0.8
-PLAYER_JUMP_SPEED = 17
+PLAYER_JUMP_SPEED = 11
 
 # Player starting position
 PLAYER_START_X = 64
@@ -38,12 +39,11 @@ PLAYER_START_Y = 500
 # Layer Names from our TileMap
 LAYER_NAME_PLATFORMS = "ground"
 LAYER_NAME_COINS = "coins"
-LAYER_NAME_DONT_TOUCH = "enemies"
 LAYER_NAME_GOALS = "goals"
-#LAYER_NAME_INFO_BOARD = "info-board"
-#LAYER_NAME_PORTAL = "portal"
-#LAYER_NAME_COINS = "coins"
 
+# Creating variable 'player' that holds the class 'Player'
+# -> function does not need to be called seperately because of __init__
+player = Player()
 
 class MyGame(arcade.Window):
     """
@@ -66,9 +66,6 @@ class MyGame(arcade.Window):
         # Separate variable that holds the player sprite
         self.player_sprite = None
 
-        #Our life in hearts
-        self.heart  = None
-
         # Our physics engine
         self.physics_engine = None
 
@@ -89,12 +86,6 @@ class MyGame(arcade.Window):
 
         #Reset Level
         self.reset_level = True
-
-        #Life
-        self.life = 3
-
-        #Reset Life
-        self.reset_life = True
         
         # Where is the right edge of the map?
         self.end_of_map = 0
@@ -128,10 +119,6 @@ class MyGame(arcade.Window):
                 "use_spatial_hash": True
             },
 
-            LAYER_NAME_DONT_TOUCH: {
-                "use_spatial_hash": True
-            },
-
             LAYER_NAME_GOALS: {
                 "use_spatial_hash": True
             },
@@ -146,41 +133,8 @@ class MyGame(arcade.Window):
 
         self.scene = arcade.Scene.from_tilemap(self.tile_map)
 
-        """
-         # Keep track of the level
-        if self.reset_level:
-            self.level = 1
-        self.reset_level = True
-        
-        # Keep track of the score
-        if self.reset_score:
-            self.score = 0
-        self.reset_score = True
-        """
-
-        
-        #open the .json file, which contains the paths of the players
-        f = open('json/player.json')
-
-        #load the .json file
-        player_file = json.load (f)
-
-        #close the .json file
-        f.close
-
-        #create variable for the "players" container
-        player_container = player_file['players']
-
-        #create variable for the selected player
-        selected_player = player_file['selectedPlayer']
-
-        #checks which charackter is selected by a number [0;1;2;3]
-        if player_file["selectedPlayer"] == selected_player:
-            #loading the image path of the .json file and creating a variable for it
-            player_path = (player_container[selected_player]["Imgpath"])
-
         # Set up the player, specifically placing it at these coordinates.
-        self.player_sprite = arcade.Sprite(player_path, CHARACTER_SCALING)
+        self.player_sprite = Player()
         self.player_sprite.center_x = 128
         self.player_sprite.center_y = 128
         self.scene.add_sprite("Player", self.player_sprite)
@@ -231,17 +185,6 @@ class MyGame(arcade.Window):
             10,
             arcade.csscolor.WHITE,
             18,
-        )
-
-
-        # Draw our Life on screen
-        life_text = f"Life: {self.life}"
-        arcade.draw_text(
-            life_text,
-            10,
-            570,
-            arcade.color.WHITE,
-            18
         )
 
 
@@ -297,6 +240,9 @@ class MyGame(arcade.Window):
             self.player_sprite, self.scene["coins"]
         )
 
+        #Update all sprites
+        self.player_sprite.update()
+
         # Loop through each coin we hit (if any) and remove it
         for coin in coin_hit_list:
             # Remove the coin
@@ -325,31 +271,6 @@ class MyGame(arcade.Window):
                 self.score = 0
 
                 self.setup()
-        
-
-        # Did the player touch something they should not?
-        if arcade.check_for_collision_with_list(
-            self.player_sprite, self.scene[LAYER_NAME_DONT_TOUCH]
-        ):  
-            #Remove life
-            self.life -= 1
-
-            #If life is under or equal zero, reset to level 1, life 3 and score 0
-            if self.life <= 0:
-
-                self.level = 1
-                self.life = 3
-                self.score = 0
-                
-                #reload game
-                self.setup()
-            
-            else:
-                #reset player to starting position
-                self.player_sprite.change_x = 0
-                self.player_sprite.change_y = 0
-                self.player_sprite.center_x = PLAYER_START_X
-                self.player_sprite.center_y = PLAYER_START_Y
 
         
         # See if the player got to the goal

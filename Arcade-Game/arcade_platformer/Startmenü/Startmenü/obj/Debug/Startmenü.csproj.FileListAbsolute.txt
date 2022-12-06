@@ -98,3 +98,8 @@ C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR
 C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\Startmenü.csproj.CopyComplete
 C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\Startmenü.exe
 C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\Startmenü.pdb
+C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\Logout.g.cs
+C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\Logout.baml
+C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\bin\Debug\Microsoft.Web.Mvc.dll
+C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\Hedgewindow.g.cs
+C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\Hedgewindow.baml

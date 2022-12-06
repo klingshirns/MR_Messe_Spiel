@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:Startmenü"
         mc:Ignorable="d"
         WindowStyle="None"
-        ResizeMode="NoResize"
-        WindowState="Maximized" 
-        Title="MainWindow">
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Width="1920" Height="1080">
     <Grid Background="White">
         <Image Height="1077" Margin="-4,0,0,0" VerticalAlignment="Center" Source="/background.jpg" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="2694">
             <Image.RenderTransform>

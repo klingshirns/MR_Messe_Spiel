@@ -26,7 +26,7 @@ namespace Startmenü
     public partial class MainWindow : Window
     {
         //path to antimicro file
-        private const string Filename = @"C:\Users\steinbergerd\source\Messe_Spiel\Controller-Software\antimicro\antimicro.exe";
+        public const string Filename = "..\\..\\..\\antimicro.exe";
 
         public MainWindow()
         {
@@ -36,7 +36,8 @@ namespace Startmenü
         //game will be completely closed
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            Logout logout = new Logout();
+            logout.Show();
         }
 
         //Settings will open
@@ -50,8 +51,8 @@ namespace Startmenü
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Process.Start(Filename);
-            ScriptEngine engine = Python.CreateEngine();
-            engine.ExecuteFile(@"C:\Users\steinbergerd\source\Messe_Spiel\Arcade-Game\arcade_platformer\arcade.game_v1.6(Demo2).py");
+            /*var engine = Python.CreateEngine();
+            engine.ExecuteFile("test2.py");*/
         }
     }
 }

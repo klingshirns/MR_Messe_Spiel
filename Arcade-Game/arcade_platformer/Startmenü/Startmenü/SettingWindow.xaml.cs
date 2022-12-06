@@ -58,7 +58,16 @@ namespace Startmenü
         //Settings will be closed
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            ReadJason();
+            if (setting.SelectedPlayer == 1 && setting.SelectedPlayer ==2 && setting.SelectedPlayer == 3 && setting.SelectedPlayer == 4) 
+            {
+                Hedgewindow hedgewindow = new Hedgewindow();
+                hedgewindow.Show();
+            }
+            else
+            {
+                this.Close();
+            }
         }
 
         //Info of "Einfachmacher" will open

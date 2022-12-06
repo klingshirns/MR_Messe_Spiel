@@ -11,6 +11,8 @@ import time
 import json
 from select import select
 
+from player import Player
+
 
 # Constants
 SCREEN_WIDTH = 1000
@@ -18,7 +20,6 @@ SCREEN_HEIGHT = 600
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Constants used to scale our sprites from their original size
-CHARACTER_SCALING = 0.8
 TILE_SCALING = 0.5
 COIN_SCALING = 0.5
 GOAL_SCALING = 1
@@ -40,61 +41,9 @@ LAYER_NAME_PLATFORMS = "ground"
 LAYER_NAME_COINS = "coins"
 LAYER_NAME_GOALS = "goals"
 
-# Index of textres (left or right)
-TEXTURE_LEFT = 0
-TEXTURE_RIGHT = 1
-
-class Player(arcade.Sprite):
-    def __init__(self):
-        super().__init__()
-
-        self.scale = CHARACTER_SCALING
-        self.textures = []
-
-        player_path = self.load_player_path()
-
-        texture = arcade.load_texture(player_path)
-        self.textures.append (texture)
-        texture = arcade.load_texture(player_path, flipped_horizontally=True)
-
-        self.textures.append (texture)
-
-        #Default
-        self.texture = texture
-
-    def update(self):
-        self.center_x += self.change_x
-        self.center_y += self.change_y
-
-        # Face Left or right
-        if self.change_x < 0:
-            self.texture = self.textures[TEXTURE_LEFT]
-        elif self.change_x > 0:
-            self.texture = self.textures [TEXTURE_RIGHT]
-    
-    def load_player_path(self):
-
-        #open the .json file, which contains the paths of the players
-        f = open('json/player.json')
-
-        #load the .json file
-        player_file = json.load (f)
-
-        #close the .json file
-        f.close
-
-        #create variable for the "players" container
-        player_container = player_file['players']
-
-        #create variable for the selected player
-        selected_player = player_file['selectedPlayer']
-
-        #checks which charackter is selected by a number [0;1;2;3]
-        if player_file["selectedPlayer"] == selected_player:
-            #loading the image path of the .json file and creating a variable for it
-            player_path = (player_container[selected_player]["Imgpath"])
-
-        return player_path
+# Creating variable 'player' that holds the class 'Player'
+# -> function does not need to be called seperately because of __init__
+player = Player()
 
 class MyGame(arcade.Window):
     """

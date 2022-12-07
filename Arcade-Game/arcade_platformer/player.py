@@ -1,10 +1,17 @@
+"""
+Player-Class
+"""
+
 import arcade
 import json
 
-# Index of textres (left or right)
+#CONSTANTS
+
+# Index of textures (left or right)
 TEXTURE_LEFT = 0
 TEXTURE_RIGHT = 1
 
+# Charakter Scaling
 CHARACTER_SCALING = 0.8
 
 class Player(arcade.Sprite):
@@ -16,7 +23,7 @@ class Player(arcade.Sprite):
 
         player_path = self.load_player_path()
 
-        texture = arcade.load_texture(player_path)
+        texture = arcade.load_texture(player_path, hit_box_algorithm="Simple")
         self.textures.append (texture)
         texture = arcade.load_texture(player_path, flipped_horizontally=True)
 

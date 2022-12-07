@@ -1,5 +1,5 @@
 """
-Messe Spiel
+Messe Spiel - Main Class
 """
 
 from time import time
@@ -12,6 +12,7 @@ import json
 from select import select
 
 from player import Player
+from draw import Draw
 
 
 # Constants
@@ -34,7 +35,7 @@ PLAYER_JUMP_SPEED = 11
 
 # Player starting position
 PLAYER_START_X = 64
-PLAYER_START_Y = 500
+PLAYER_START_Y = 1000
 
 # Layer Names from our TileMap
 LAYER_NAME_PLATFORMS = "ground"
@@ -55,13 +56,15 @@ class MyGame(arcade.Window):
         # Call the parent class and set up the window
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
 
-
         # Our TileMap Object
 
         self.tile_map = None
 
         # Our Scene Object
         self.scene = None
+
+        # Holds background image
+        self.background_image = None
 
         # Separate variable that holds the player sprite
         self.player_sprite = None
@@ -91,7 +94,7 @@ class MyGame(arcade.Window):
         self.end_of_map = 0
 
         #setting the background-color for the map
-        arcade.set_background_color(arcade.csscolor.CORNFLOWER_BLUE)
+        arcade.set_background_color(arcade.csscolor.GREY)
 
     def setup(self):
         """Set up the game here. Call this function to restart the game."""
@@ -126,7 +129,7 @@ class MyGame(arcade.Window):
 
         # Read in the tiled map
 
-        self.tile_map = arcade.load_tilemap(map_name, TILE_SCALING, layer_options)
+        self.tile_map = arcade.load_tilemap(map_name, TILE_SCALING, layer_options, hit_box_algorithm="Detailed")
 
         # Initialize Scene with our TileMap, this will automatically add all layers
         # from the map as SpriteLists in the scene in the proper order.
@@ -136,28 +139,22 @@ class MyGame(arcade.Window):
         # Set up the player, specifically placing it at these coordinates.
         self.player_sprite = Player()
         self.player_sprite.center_x = 128
-        self.player_sprite.center_y = 128
+        self.player_sprite.center_y = 500
         self.scene.add_sprite("Player", self.player_sprite)
 
+        
         # Set the background color
-
         if self.tile_map.background_color:
-
             arcade.set_background_color(self.tile_map.background_color)
 
-
+        self.background = arcade.load_texture(f"../assets/images/background.jpg")
 
         # Create the 'physics engine'
-
         self.physics_engine = arcade.PhysicsEnginePlatformer(
 
             self.player_sprite, gravity_constant=GRAVITY, walls=self.scene["ground"]
 
         )
-
-
-        # Calculate the right edge of the my_map in pixels
-        #self.end_of_map = self.tile_map.width * GRID_PIXEL_SIZE
 
 
     def on_draw(self):
@@ -169,10 +166,30 @@ class MyGame(arcade.Window):
         # Activate the game camera
         self.camera.use()
 
+        arcade.draw_lrwh_rectangle_textured(0, 128,
+                                            3000, 1000,
+                                            self.background)
 
         # Draw our Scene
         self.scene.draw()
 
+
+        # Elektro-IT
+        arcade.draw_text(
+            "Elektro-IT",
+            800,
+            320,
+            color= arcade.color.BLACK,
+            font_size= 26,
+        )
+        
+        arcade.draw_text(
+            "Mechatronik",
+            start_x= 1530,
+            start_y= 520,
+            color= arcade.color.BLACK,
+            font_size= 26,
+        )
 
         # Activate the GUI camera before drawing GUI elements
         self.gui_camera.use()
@@ -186,6 +203,7 @@ class MyGame(arcade.Window):
             arcade.csscolor.WHITE,
             18,
         )
+
 
 
     def on_key_press(self, key, modifiers):
@@ -240,15 +258,15 @@ class MyGame(arcade.Window):
             self.player_sprite, self.scene["coins"]
         )
 
-        #Update all sprites
-        self.player_sprite.update()
-
         # Loop through each coin we hit (if any) and remove it
         for coin in coin_hit_list:
             # Remove the coin
             coin.remove_from_sprite_lists()
             # Add one to the score
             self.score += 1
+
+        #Update all sprites
+        self.player_sprite.update()
 
 
         # Position the camera
@@ -261,16 +279,6 @@ class MyGame(arcade.Window):
             #reset player to starting position
             self.player_sprite.center_x = PLAYER_START_X
             self.player_sprite.center_y = PLAYER_START_Y
-            self.life -= 1 #remove one life
-
-            #checks if life is under r equal zero
-            if self.life <= 0:
-            
-                self.level = 1
-                self.life = 3
-                self.score = 0
-
-                self.setup()
 
         
         # See if the player got to the goal

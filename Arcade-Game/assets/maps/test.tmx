@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="40" height="20" tilewidth="128" tileheight="128" infinite="0" nextlayerid="5" nextobjectid="1">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="40" height="20" tilewidth="128" tileheight="128" infinite="0" nextlayerid="10" nextobjectid="9">
  <tileset firstgid="1" source="Tilesets/MR-Logo.tsx"/>
  <tileset firstgid="7" source="Tilesets/ground.tsx"/>
+ <tileset firstgid="135" source="Tilesets/interactives.tsx"/>
+ <tileset firstgid="263" source="transformer_single.tsx"/>
+ <tileset firstgid="264" source="Tilesets/alienBlue_front.tsx"/>
  <layer id="1" name="ground" width="40" height="20">
   <data encoding="base64" compression="zlib">
-   eJztwzENAAAIA7CdfPh3iw0CbdIEAIBPevny9AG9qAYZ
+   eJxjYBgFo2AUjIJRMApGwSgYBSAgiQcPNMDntoF2J7FuI9aNpJo3iocWBgCNfg6O
+  </data>
+ </layer>
+ <layer id="6" name="background" width="40" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGwXAEtwbaAQTAo4F2wCADgym+2BkxxWgZXxxY7BsFwxcAACcCA4o=
   </data>
  </layer>
  <layer id="3" name="goals" width="40" height="20">
@@ -12,9 +20,9 @@
    eJztwTEBAAAAwqD1T20LL6AAAAA+BgyAAAE=
   </data>
  </layer>
- <layer id="4" name="coins" width="40" height="20">
+ <layer id="4" name="coins" width="40" height="20" opacity="0.96">
   <data encoding="base64" compression="zlib">
-   eJztyrENAAAIw7BO/H8yN6BOSPaaJAAAnSn79QP+WlVwABM=
+   eJztwTEBAAAAwqD1T20LL6AAAAA+BgyAAAE=
   </data>
  </layer>
 </map>

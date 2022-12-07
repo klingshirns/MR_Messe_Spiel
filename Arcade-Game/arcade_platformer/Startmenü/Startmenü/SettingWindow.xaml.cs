@@ -23,7 +23,7 @@ namespace Startmenü
     public partial class SettingWindow : Window
     {
         //path to player.json
-        private readonly string path = @"C:\Users\steinbergerd\source\Messe_Spiel\Arcade-Game\arcade_platformer\json\2player.json";
+        private readonly string path = @"..\..\..\..\json\player.json";
 
         private SettingDto setting;
 
@@ -32,19 +32,19 @@ namespace Startmenü
             InitializeComponent();
             setting = ReadJason();
 
-            if (setting.SelectedPlayer == 1)
+            if (setting.SelectedPlayer == 0)
             {
                 Button_Click_6(null, null);
             }
-            if (setting.SelectedPlayer == 2)
+            if (setting.SelectedPlayer == 1)
             {
                 ChoosButton2_Click(null, null);
             }
-            if (setting.SelectedPlayer == 3)
+            if (setting.SelectedPlayer == 2)
             {
                 ChoosButton3_Click(null, null);
             }
-            if (setting.SelectedPlayer == 4)
+            if (setting.SelectedPlayer == 3)
             {
                 ChoosButton4_Click(null, null);
             }
@@ -59,7 +59,7 @@ namespace Startmenü
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ReadJason();
-            if (setting.SelectedPlayer == 1 && setting.SelectedPlayer ==2 && setting.SelectedPlayer == 3 && setting.SelectedPlayer == 4) 
+            if (setting.SelectedPlayer == 0 && setting.SelectedPlayer == 1 && setting.SelectedPlayer == 2 && setting.SelectedPlayer == 3) 
             {
                 Hedgewindow hedgewindow = new Hedgewindow();
                 hedgewindow.Show();
@@ -110,7 +110,7 @@ namespace Startmenü
             ChoosButton3.Background = Brushes.Red;
             ChoosButton4.Background = Brushes.Red;
 
-            setting.SelectedPlayer = 1;
+            setting.SelectedPlayer = 0;
         }
 
         private void ChoosButton2_Click(object sender, RoutedEventArgs e)
@@ -125,7 +125,7 @@ namespace Startmenü
             ChoosButton3.Background = Brushes.Red;
             ChoosButton4.Background = Brushes.Red;
 
-            setting.SelectedPlayer = 2;
+            setting.SelectedPlayer = 1;
         }
 
         private void ChoosButton3_Click(object sender, RoutedEventArgs e)
@@ -140,7 +140,7 @@ namespace Startmenü
             ChoosButton3.Background = Brushes.Green;
             ChoosButton4.Background = Brushes.Red;
 
-            setting.SelectedPlayer = 3;
+            setting.SelectedPlayer = 2;
         }
 
         private void ChoosButton4_Click(object sender, RoutedEventArgs e)
@@ -155,7 +155,7 @@ namespace Startmenü
             ChoosButton3.Background = Brushes.Red;
             ChoosButton4.Background = Brushes.Green;
 
-            setting.SelectedPlayer = 4;
+            setting.SelectedPlayer = 3;
         }
 
         private SettingDto ReadJason()
@@ -165,10 +165,10 @@ namespace Startmenü
             if (!File.Exists(path))
             {
                 List<Player> players = new List<Player>();
-                players.Add(new Player() { Name = "Einfachmacher", Imgpath = @"C:\Users\steinbergerd\source\Messe_Spiel\Arcade-Game\assets\images\player\Original\einfachmacher.png", No = 1 });
-                players.Add(new Player() { Name = "Kundenversteher", Imgpath = @"C:\Users\steinbergerd\source\Messe_Spiel\Arcade-Game\assets\images\player\Original\Kundenversteher.png", No = 2 });
-                players.Add(new Player() { Name = "Vorangeher", Imgpath = @"C:\Users\steinbergerd\source\Messe_Spiel\Arcade-Game\assets\images\player\Original\vorangeher.png", No = 3 });
-                players.Add(new Player() { Name = "Zusammenbringer", Imgpath = @"C:\Users\steinbergerd\source\Messe_Spiel\Arcade-Game\assets\images\player\Original\Zusammenbringer.png", No = 4 });
+                players.Add(new Player() { Name = "Einfachmacher", Imgpath = @"..\..\..\..\..\assets\images\player\einfachmacher.png", No = 0 });
+                players.Add(new Player() { Name = "Kundenversteher", Imgpath = @"..\..\..\..\..\assets\images\player\Original\Kundenversteher.png", No = 1 });
+                players.Add(new Player() { Name = "Vorangeher", Imgpath = @"..\..\..\..\..\assets\images\player\Original\vorangeher.png", No = 2 });
+                players.Add(new Player() { Name = "Zusammenbringer", Imgpath = @"..\..\..\..\..\assets\images\player\Original\Zusammenbringer.png", No = 3 });
                 result.Players = players.ToArray();
                 result.SelectedPlayer = 1;
 

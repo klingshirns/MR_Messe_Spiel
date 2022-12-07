@@ -236,5 +236,8 @@
   <ItemGroup>
     <Resource Include="Hilfe.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MicrosoftTeams-image.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

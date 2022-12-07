@@ -26,7 +26,7 @@ namespace Startmenü
     public partial class MainWindow : Window
     {
         //path to antimicro file
-        public const string Filename = "..\\..\\..\\antimicro.exe";
+        public const string Filename = @"..\..\..\..\..\..\Controller-Software\antimicro\antimicro.exe";
 
         public MainWindow()
         {
@@ -51,8 +51,8 @@ namespace Startmenü
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Process.Start(Filename);
-            /*var engine = Python.CreateEngine();
-            engine.ExecuteFile("test2.py");*/
+            
+            Process.Start(@"..\..\..\..\main.py");
         }
     }
 }

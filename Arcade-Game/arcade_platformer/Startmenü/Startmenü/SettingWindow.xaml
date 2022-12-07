@@ -21,27 +21,26 @@
             </Image.RenderTransform>
         </Image>
         <Rectangle HorizontalAlignment="Left" Height="1080" Margin="1521,0,0,0" VerticalAlignment="Center" Width="400" Fill="White"/>
-        <Label Content="Settings" HorizontalAlignment="Left" Height="122" Margin="585,79,0,0" VerticalAlignment="Top" Width="414" FontFamily="Arial" FontSize="100" FontWeight="Bold"/>
+        <Label Content="Charakters" HorizontalAlignment="Left" Height="122" Margin="490,79,0,0" VerticalAlignment="Top" Width="554" FontFamily="Arial" FontSize="100" FontWeight="Bold"/>
         <Image HorizontalAlignment="Left" Height="180" Margin="1637,50,0,0" VerticalAlignment="Top" Width="180
                " Source="/MR-Logo.jpg"/>
         <Label Content="The&#xD;&#xA;Power&#xD;&#xA;behind&#xD;&#xA;Power." HorizontalAlignment="Left" Height="235" Margin="1637,0,0,0" VerticalAlignment="Center" Width="192" FontFamily="Arial" FontWeight="Bold" FontSize="48"/>
         <Label Content="Powered by MR - Azubis - 2021" HorizontalAlignment="Left" Height="31" Margin="1622,997,0,0" VerticalAlignment="Top" Width="222" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
         <Button Content="Exit" HorizontalAlignment="Left" Height="60" Margin="974,968,0,0" VerticalAlignment="Top" Width="200" FontFamily="Arial" FontSize="24" FontWeight="Bold" Click="Button_Click"/>
-        <Label Content="Characters:" HorizontalAlignment="Left" Height="53" Margin="116,192,0,0" VerticalAlignment="Top" Width="222" FontFamily="Arial" FontWeight="Bold" FontSize="36"/>
-        <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="472,423,0,0" VerticalAlignment="Top" Width="60" Click="Button_Click_2" FontFamily="Arial" FontSize="22" FontWeight="Bold" BorderBrush="Black" Background="#FFDDDDDD" Foreground="Black"/>
-        <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="737,423,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" FontSize="22" Click="Button_Click_4" RenderTransformOrigin="1.143,0.628"/>
-        <Button x:Name="ChoosButton1" Content="Einfachmacher" HorizontalAlignment="Left" Height="40" Margin="402,378,0,0" VerticalAlignment="Top" Width="200"  FontFamily="Arial" FontWeight="Bold" FontSize="18" Background="#FFDDDDDD" Click="Button_Click_6" RenderTransformOrigin="0.579,0.538"/>
-        <Label Content="Minispiele:" HorizontalAlignment="Left" Margin="116,0,0,0" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" FontSize="36"/>
-        <Button x:Name="ChoosButton2" Content="Kundenversteher" HorizontalAlignment="Left" Height="40" Margin="667,378,0,0" VerticalAlignment="Top" Width="200" FontSize="18" FontWeight="Bold" FontFamily="Arial" Click="ChoosButton2_Click" RenderTransformOrigin="0.512,0.612"/>
+        <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="193,140,0,0" VerticalAlignment="Top" Width="60" Click="Button_Click_2" FontFamily="Arial" FontSize="22" FontWeight="Bold" BorderBrush="Black" Background="#FFDDDDDD" Foreground="Black"/>
+        <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="293,140,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" FontSize="22" Click="Button_Click_4" RenderTransformOrigin="1.143,0.628"/>
+        <Button x:Name="ChoosButton1" Content="Einfachmacher" HorizontalAlignment="Left" Height="40" Margin="294,422,0,0" VerticalAlignment="Top" Width="200"  FontFamily="Arial" FontWeight="Bold" FontSize="18" Background="#FFDDDDDD" Click="Button_Click_6" RenderTransformOrigin="0.579,0.538"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="116,0,0,0" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" FontSize="36"/>
+        <Button x:Name="ChoosButton2" Content="Kundenversteher" HorizontalAlignment="Left" Height="40" Margin="294,812,0,0" VerticalAlignment="Top" Width="200" FontSize="18" FontWeight="Bold" FontFamily="Arial" Click="ChoosButton2_Click" RenderTransformOrigin="0.512,0.612"/>
         <Image Height="100" Width="100"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="461,267,0,0" VerticalAlignment="Top" Width="84" Source="/einfachmacher.png" Visibility="Visible"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="717,268,0,0" VerticalAlignment="Top" Width="100" Source="/Kundenversteher.png" RenderTransformOrigin="0.515,0.57"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="1014,268,0,0" VerticalAlignment="Top" Width="50" Source="/voranggeher.png"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="1240,267,0,0" VerticalAlignment="Top" Width="100" Source="/Zusamenbringer.png" RenderTransformOrigin="0.18,0.465"/>
-        <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="1009,423,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" FontSize="22" Click="Button_Click_3" RenderTransformOrigin="0.295,0.233"/>
-        <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="1260,423,0,0" VerticalAlignment="Top" Width="60" FontSize="22" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_5" RenderTransformOrigin="0.751,0.576"/>
-        <Button x:Name="ChoosButton4" Content="Zusammenbringer" HorizontalAlignment="Left" Height="40" Margin="1190,378,0,0" VerticalAlignment="Top" Width="200" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton4_Click"/>
-        <Button x:Name="ChoosButton3" Content="Vorangeher" HorizontalAlignment="Left" Height="40" Margin="939,378,0,0" VerticalAlignment="Top" Width="200" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton3_Click" RenderTransformOrigin="0.808,0.514"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="353,298,0,0" VerticalAlignment="Top" Width="84" Source="/einfachmacher.png" Visibility="Visible"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="344,659,0,0" VerticalAlignment="Top" Width="100" Source="/Kundenversteher.png" RenderTransformOrigin="0.515,0.57"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="1014,298,0,0" VerticalAlignment="Top" Width="50" Source="/voranggeher.png" RenderTransformOrigin="0.542,0.469"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="989,660,0,0" VerticalAlignment="Top" Width="100" Source="/Zusamenbringer.png" RenderTransformOrigin="0.18,0.465"/>
+        <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="223,51,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" FontSize="22" Click="Button_Click_3" RenderTransformOrigin="0.295,0.233"/>
+        <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="323,63,0,0" VerticalAlignment="Top" Width="60" FontSize="22" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_5" RenderTransformOrigin="0.751,0.576"/>
+        <Button x:Name="ChoosButton4" Content="Zusammenbringer" HorizontalAlignment="Left" Height="40" Margin="939,806,0,0" VerticalAlignment="Top" Width="200" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton4_Click"/>
+        <Button x:Name="ChoosButton3" Content="Vorangeher" HorizontalAlignment="Left" Height="40" Margin="939,416,0,0" VerticalAlignment="Top" Width="200" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton3_Click" RenderTransformOrigin="0.808,0.514"/>
         <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Height="60" Margin="1190,968,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" FontSize="24" FontFamily="Arial" Click="Save_Click"/>
     </Grid>
 </Window>

@@ -41,6 +41,7 @@ PLAYER_START_Y = 1000
 LAYER_NAME_PLATFORMS = "ground"
 LAYER_NAME_COINS = "coins"
 LAYER_NAME_GOALS = "goals"
+LAYER_NAME_LEVEL_PORTAL = "level_portal"
 
 # Creating variable 'player' that holds the class 'Player'
 # -> function does not need to be called seperately because of __init__
@@ -85,13 +86,16 @@ class MyGame(arcade.Window):
         self.reset_score = True
 
         #Level
-        self.level = 1
+        self.level = 0
 
         #Reset Level
         self.reset_level = True
-        
-        # Where is the right edge of the map?
-        self.end_of_map = 0
+
+        #Level Key
+        self.level_key = False
+
+        # 
+        self.maps = None
 
         #setting the background-color for the map
         arcade.set_background_color(arcade.csscolor.GREY)
@@ -103,13 +107,16 @@ class MyGame(arcade.Window):
         self.camera = arcade.Camera(self.width, self.height)
         self.gui_camera = arcade.Camera(self.width, self.height)
 
+        # Array tho hold map names
+        self.maps = ["test", "electronic_it"]
 
-        # Name of map file to load
-        #map_name = f"../assets/level_{self.level:02}.tmx"
-        map_name = f"../assets/maps/test.tmx"
+
+        current_map = self.maps[self.level] #get current map_name from Array with index
+        map_name = f"../assets/maps/{current_map}.tmx" # safe current map name with path
+
+
         # Layer specific options are defined based on Layer names in a dictionary
         # Doing this will make the SpriteList for the platforms layer
-
         # use spatial hashing for detection.
 
         layer_options = {
@@ -125,16 +132,21 @@ class MyGame(arcade.Window):
             LAYER_NAME_GOALS: {
                 "use_spatial_hash": True
             },
+
+            LAYER_NAME_LEVEL_PORTAL: {
+                "use_spatial_hash": True
+            },
         }
 
-        # Read in the tiled map
 
+        # Read in the tiled map
         self.tile_map = arcade.load_tilemap(map_name, TILE_SCALING, layer_options, hit_box_algorithm="Detailed")
+
 
         # Initialize Scene with our TileMap, this will automatically add all layers
         # from the map as SpriteLists in the scene in the proper order.
-
         self.scene = arcade.Scene.from_tilemap(self.tile_map)
+
 
         # Set up the player, specifically placing it at these coordinates.
         self.player_sprite = Player()
@@ -147,7 +159,8 @@ class MyGame(arcade.Window):
         if self.tile_map.background_color:
             arcade.set_background_color(self.tile_map.background_color)
 
-        self.background = arcade.load_texture(f"../assets/images/background.jpg")
+        # load background image
+        self.background = arcade.load_texture(f"../assets/images/background.gif")
 
         # Create the 'physics engine'
         self.physics_engine = arcade.PhysicsEnginePlatformer(
@@ -166,9 +179,11 @@ class MyGame(arcade.Window):
         # Activate the game camera
         self.camera.use()
 
+        # Draw background image
         arcade.draw_lrwh_rectangle_textured(0, 128,
                                             3000, 1000,
                                             self.background)
+
 
         # Draw our Scene
         self.scene.draw()
@@ -178,15 +193,16 @@ class MyGame(arcade.Window):
         arcade.draw_text(
             "Elektro-IT",
             800,
-            320,
+            300,
             color= arcade.color.BLACK,
             font_size= 26,
         )
         
+        # Mechatronics
         arcade.draw_text(
             "Mechatronik",
-            start_x= 1530,
-            start_y= 520,
+            start_x= 1480,
+            start_y= 370,
             color= arcade.color.BLACK,
             font_size= 26,
         )
@@ -194,16 +210,14 @@ class MyGame(arcade.Window):
         # Activate the GUI camera before drawing GUI elements
         self.gui_camera.use()
 
-        # Draw our score on the screen, scrolling it with the viewport
-        score_text = f"Score: {self.score}"
-        arcade.draw_text(
-            score_text,
-            10,
-            10,
-            arcade.csscolor.WHITE,
-            18,
-        )
 
+        arcade.draw_text(
+            self.level,
+            0,
+            0,
+            color = arcade.color.BLACK,
+            font_size = 30,
+        )
 
 
     def on_key_press(self, key, modifiers):
@@ -220,6 +234,9 @@ class MyGame(arcade.Window):
 
         elif key == arcade.key.LEFT or key == arcade.key.A:
             self.player_sprite.change_x = -PLAYER_MOVEMENT_SPEED
+
+        elif key == arcade.key.ENTER:
+            self.level_key = True
         
         
     
@@ -231,6 +248,9 @@ class MyGame(arcade.Window):
 
         elif key == arcade.key.RIGHT or key == arcade.key.D:
             self.player_sprite.change_x = 0
+        
+        elif key == arcade.key.ENTER:
+            self.level_key = False
     
     #centering the camera to the player
     def center_camera_to_player(self):
@@ -268,6 +288,19 @@ class MyGame(arcade.Window):
         #Update all sprites
         self.player_sprite.update()
 
+        
+        # Checks if the player colided with a Level portal and puts it in a variable
+        portal_hit = arcade.check_for_collision_with_list(
+            self.player_sprite, self.scene[LAYER_NAME_LEVEL_PORTAL])
+
+        # Takes the value from the level portal hit and changes Level Value + reloads game
+        for level_portal in portal_hit:
+            if self.level_key:
+
+                self.level = int(level_portal.properties["Kennung"])
+
+                self.setup() # Reloads Game
+        
 
         # Position the camera
         self.center_camera_to_player()
@@ -279,35 +312,6 @@ class MyGame(arcade.Window):
             #reset player to starting position
             self.player_sprite.center_x = PLAYER_START_X
             self.player_sprite.center_y = PLAYER_START_Y
-
-        
-        # See if the player got to the goal
-        if arcade.check_for_collision_with_list(
-            self.player_sprite, self.scene[LAYER_NAME_GOALS]
-        ): 
-            # Set next level
-            self.level +=1
-
-            # If the next level would be higher than 3, reset to level 1
-            if self.level > 3:
-                self.level = 1
-                self.score = 0
-                self.life = 3
-
-                self.setup()
-
-            # Load next level
-            self.setup()
-        
-
-        """
-        # Teleport player to xx coordinates
-        if arcade.check_for_collision_with_list(
-            self.player_sprite, self.scene[LAYER_NAME_PORTAL]
-        ):
-            self.player_sprite.center_x = 
-            self.player_sprite.center_y = 
-        """
 
 
 def main():

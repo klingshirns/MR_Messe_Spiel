@@ -56,7 +56,7 @@ namespace Startmenü
             WriteJson();
         }
         //Settings will be closed
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Exitbut_Click(object sender, RoutedEventArgs e)
         {
             ReadJason();
             if (setting.SelectedPlayer == 0 && setting.SelectedPlayer == 1 && setting.SelectedPlayer == 2 && setting.SelectedPlayer == 3) 

@@ -1,30 +1,25 @@
-{       
-    "selectedPlayer" : 0,
-    "players": 
-    [
-        {
-            "No" : "0",
-            "Imgpath": "../assets/images/player/einfachmacher.png",
-            "name": "Einfachmacher",
-            "description": "Einfachmacher ..."
-        },
-        {
-            "No" : "1",
-            "Imgpath": "../assets/images/player/vorangeher.png",
-            "name": "Vorangeher",
-            "description":"Vorangeher... "
-        },
-        {
-            "No" : "2",
-            "Imgpath": "../assets/images/player/kundenversteher.png",
-            "name" : "Kundenversteher",
-            "description":"Kundenversteher ..."
-        },
-        {
-            "No" : "3",
-            "Imgpath": "../assets/images/player/zusammenbringer.png",
-            "name": "Zusammenbringer",
-            "description":"Zusammenbringer ..."
-        }
-    ]
+{
+  "selectedPlayer": 0,
+  "players": [
+    {
+      "No": "0",
+      "Imgpath": "../assets/images/player/einfachmacher.png",
+      "name": "Einfachmacher"
+    },
+    {
+      "No": "1",
+      "Imgpath": "../assets/images/player/vorangeher.png",
+      "name": "Vorangeher"
+    },
+    {
+      "No": "2",
+      "Imgpath": "../assets/images/player/kundenversteher.png",
+      "name": "Kundenversteher"
+    },
+    {
+      "No": "3",
+      "Imgpath": "../assets/images/player/zusammenbringer.png",
+      "name": "Zusammenbringer"
+    }
+  ]
 }

@@ -51,8 +51,12 @@ namespace Startmenü
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Process.Start(Filename);
-            
             Process.Start(@"..\..\..\..\main.py");
+        }
+
+        private void Testbu_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

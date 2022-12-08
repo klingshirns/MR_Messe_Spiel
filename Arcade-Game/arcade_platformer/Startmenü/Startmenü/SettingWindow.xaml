@@ -26,21 +26,25 @@
                " Source="/MR-Logo.jpg"/>
         <Label Content="The&#xD;&#xA;Power&#xD;&#xA;behind&#xD;&#xA;Power." HorizontalAlignment="Left" Height="235" Margin="1637,0,0,0" VerticalAlignment="Center" Width="192" FontFamily="Arial" FontWeight="Bold" FontSize="48"/>
         <Label Content="Powered by MR - Azubis - 2021" HorizontalAlignment="Left" Height="31" Margin="1622,997,0,0" VerticalAlignment="Top" Width="222" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Height="60" Margin="974,968,0,0" VerticalAlignment="Top" Width="200" FontFamily="Arial" FontSize="24" FontWeight="Bold" Click="Button_Click"/>
+        <Button Name="Exitbut" Content="Exit" HorizontalAlignment="Left" Height="60" Margin="939,968,0,0" VerticalAlignment="Top" Width="200" FontFamily="Arial" FontSize="24" FontWeight="Bold"/>
         <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="193,140,0,0" VerticalAlignment="Top" Width="60" Click="Button_Click_2" FontFamily="Arial" FontSize="22" FontWeight="Bold" BorderBrush="Black" Background="#FFDDDDDD" Foreground="Black"/>
         <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="293,140,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" FontSize="22" Click="Button_Click_4" RenderTransformOrigin="1.143,0.628"/>
-        <Button x:Name="ChoosButton1" Content="Einfachmacher" HorizontalAlignment="Left" Height="40" Margin="294,422,0,0" VerticalAlignment="Top" Width="200"  FontFamily="Arial" FontWeight="Bold" FontSize="18" Background="#FFDDDDDD" Click="Button_Click_6" RenderTransformOrigin="0.579,0.538"/>
+        <Rectangle Margin="10,201,422,126" Fill="Gray" Opacity="0.6"/>
+        <Button x:Name="ChoosButton1" Content="Einfachmacher" HorizontalAlignment="Left" Height="40" Margin="23,278,0,0" VerticalAlignment="Top" Width="200"  FontFamily="Arial" FontWeight="Bold" FontSize="18" Background="#FFDDDDDD" Click="Button_Click_6" RenderTransformOrigin="0.579,0.538"/>
         <Label Content="" HorizontalAlignment="Left" Margin="116,0,0,0" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" FontSize="36"/>
-        <Button x:Name="ChoosButton2" Content="Kundenversteher" HorizontalAlignment="Left" Height="40" Margin="294,812,0,0" VerticalAlignment="Top" Width="200" FontSize="18" FontWeight="Bold" FontFamily="Arial" Click="ChoosButton2_Click" RenderTransformOrigin="0.512,0.612"/>
-        <Image Height="100" Width="100"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="353,298,0,0" VerticalAlignment="Top" Width="84" Source="/einfachmacher.png" Visibility="Visible"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="344,659,0,0" VerticalAlignment="Top" Width="100" Source="/Kundenversteher.png" RenderTransformOrigin="0.515,0.57"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="1014,298,0,0" VerticalAlignment="Top" Width="50" Source="/voranggeher.png" RenderTransformOrigin="0.542,0.469"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="989,660,0,0" VerticalAlignment="Top" Width="100" Source="/Zusamenbringer.png" RenderTransformOrigin="0.18,0.465"/>
+        <Button x:Name="ChoosButton2" Content="Kundenversteher" HorizontalAlignment="Left" Height="40" Margin="23,658,0,0" VerticalAlignment="Top" Width="200" FontSize="18" FontWeight="Bold" FontFamily="Arial" Click="ChoosButton2_Click" RenderTransformOrigin="0.512,0.612"/>
+        <Image HorizontalAlignment="Left" Height="175" Margin="252,211,0,0" VerticalAlignment="Top" Width="143" Source="/einfachmacher.png" Visibility="Visible"/>
+        <Image HorizontalAlignment="Left" Height="175" Margin="236,592,0,0" VerticalAlignment="Top" Width="175" Source="/Kundenversteher.png" RenderTransformOrigin="0.515,0.57"/>
+        <Image HorizontalAlignment="Left" Height="175" Margin="286,415,0,0" VerticalAlignment="Top" Width="75" Source="/voranggeher.png" RenderTransformOrigin="0.542,0.469"/>
+        <Image HorizontalAlignment="Left" Height="175" Margin="236,783,0,0" VerticalAlignment="Top" Width="175" Source="/Zusamenbringer.png" RenderTransformOrigin="0.18,0.465"/>
         <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="223,51,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" FontSize="22" Click="Button_Click_3" RenderTransformOrigin="0.295,0.233"/>
         <Button Content="Info" HorizontalAlignment="Left" Height="40" Margin="323,63,0,0" VerticalAlignment="Top" Width="60" FontSize="22" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_5" RenderTransformOrigin="0.751,0.576"/>
-        <Button x:Name="ChoosButton4" Content="Zusammenbringer" HorizontalAlignment="Left" Height="40" Margin="939,806,0,0" VerticalAlignment="Top" Width="200" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton4_Click"/>
-        <Button x:Name="ChoosButton3" Content="Vorangeher" HorizontalAlignment="Left" Height="40" Margin="939,416,0,0" VerticalAlignment="Top" Width="200" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton3_Click" RenderTransformOrigin="0.808,0.514"/>
+        <Button x:Name="ChoosButton4" Content="Zusammenbringer" HorizontalAlignment="Left" Height="40" Margin="23,848,0,0" VerticalAlignment="Top" Width="200" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton4_Click"/>
+        <Button x:Name="ChoosButton3" Content="Vorangeher" HorizontalAlignment="Left" Height="40" Margin="23,488,0,0" VerticalAlignment="Top" Width="200" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton3_Click" RenderTransformOrigin="0.517,0.494"/>
         <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Height="60" Margin="1190,968,0,0" VerticalAlignment="Top" Width="200" FontWeight="Bold" FontSize="24" FontFamily="Arial" Click="Save_Click"/>
+        <Label Content="technische Ausbildungsrichtung" HorizontalAlignment="Left" Height="33" Margin="490,282,0,0" VerticalAlignment="Top" Width="361" FontFamily="72 Black" FontSize="20"/>
+        <Label Content="kaufmänische Ausbildungsrichtung" HorizontalAlignment="Left" Height="42" Margin="490,466,0,0" VerticalAlignment="Top" Width="402" FontFamily="Arial Black" FontSize="20"/>
+        <Label Content="duales Studium-Richtung, studierende-Richtung" HorizontalAlignment="Left" Height="52" Margin="486,652,0,0" VerticalAlignment="Top" Width="474"/>
+        <Label Content="Maschienfabrik Reinhausen" HorizontalAlignment="Left" Height="30" Margin="490,850,0,0" VerticalAlignment="Top" Width="322" FontFamily="Arial Black" FontSize="20"/>
     </Grid>
 </Window>

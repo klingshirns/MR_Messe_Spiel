@@ -1,0 +1,48 @@
+{
+    "Quiz": [
+        {
+            "No":"1",
+            "Question1":"1. Frage: Wann wurde die Maschinenfabrik Reinhausen gegründet?",
+            "answer1": {
+                "a":"1929",
+                "b":"1986",
+                "c":"1999"
+            }
+        },
+        {
+            "No":"2",
+            "Question2":"2. Frage: Wer waren die Erfinder des Laststufenschalters?",
+            "answer2": {
+                "a":"Dr.Janson",
+                "b":"Scheubeck",
+                "c":"die Gebrüder Scheubeck"
+            }
+        },
+        {
+            "No":"3",
+            "Question3":"",
+            "answer3": {
+
+            }
+        },
+        {
+            "No":"4",
+            "Question4":"In wie vielen Ländern sind wir vertreten?",
+            "answer4":{
+                "a":"36",
+                "b":"19",
+                "c":"28",
+                "d":"40"
+            }
+        },
+        {
+            "No":"5"
+        },
+        {
+            "No":"6"
+        },
+        {
+            "No":"7"
+        }
+    ]
+}

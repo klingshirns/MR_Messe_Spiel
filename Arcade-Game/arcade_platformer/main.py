@@ -12,7 +12,6 @@ import json
 from select import select
 
 from player import Player
-from draw import Draw
 
 
 # Constants
@@ -42,10 +41,12 @@ LAYER_NAME_PLATFORMS = "ground"
 LAYER_NAME_COINS = "coins"
 LAYER_NAME_GOALS = "goals"
 LAYER_NAME_LEVEL_PORTAL = "level_portal"
+LAYER_NAME_INFO_BOXES = "info_boxes"
 
 # Creating variable 'player' that holds the class 'Player'
 # -> function does not need to be called seperately because of __init__
 player = Player()
+
 
 class MyGame(arcade.Window):
     """
@@ -58,7 +59,6 @@ class MyGame(arcade.Window):
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
 
         # Our TileMap Object
-
         self.tile_map = None
 
         # Our Scene Object
@@ -91,11 +91,17 @@ class MyGame(arcade.Window):
         #Reset Level
         self.reset_level = True
 
-        #Level Key
+        #Level entering Key (Enter)
         self.level_key = False
 
-        # 
+        # Holds map names
         self.maps = None
+
+        # Hold the loaded info Box to give it to draw element
+        self.load_info_box = None
+
+        #Should load Info Box?
+        self.should_load_info_box = False
 
         #setting the background-color for the map
         arcade.set_background_color(arcade.csscolor.GREY)
@@ -106,13 +112,6 @@ class MyGame(arcade.Window):
         # Set up the Cameras
         self.camera = arcade.Camera(self.width, self.height)
         self.gui_camera = arcade.Camera(self.width, self.height)
-
-        # Array tho hold map names
-        self.maps = ["test", "electronic_it"]
-
-
-        current_map = self.maps[self.level] #get current map_name from Array with index
-        map_name = f"../assets/maps/{current_map}.tmx" # safe current map name with path
 
 
         # Layer specific options are defined based on Layer names in a dictionary
@@ -136,8 +135,17 @@ class MyGame(arcade.Window):
             LAYER_NAME_LEVEL_PORTAL: {
                 "use_spatial_hash": True
             },
+
+            LAYER_NAME_INFO_BOXES: {
+                "use_spatial_hash": True
+            }
         }
 
+        # Array to hold map names
+        self.maps = ["welcome_area", "electronic_it"]
+
+        current_map = self.maps[self.level] #get current map_name from Array with index
+        map_name = f"../assets/maps/{current_map}.tmx" # safe current map name with path
 
         # Read in the tiled map
         self.tile_map = arcade.load_tilemap(map_name, TILE_SCALING, layer_options, hit_box_algorithm="Detailed")
@@ -166,11 +174,11 @@ class MyGame(arcade.Window):
         self.physics_engine = arcade.PhysicsEnginePlatformer(
 
             self.player_sprite, gravity_constant=GRAVITY, walls=self.scene["ground"]
-
         )
 
 
     def on_draw(self):
+        
         """Render the screen."""
 
         # Clear the screen to the background color
@@ -219,6 +227,10 @@ class MyGame(arcade.Window):
             font_size = 30,
         )
 
+        # Checks bool value "should_load_info_box" and draws the image
+        if self.should_load_info_box:
+            arcade.draw_lrwh_rectangle_textured(0,0,1000, 600, self.load_info_box)
+
 
     def on_key_press(self, key, modifiers):
         #Called whenever a key is pressed.
@@ -237,7 +249,10 @@ class MyGame(arcade.Window):
 
         elif key == arcade.key.ENTER:
             self.level_key = True
-        
+
+        # Set bool value for loading info box to false when pressing Escape
+        elif key == arcade.key.ESCAPE: 
+            self.should_load_info_box = False
         
     
     def on_key_release(self, key, modifiers):
@@ -301,6 +316,25 @@ class MyGame(arcade.Window):
 
                 self.setup() # Reloads Game
         
+        # Is the player standing in front of a Info Box?
+        # If yes, put it in a variable
+        info_box_hit = arcade.check_for_collision_with_list(
+            self.player_sprite, self.scene[LAYER_NAME_INFO_BOXES])
+
+        # Takes the object which was hit
+        for info_box in info_box_hit:
+            if self.level_key: # Checks if the button to activate the info box was pressed
+                
+                info_box_id = int(info_box.properties["Kennung"]) #Get info Box id
+
+                info_boxes = ["info_box"] #Array for info_boxes (filename)
+                info_box = info_boxes[info_box_id] # Get info box from array
+                # loading info box image
+                self.load_info_box = arcade.load_texture(f"../assets/images/{info_box}.jpg")
+                # sets value to draw info box to true
+                self.should_load_info_box = True
+
+
 
         # Position the camera
         self.center_camera_to_player()

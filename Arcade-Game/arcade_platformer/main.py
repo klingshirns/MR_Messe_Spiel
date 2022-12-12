@@ -12,6 +12,7 @@ import json
 from select import select
 
 from player import Player
+from drawText import DrawText
 
 
 # Constants
@@ -45,7 +46,6 @@ LAYER_NAME_INFO_BOXES = "info_boxes"
 
 # Creating variable 'player' that holds the class 'Player'
 # -> function does not need to be called seperately because of __init__
-player = Player()
 
 
 class MyGame(arcade.Window):
@@ -138,7 +138,7 @@ class MyGame(arcade.Window):
 
             LAYER_NAME_INFO_BOXES: {
                 "use_spatial_hash": True
-            }
+            },
         }
 
         # Array to hold map names
@@ -196,24 +196,7 @@ class MyGame(arcade.Window):
         # Draw our Scene
         self.scene.draw()
 
-
-        # Elektro-IT
-        arcade.draw_text(
-            "Elektro-IT",
-            800,
-            300,
-            color= arcade.color.BLACK,
-            font_size= 26,
-        )
-        
-        # Mechatronics
-        arcade.draw_text(
-            "Mechatronik",
-            start_x= 1480,
-            start_y= 370,
-            color= arcade.color.BLACK,
-            font_size= 26,
-        )
+        DrawText(self.level)
 
         # Activate the GUI camera before drawing GUI elements
         self.gui_camera.use()
@@ -327,14 +310,14 @@ class MyGame(arcade.Window):
                 
                 info_box_id = int(info_box.properties["Kennung"]) #Get info Box id
 
-                info_boxes = ["info_box"] #Array for info_boxes (filename)
+                info_boxes = ["info_electro_it"] #Array for info_boxes (filename)
                 info_box = info_boxes[info_box_id] # Get info box from array
                 # loading info box image
                 self.load_info_box = arcade.load_texture(f"../assets/images/{info_box}.jpg")
                 # sets value to draw info box to true
                 self.should_load_info_box = True
 
-
+        DrawText(self.level)
 
         # Position the camera
         self.center_camera_to_player()

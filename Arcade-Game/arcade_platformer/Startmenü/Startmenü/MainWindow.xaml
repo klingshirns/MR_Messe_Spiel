@@ -29,6 +29,5 @@
                " Source="/MR-Logo.jpg"/>
         <Label Content="The&#xD;&#xA;Power&#xD;&#xA;behind&#xD;&#xA;Power." HorizontalAlignment="Left" Height="235" Margin="1637,0,0,0" VerticalAlignment="Center" Width="192" FontFamily="Arial" FontWeight="Bold" FontSize="48"/>
         <Label Content="Powered by MR - Azubis - 2021" HorizontalAlignment="Left" Height="31" Margin="1622,997,0,0" VerticalAlignment="Top" Width="222" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
-        <Button Name="Testbu" Content="Button" HorizontalAlignment="Left" Height="68" Margin="1216,472,0,0" VerticalAlignment="Top" Width="198" Click="Button_Click_3"/>
     </Grid>
 </Window>

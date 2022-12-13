@@ -156,3 +156,5 @@ C:\Users\klingshirns\OneDrive - Reinhausen Group\Dokumente\Programmieren\MR_Mess
 C:\Users\klingshirns\OneDrive - Reinhausen Group\Dokumente\Programmieren\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\Startmenü.exe
 C:\Users\klingshirns\OneDrive - Reinhausen Group\Dokumente\Programmieren\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\Startmenü.pdb
 >>>>>>> 69f01ed7c15e15de491ea5b9a3034e34662f8117
+C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\WrongPassword.g.cs
+C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\WrongPassword.baml

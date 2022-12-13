@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Startmenü
 {
@@ -30,17 +31,17 @@ namespace Startmenü
             this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Logoutbutton_Click(object sender, RoutedEventArgs e)
         {
-            string password = "1234";
-            string logout = PasswordBox.TextInputEvent.ToString();
-            if (logout == password)
+            if (pasbox.Password == "1111")
             {
                 Application.Current.Shutdown();
             }
-            else
+            else if(pasbox.Password != "1111")
             {
-                this.Close();
+                WrongPassword wrongPassword = new WrongPassword();
+                wrongPassword.Show();
+                pasbox.Clear();
             }
         }
     }

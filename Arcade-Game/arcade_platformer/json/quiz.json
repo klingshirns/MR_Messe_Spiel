@@ -1,0 +1,82 @@
+{
+    "Quiz": {
+    "name":"Quiz",
+    "headline":"Herzlich Wilkommen zum Maschinenfabrik Reinhausen Quiz",
+    "name2":"Zuerst kommen ein paar Fragen über die Maschinenfabrik Reinhausen:",
+    "name3":"Schätzfrage: ",
+    "name4":"Als nächstes kommen ein paar Fragen zur Ausbildung/ duales Studium"
+    },
+    "Questions":
+        [
+        {
+            "No":"1",
+            "Question1":"1. Frage: Wann wurde die Maschinenfabrik Reinhausen gegründet?",
+            "answer1": {
+                "a":"1929",
+                "b":"1986",
+                "c":"1999"
+            }
+        },
+        {
+            "No":"2",
+            "Question2":"2. Frage: Wer waren die Erfinder des Laststufenschalters?",
+            "answer2": {
+                "a":"Dr.Janson",
+                "b":"Scheubeck",
+                "c":"die Gebrüder Scheubeck"
+            }
+        },
+        {
+            "No":"3",
+            "Question3":"3. Frage: Wann wurde der erste Laststufnschalter erfunden?",
+            "answer3": {
+                "a":"1903",
+                "b":"1929",
+                "c":"1856"
+            }
+        },
+        {
+            "No":"4",
+            "Question4":"In wie vielen Ländern sind wir vertreten?",
+            "answer4":{
+                "a":"36",
+                "b":"19",
+                "c":"28",
+                "d":"40"
+            }
+        },
+        {
+            "No":"5",
+            "Question5":"1. Frage: Wie viele Ausbildungsangebote gibt es?",
+            "answer5":{
+                "a":"14", 
+                "b":"9",
+                "c":"20",
+                "d":"4"
+            }
+        },
+        {
+            "No":"6",
+            "Question6":"2. Frage: Was sind deine Belohnungen während der Ausbildung?",
+            "answer6":{
+                "a":"attraktive Vergütungen",
+                "b":"40 Stunden-Woche",
+                "c":"iPad oder Laptop",
+                "d":"feste Arbeitszeiten",
+                "e":"35 Stunden-Woche",
+                "f":"flexible Arbeitszeiten"
+            }
+        },
+        {
+            "No":"7",
+            "Question7":"Wie viele Auszubildende werden derzeit in der MR auf die späteren Unternehmensaufgaben vorbereitet?",
+            "amswer7":{
+                "a":"130",
+                "b":"82",
+                "c":"90",
+                "d":"111,5",
+                "e":"98"
+            }
+        }
+    ]
+}

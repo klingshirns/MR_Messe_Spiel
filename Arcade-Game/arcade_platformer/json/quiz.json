@@ -1,0 +1,265 @@
+{
+    "General":
+    [
+        {
+            "No" : 1,
+            "Keyword" : "Founding",
+            "Question": "Wann wurde die Maschinenfabrik Reinhausen gegründet",
+            "Answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "1929",
+                    "Truth": true
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "1986",
+                    "Truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "1999",
+                    "Truth" : false
+                }
+            ]
+        },
+        {
+            "No" : 2,
+            "Keyword" : "Founding Members",
+            "Question" : "Wer waren die Gründungsmitglieder der MR?",
+            "Answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "None",
+                    "Truth": null
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "None",
+                    "Truth" : null
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "None",
+                    "Truth" : null
+                }
+            ]
+        },
+        {
+            "No": 3,
+            "Keyword" : "Invention Tap Changer",
+            "Question" : "Wann wurde der erste Laststufenschalter erfunden?",
+            "Answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "None",
+                    "Truth": null
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "None",
+                    "Truth" : null
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "None",
+                    "Truth" : null
+                }
+            ]
+        },
+        {
+            "No": 4,
+            "Keyword" : "Company Locations",
+            "Question" : "In wie vielen Ländern sind wir vertreten?",
+            "Answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "None",
+                    "Truth": null
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "None",
+                    "Truth" : null
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "None",
+                    "Truth" : null
+                }
+            ]
+        },
+        {
+            "No": 5,
+            "Keyword" : "Training offers",
+            "Question" : "wie viele Ausbildungsangebote gibt es?",
+            "Answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "None",
+                    "Truth": null
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "None",
+                    "Truth" : null
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "None",
+                    "Truth" : null
+                }
+            ]
+        },
+        {
+            "No": 6,
+            "Keyword" : "Advantages",
+            "Question" : "Was sind deine Vorteile während der Ausbildung",
+            "Answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "None",
+                    "Truth": null
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "None",
+                    "Truth" : null
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "None",
+                    "Truth" : null
+                }
+            ]
+        },
+        {
+            "No": 7,
+            "Keyword" : "Number of trainees",
+            "Question" : "Wie viele Auszubildende werden derzeit in der MR auf die späteren Unternehmensaufgaben vorbereitet?",
+            "Answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "None",
+                    "Truth": null
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "None",
+                    "Truth" : null
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "None",
+                    "Truth" : null
+                }
+            ]
+        }
+    ],
+
+    "Electro_IT":
+    [
+        {
+            "No" : 1,
+            "Keyword" : "Hardware",
+            "Question": "Was versteht man unter Hardware?",
+            "Answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Eisen, Kunststoff, ...",
+                    "Truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Elektronische Bauteile eines Computers",
+                    "Truth" : true
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Betriebssysteme wie Windows oder Linux",
+                    "Truth" : false
+                }
+            ]
+        },
+
+        {
+            "No" : 2,
+            "Keyword" : "Software",
+            "Question": "Was versteht man unter Software?",
+            "Answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Betriebssystem, Programme und Anwendungen",
+                    "Truth": true
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Schaumstoff",
+                    "Truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Lüfter",
+                    "Truth" : false
+                }
+            ]
+        },
+
+        {
+            "No" : 3,
+            "Keyword" : "CPU",
+            "Question": "Was bedeutet CPU?",
+            "Answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Grafikkarte",
+                    "Truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Prozessor",
+                    "Truth" : true
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Netzteil",
+                    "Truth" : false
+                }
+            ]
+        },
+
+        {
+            "No" : 4,
+            "Keyword" : "Storage",
+            "Question": "Worauf kann man Daten dauerhaft abspeichern?",
+            "Answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Arbeitsspeicher",
+                    "Truth": true
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Festplatte (SSD, HDD)",
+                    "Truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Chipsatz",
+                    "Truth" : false
+                }
+            ]
+        }
+    ]
+}

@@ -56,7 +56,7 @@ namespace Startmenü
             WriteJson();
         }
         //Settings will be closed
-        private void Exitbut_Click(object sender, RoutedEventArgs e)
+        private void Exitbut_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
@@ -91,60 +91,28 @@ namespace Startmenü
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            ChoosButton1.Content = "EINFACHMACHER";
-            ChoosButton2.Content = "Kundenversteher";
-            ChoosButton3.Content = "Vorangeher";
-            ChoosButton4.Content = "Zusammenbringer";
-
-            ChoosButton1.Background = Brushes.Green;
-            ChoosButton2.Background = Brushes.Red;
-            ChoosButton3.Background = Brushes.Red;
-            ChoosButton4.Background = Brushes.Red;
+            label.Content = "Technische Ausbildung:\n - eindeutige Prioritäten\n - setzten auf 80 Prozent Lösungen und verbessern bei Bedarf\n - Lösungen klein und kompakt, kein Schnickschnack\n - denken und handeln ergebnisorientiert\n";
 
             setting.SelectedPlayer = 0;
         }
 
         private void ChoosButton2_Click(object sender, RoutedEventArgs e)
         {
-            ChoosButton1.Content = "Einfachmacher";
-            ChoosButton2.Content = "KUNDENVERSTEHER";
-            ChoosButton3.Content = "Vorangeher";
-            ChoosButton4.Content = "Zusammenbringer";
-
-            ChoosButton1.Background = Brushes.Red;
-            ChoosButton2.Background = Brushes.Green;
-            ChoosButton3.Background = Brushes.Red;
-            ChoosButton4.Background = Brushes.Red;
+            label.Content = "kaufmänische Ausbildung:\n - ";
 
             setting.SelectedPlayer = 1;
         }
 
         private void ChoosButton3_Click(object sender, RoutedEventArgs e)
-        {
-            ChoosButton1.Content = "Einfachmacher";
-            ChoosButton2.Content = "Kundenversteher";
-            ChoosButton3.Content = "VORANGEHER";
-            ChoosButton4.Content = "Zusammenbringer";
-
-            ChoosButton1.Background = Brushes.Red;
-            ChoosButton2.Background = Brushes.Red;
-            ChoosButton3.Background = Brushes.Green;
-            ChoosButton4.Background = Brushes.Red;
+        { 
+            label.Content = "duale Studium-Richtung";
 
             setting.SelectedPlayer = 2;
         }
 
         private void ChoosButton4_Click(object sender, RoutedEventArgs e)
         {
-            ChoosButton1.Content = "Einfachmacher";
-            ChoosButton2.Content = "Kundenversteher";
-            ChoosButton3.Content = "Vorangeher";
-            ChoosButton4.Content = "ZUSAMMENBRINGER";
-
-            ChoosButton1.Background = Brushes.Red;
-            ChoosButton2.Background = Brushes.Red;
-            ChoosButton3.Background = Brushes.Red;
-            ChoosButton4.Background = Brushes.Green;
+            label.Content = "Maschinenfabrik Reinhausen";
 
             setting.SelectedPlayer = 3;
         }

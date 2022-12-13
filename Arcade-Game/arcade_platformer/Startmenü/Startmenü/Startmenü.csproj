@@ -246,5 +246,11 @@
   <ItemGroup>
     <Resource Include="MicrosoftTeams-image.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Teams_hintergrund_Impulsgrafik-210915.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Teams_hintergrund_Digi_Netz-210915.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

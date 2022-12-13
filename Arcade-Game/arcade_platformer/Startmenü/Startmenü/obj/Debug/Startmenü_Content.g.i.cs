@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("microsoftteams-image.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("teams_hintergrund_digi_netz-210915.jpg")]
 
 

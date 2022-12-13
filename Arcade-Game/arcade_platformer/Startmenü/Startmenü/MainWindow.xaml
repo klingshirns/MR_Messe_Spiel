@@ -7,27 +7,25 @@
         mc:Ignorable="d"
         WindowStyle="None"
         ResizeMode="NoResize" 
+        WindowState="Maximized"
         WindowStartupLocation="CenterScreen"
         Title="MainWindow" Width="1920" Height="1080">
-    <Grid Background="White">
-        <Image Height="1077" Margin="-4,0,0,0" VerticalAlignment="Center" Source="/background.jpg" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="2694">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.002"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Button Content="Play" HorizontalAlignment="Left" Height="60" Margin="483,472,0,0" VerticalAlignment="Top" Width="600" FontFamily="Arial" FontSize="48" FontWeight="Bold" Click="Button_Click_2" BorderThickness="1,1,1,1" ClickMode="Release"/>
-        <Button Content="Settings" HorizontalAlignment="Left" Height="60" Margin="483,564,0,0" VerticalAlignment="Top" Width="600" FontFamily="Arial" FontWeight="Bold" FontSize="48" Click="Button_Click_1"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Height="60" Margin="483,644,0,0" VerticalAlignment="Top" Width="600" FontSize="48" FontWeight="Bold" FontFamily="Arial" Click="Button_Click"/>
-        <Rectangle HorizontalAlignment="Left" Height="1070" Margin="1521,0,0,0" VerticalAlignment="Center" Width="400" Fill="White"/>
-        <Label Content="Mr. Run" HorizontalAlignment="Left" Height="102" Margin="595,179,0,0" VerticalAlignment="Top" Width="376" FontFamily="Arial" FontSize="100" FontWeight="Bold"/>
-        <Image HorizontalAlignment="Left" Height="180" Margin="1637,50,0,0" VerticalAlignment="Top" Width="180
-               " Source="/MR-Logo.jpg"/>
-        <Label Content="The&#xD;&#xA;Power&#xD;&#xA;behind&#xD;&#xA;Power." HorizontalAlignment="Left" Height="235" Margin="1637,0,0,0" VerticalAlignment="Center" Width="192" FontFamily="Arial" FontWeight="Bold" FontSize="48"/>
-        <Label Content="Powered by MR - Azubis - 2021" HorizontalAlignment="Left" Height="31" Margin="1622,997,0,0" VerticalAlignment="Top" Width="222" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Teams_hintergrund_Impulsgrafik-210915.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="0.5*" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="1" Content="Mr. Run" HorizontalAlignment="Center" Height="102" VerticalAlignment="Center" FontFamily="Arial" FontSize="100" FontWeight="Bold" Width="376"/>
+        <Button Grid.Row="2" Content="Play" HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="600" FontFamily="Arial" FontSize="48" FontWeight="Bold" Click="Button_Click_2" BorderThickness="1,1,1,1" ClickMode="Release"/>
+        <Button Grid.Row="3" Content="Settings" HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="600" FontFamily="Arial" FontWeight="Bold" FontSize="48" Click="Button_Click_1"/>
+        <Button Grid.Row="4" Content="Exit" HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="600" FontSize="48" FontWeight="Bold" FontFamily="Arial" Click="Button_Click"/>
+        <Label Grid.Row="5" Content="Powered by MR - Azubis - 2021" HorizontalAlignment="Right" Height="31" VerticalAlignment="Bottom" Margin="15px" Width="222" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
     </Grid>
 </Window>

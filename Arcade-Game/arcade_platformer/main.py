@@ -158,8 +158,8 @@ class MyGame(arcade.Window):
 
         # Set up the player, specifically placing it at these coordinates.
         self.player_sprite = Player()
-        self.player_sprite.center_x = 128
-        self.player_sprite.center_y = 500
+        self.player_sprite.center_x = PLAYER_START_X
+        self.player_sprite.center_y = PLAYER_START_Y
         self.scene.add_sprite("Player", self.player_sprite)
 
         
@@ -173,7 +173,7 @@ class MyGame(arcade.Window):
         # Create the 'physics engine'
         self.physics_engine = arcade.PhysicsEnginePlatformer(
 
-            self.player_sprite, gravity_constant=GRAVITY, walls=self.scene["ground"]
+            self.player_sprite, gravity_constant=GRAVITY, walls=self.scene[LAYER_NAME_PLATFORMS]
         )
 
 
@@ -212,7 +212,7 @@ class MyGame(arcade.Window):
 
         # Checks bool value "should_load_info_box" and draws the image
         if self.should_load_info_box:
-            arcade.draw_lrwh_rectangle_textured(0,0,1000, 600, self.load_info_box)
+            arcade.draw_lrwh_rectangle_textured(0,0,SCREEN_WIDTH, SCREEN_HEIGHT, self.load_info_box)
 
 
     def on_key_press(self, key, modifiers):
@@ -273,7 +273,7 @@ class MyGame(arcade.Window):
 
         # See if we hit any coins
         coin_hit_list = arcade.check_for_collision_with_list(
-            self.player_sprite, self.scene["coins"]
+            self.player_sprite, self.scene[LAYER_NAME_COINS]
         )
 
         # Loop through each coin we hit (if any) and remove it
@@ -317,6 +317,7 @@ class MyGame(arcade.Window):
                 # sets value to draw info box to true
                 self.should_load_info_box = True
 
+        # Draw texts on screen
         DrawText(self.level)
 
         # Position the camera

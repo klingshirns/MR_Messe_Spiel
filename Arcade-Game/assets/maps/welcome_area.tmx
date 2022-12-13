@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="40" height="20" tilewidth="128" tileheight="128" infinite="0" nextlayerid="14" nextobjectid="18">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="128" tileheight="128" infinite="0" nextlayerid="17" nextobjectid="31">
  <tileset firstgid="1" source="Tilesets/MR-Logo.tsx"/>
  <tileset firstgid="7" source="Tilesets/ground.tsx"/>
  <tileset firstgid="135" source="Tilesets/interactives.tsx"/>
  <tileset firstgid="263" source="transformer_single.tsx"/>
  <tileset firstgid="264" source="Tilesets/alienBlue_front.tsx"/>
- <layer id="1" name="ground" width="40" height="20">
+ <tileset firstgid="265" source="sprechblase.tsx"/>
+ <layer id="1" name="ground" width="50" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGwSgYBaOAfCBJIqa2eaN4aGEAl6sM5Q==
+   eJztzbEJAAAIBLFfw/0XdQWtREjg6ksAAAB+qmVXX2lSA4qYD9M=
   </data>
  </layer>
- <objectgroup id="13" name="text"/>
- <layer id="6" name="background" width="40" height="20">
+ <layer id="6" name="background" width="50" height="20">
   <data encoding="base64" compression="zlib">
-   eJztzTEBAAAEADAu+ifWgsNWYBEAAHxWefv38c+uATFuABI=
+   eJztziEBAAAIA7Dj6J8YSQQEW4IlAAAAP3VdD2ANJq8ACg==
   </data>
  </layer>
  <objectgroup id="11" name="level_portal">
@@ -45,15 +45,16 @@
     <property name="Kennung" type="int" value="0"/>
    </properties>
   </object>
+  <object id="28" gid="2147483913" x="4563" y="1992" width="1030" height="208"/>
  </objectgroup>
- <layer id="3" name="goals" width="40" height="20">
+ <layer id="3" name="goals" width="50" height="20">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20LL6AAAAA+BgyAAAE=
+   eJztwTEBAAAAwqD1T20MH6AAAACAtwEPoAAB
   </data>
  </layer>
- <layer id="4" name="coins" width="40" height="20" opacity="0.96">
+ <layer id="4" name="coins" width="50" height="20" opacity="0.96">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20LL6AAAAA+BgyAAAE=
+   eJztwTEBAAAAwqD1T20MH6AAAACAtwEPoAAB
   </data>
  </layer>
 </map>

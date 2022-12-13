@@ -30,6 +30,7 @@ class DrawText:
             330,
             color= arcade.color.BLACK,
             font_size= 26,
+            font_name=("Comic Sans MS")
         )
         
         # Mechatronics
@@ -39,6 +40,17 @@ class DrawText:
             start_y= 385,
             color= arcade.color.BLACK,
             font_size= 26,
+            font_name=("Comic Sans MS")
+        )
+
+        #Wizzard
+        arcade.draw_text(
+            "Stelle mir ein paar Fragen!",
+            start_x = 2330,
+            start_y = 330,
+            color= arcade.color.BLACK,
+            font_size= 22,
+            font_name = ("Comic Sans MS")
         )
     
     def drawElectroIT(self):
@@ -49,6 +61,7 @@ class DrawText:
             start_y= 180,
             color = arcade.color.WHITE,
             font_size= 26,
+            font_name=("Comic Sans MS")
         )
 
 

@@ -92,6 +92,7 @@ namespace Startmenü
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
             label.Content = "Technische Ausbildung:\n - eindeutige Prioritäten\n - setzten auf 80 Prozent Lösungen und verbessern bei Bedarf\n - Lösungen klein und kompakt, kein Schnickschnack\n - denken und handeln ergebnisorientiert\n";
+            
 
             setting.SelectedPlayer = 0;
         }

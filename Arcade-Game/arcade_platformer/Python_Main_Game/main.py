@@ -138,7 +138,7 @@ class MyGame(arcade.Window):
         self.maps = ["welcome_area", "electronic_it"]
 
         current_map = self.maps[self.level] #get current map_name from Array with index
-        map_name = f"../assets/maps/{current_map}.tmx" # safe current map name with path
+        map_name = f"../../assets/maps/{current_map}.tmx" # safe current map name with path
 
         # Read in the tiled map
         self.tile_map = arcade.load_tilemap(map_name, TILE_SCALING, layer_options, hit_box_algorithm="Detailed")
@@ -161,7 +161,7 @@ class MyGame(arcade.Window):
             arcade.set_background_color(self.tile_map.background_color)
 
         # load background image
-        self.background = arcade.load_texture(f"../assets/images/background.gif")
+        self.background = arcade.load_texture(f"../../assets/images/background/background.gif")
 
         # Create the 'physics engine'
         self.physics_engine = arcade.PhysicsEnginePlatformer(
@@ -306,7 +306,7 @@ class MyGame(arcade.Window):
                 info_boxes = ["info_electro_it"] #Array for info_boxes (filename)
                 info_box = info_boxes[info_box_id] # Get info box from array
                 # loading info box image
-                self.load_info_box = arcade.load_texture(f"../assets/images/{info_box}.jpg")
+                self.load_info_box = arcade.load_texture(f"../../assets/images/{info_box}.jpg")
                 # sets value to draw info box to true
                 self.should_load_info_box = True
 

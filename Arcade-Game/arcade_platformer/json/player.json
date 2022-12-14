@@ -3,22 +3,22 @@
   "players": [
     {
       "No": "0",
-      "Imgpath": "../assets/images/player/einfachmacher.png",
+      "Imgpath": "../../assets/images/player/einfachmacher.png",
       "name": "Einfachmacher"
     },
     {
       "No": "1",
-      "Imgpath": "../assets/images/player/vorangeher.png",
+      "Imgpath": "../../assets/images/player/vorangeher.png",
       "name": "Vorangeher"
     },
     {
       "No": "2",
-      "Imgpath": "../assets/images/player/kundenversteher.png",
+      "Imgpath": "../../assets/images/player/kundenversteher.png",
       "name": "Kundenversteher"
     },
     {
       "No": "3",
-      "Imgpath": "../assets/images/player/zusammenbringer.png",
+      "Imgpath": "../../assets/images/player/zusammenbringer.png",
       "name": "Zusammenbringer"
     }
   ]

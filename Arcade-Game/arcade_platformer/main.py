@@ -2,14 +2,7 @@
 Messe Spiel - Main Class
 """
 
-from time import time
-from tkinter import Place
-from turtle import speed
-from typing import Optional
 import arcade
-import time
-import json
-from select import select
 
 from player import Player
 from drawText import DrawText
@@ -121,7 +114,7 @@ class MyGame(arcade.Window):
         layer_options = {
 
             LAYER_NAME_PLATFORMS: {
-                "use_spatial_hash": True,
+                "use_spatial_hash": True
             },
 
             LAYER_NAME_COINS: {
@@ -295,7 +288,7 @@ class MyGame(arcade.Window):
         for level_portal in portal_hit:
             if self.level_key:
 
-                self.level = int(level_portal.properties["Kennung"])
+                self.level = int(level_portal.properties["ID"])
 
                 self.setup() # Reloads Game
         
@@ -308,7 +301,7 @@ class MyGame(arcade.Window):
         for info_box in info_box_hit:
             if self.level_key: # Checks if the button to activate the info box was pressed
                 
-                info_box_id = int(info_box.properties["Kennung"]) #Get info Box id
+                info_box_id = int(info_box.properties["ID"]) #Get info Box id
 
                 info_boxes = ["info_electro_it"] #Array for info_boxes (filename)
                 info_box = info_boxes[info_box_id] # Get info box from array

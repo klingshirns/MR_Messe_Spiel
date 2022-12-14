@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="128" tileheight="128" infinite="0" nextlayerid="17" nextobjectid="31">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="128" tileheight="128" infinite="0" nextlayerid="18" nextobjectid="32">
  <tileset firstgid="1" source="Tilesets/MR-Logo.tsx"/>
  <tileset firstgid="7" source="Tilesets/ground.tsx"/>
  <tileset firstgid="135" source="Tilesets/interactives.tsx"/>
@@ -13,28 +13,36 @@
  </layer>
  <layer id="6" name="background" width="50" height="20">
   <data encoding="base64" compression="zlib">
-   eJztziEBAAAIA7Dj6J8YSQQEW4IlAAAAP3VdD2ANJq8ACg==
+   eJztwTEBAAAAwqD1T20MH6AAAACAtwEPoAAB
   </data>
  </layer>
+ <objectgroup id="17" name="wizzard">
+  <object id="31" gid="264" x="4651" y="2175" width="131" height="188">
+   <properties>
+    <property name="Designation" value="General"/>
+    <property name="ID" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup id="11" name="level_portal">
   <object id="9" gid="226" x="2060" y="2175.33" width="160" height="160">
    <properties>
-    <property name="Kennung" type="int" value="1"/>
+    <property name="ID" type="int" value="1"/>
    </properties>
   </object>
   <object id="10" gid="218" x="2059.69" y="2015.21" width="160" height="160">
    <properties>
-    <property name="Kennung" type="int" value="1"/>
+    <property name="ID" type="int" value="1"/>
    </properties>
   </object>
   <object id="12" gid="226" x="3071" y="2047" width="160" height="160">
    <properties>
-    <property name="Kennung" type="int" value="2"/>
+    <property name="ID" type="int" value="2"/>
    </properties>
   </object>
   <object id="13" gid="218" x="3071" y="1887.25" width="160" height="160">
    <properties>
-    <property name="Kennung" type="int" value="2"/>
+    <property name="ID" type="int" value="2"/>
    </properties>
   </object>
  </objectgroup>
@@ -42,7 +50,7 @@
   <object id="14" gid="169" x="1123.42" y="2175.97" width="324" height="196">
    <properties>
     <property name="Designation" value="General"/>
-    <property name="Kennung" type="int" value="0"/>
+    <property name="ID" type="int" value="0"/>
    </properties>
   </object>
   <object id="28" gid="2147483913" x="4563" y="1992" width="1030" height="208"/>

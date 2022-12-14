@@ -38,6 +38,9 @@ namespace Startmenü
         {
             Logout logout = new Logout();
             logout.Show();
+            
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.AllowsTransparency = true;
         }
 
         //Settings will open
@@ -51,7 +54,7 @@ namespace Startmenü
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Process.Start(Filename);
-            Process.Start(@"..\..\..\..\main.py");
+            Process.Start(@"..\..\..\..\Python_Main_Game\main.py");
         }
 
         private void Testbu_Click(object sender, RoutedEventArgs e)

@@ -91,22 +91,27 @@ namespace Startmenü
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            label.Content = "Technische Ausbildung:\n - eindeutige Prioritäten\n - setzten auf 80 Prozent Lösungen und verbessern bei Bedarf\n - Lösungen klein und kompakt, kein Schnickschnack\n - denken und handeln ergebnisorientiert\n";
-            
+            label.Content = "Technische Ausbildung:\n";
+            label2.Content = "- setzten auf 80 Prozent Lösungen und verbessern bei Bedarf\n- denken und handeln ergebnisorientiert\n";
+            label3.Content = "- eindeutige Prioritäten\n- Lösungen klein und kompakt, kein Schnickschnack\n";
 
             setting.SelectedPlayer = 0;
         }
 
         private void ChoosButton2_Click(object sender, RoutedEventArgs e)
         {
-            label.Content = "kaufmänische Ausbildung:\n - ";
+            label.Content = "duale Studium-Richtung";
+            label2.Content = "Kunden erfolgreicher machen, ohne inter Komplexität unnötig zu erhöhen.\n- versetzen uns in Kunden bevor wir etwas entscheiden oder tun, erfragen aktiv die Bedürfnisse.\n- nutzen jede Chance zum Kundendialog und setzen uns für eine verlässliche und gewinnbringende Partnerschaft ein.\n Wir verfolgen aktiv die Entwicklungen in unserem Umfeld und teilen diese mit unseren Kunden. Die Comic-Figur\n Unser Kundenversteher hat besonders große Ohren, um richtig gut hinhören zu können.Er stellt den Kunden in den Vordergrund, daher ist unser Charakter auch etwas kleiner.\n Gegenüber internen und externen Kunden tritt er professionell auf, dargestellt durch sein Business-Outfit.";
+            label3.Content = "";
 
             setting.SelectedPlayer = 1;
         }
 
         private void ChoosButton3_Click(object sender, RoutedEventArgs e)
-        { 
-            label.Content = "duale Studium-Richtung";
+        {
+            label.Content = "kaufmänische Ausbildung:\n";
+            label2.Content = "- treiben strategische Leitplanken mutig voran\n- tragen von Engagement und Zuverlässigkeit bei neuen Themen\n- echter Kämpfer, der so schnell nichts aufhält\n- Mitziehung anderer durch Begeisterung";
+            label3.Content = "- treffen schnelle Entscheidungen\n- unterstützen zielstrebige KollegInnen\n- setzen entschiedene Themen zielstrebig\n";
 
             setting.SelectedPlayer = 2;
         }
@@ -114,6 +119,8 @@ namespace Startmenü
         private void ChoosButton4_Click(object sender, RoutedEventArgs e)
         {
             label.Content = "Maschinenfabrik Reinhausen";
+            label2.Content = "- pflegen stets direkte Interaktion und verteilen Informationen schnell und verständlich an relevante Stakeholder.\n- gegenseitig einbringen passend zu unseren Kompetenzen und Fähigkeiten\n- geben ehrlich Feedback wenn Zusammenarbeit nicht funktioniert und suchen gemeinsame Lösungen";
+            label3.Content = "- Vertretung gemeinsamer getroffene Entscheidungen\n- wertschätzen die Leistung anderer und feiern Erfolge gemeinsam\n- vertrauenswürdige Ausstrahlung";
 
             setting.SelectedPlayer = 3;
         }

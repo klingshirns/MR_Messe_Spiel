@@ -22,11 +22,28 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="0.5*" />
         </Grid.RowDefinitions>
-        
         <Label Grid.Row="1" Content="Mr. Run" HorizontalAlignment="Center" Height="102" VerticalAlignment="Center" FontFamily="Arial" FontSize="100" FontWeight="Bold" Width="376"/>
-        <Button Grid.Row="2" Content="Play" HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="600" FontFamily="Arial" FontSize="48" FontWeight="Bold" Click="Button_Click_2" BorderThickness="1,1,1,1" ClickMode="Release"/>
-        <Button Grid.Row="3" Content="Settings" HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="600" FontFamily="Arial" FontWeight="Bold" FontSize="48" Click="Button_Click_1"/>
-        <Button Grid.Row="4" Content="Exit" HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="600" FontSize="48" FontWeight="Bold" FontFamily="Arial" Click="Button_Click" />
+        <Button Grid.Row="2" Content="Spielen" HorizontalAlignment="Center" Height="70" VerticalAlignment="Top" Width="600" FontFamily="Arial" FontSize="48" FontWeight="Bold" Click="Button_Click_2" BorderThickness="1,1,1,1" ClickMode="Release">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Grid.Row="3" Content="Figuren" HorizontalAlignment="Center" Height="70" VerticalAlignment="Top" Width="600" FontFamily="Arial" FontWeight="Bold" FontSize="48" Click="Button_Click_1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Grid.Row="4" Content="Verlassen" HorizontalAlignment="Center" Height="70" VerticalAlignment="Top" Width="600" FontSize="48" FontWeight="Bold" FontFamily="Arial" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         <Label Grid.Row="5" Content="Powered by MR - Azubis - 2021" HorizontalAlignment="Right" Height="31" VerticalAlignment="Bottom" Margin="15px" Width="222" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
     </Grid>
 </Window>

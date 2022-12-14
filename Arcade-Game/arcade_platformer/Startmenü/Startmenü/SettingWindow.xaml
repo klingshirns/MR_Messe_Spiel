@@ -54,11 +54,17 @@
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
         <TextBlock
-            Text="Shadow Text"
-            Margin="59,910,0,-46"
-            FontSize="70"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Text="Charakters"
+            FontSize="100"
             Foreground="White" FontFamily="Arial">
             <TextBlock.Effect>
                 <DropShadowEffect
@@ -69,25 +75,25 @@
                     BlurRadius="0.0" />
             </TextBlock.Effect>
         </TextBlock>
-        <Label Content="Charakters" Grid.Row="0"  Grid.Column="1" HorizontalAlignment="Left" Height="122"  VerticalAlignment="Top" Width="554" FontFamily="Arial" FontSize="100" FontWeight="Bold" Foreground="White" BorderBrush="#FF0E0E0E" Background="#332B2B2B"/>
+
         <Button Name="Exitbut" Grid.Row="3" Grid.Column="4"  Content="Exit" HorizontalAlignment="Center" Height="60" VerticalAlignment="Center" Width="200" FontFamily="Arial" FontSize="24" FontWeight="Bold" Click="Exitbut_Click_1"/>
-        <Button x:Name="ChoosButton1" Grid.Row="1" Grid.Column="1" Style="{StaticResource MyButtonStyle}" Content="" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="236"  FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="Button_Click_6" RenderTransformOrigin="0.579,0.538" ClickMode="Release" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <Button x:Name="ChoosButton1" Grid.Row="1" Grid.Column="1" Style="{StaticResource MyButtonStyle}" Content="" HorizontalAlignment="Center" Height="300" VerticalAlignment="Bottom" Width="236"  FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="Button_Click_6" RenderTransformOrigin="0.579,0.538" ClickMode="Release" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/einfachmacher.png"/>
             </Button.Background>
         </Button>
         <Label Content="" HorizontalAlignment="Left" Margin="116,0,0,0" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" FontSize="36"/>
-        <Button x:Name="ChoosButton2" Grid.Row="1" Grid.Column="3" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Left" Height="300"  VerticalAlignment="Top" Width="268" FontSize="18" FontWeight="Bold" FontFamily="Arial" Click="ChoosButton2_Click" RenderTransformOrigin="0.512,0.612" ClickMode="Release" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <Button x:Name="ChoosButton2" Grid.Row="1" Grid.Column="3" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Center" Height="300"  VerticalAlignment="Bottom" Width="268" FontSize="18" FontWeight="Bold" FontFamily="Arial" Click="ChoosButton2_Click" RenderTransformOrigin="0.512,0.612" ClickMode="Release" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Kundenversteher.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="ChoosButton4" Grid.Row="1" Grid.Column="4" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Left" Height="410"  VerticalAlignment="Top" Width="393" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton4_Click" ClickMode="Release" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand">
+        <Button x:Name="ChoosButton4" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Center" Height="475"  VerticalAlignment="Bottom" Width="475" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton4_Click" ClickMode="Release" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand">
             <Button.Background>
-                <ImageBrush ImageSource="/Zusamenbringer.png"/>
+                <ImageBrush ImageSource="/Zusamenbringer.png" Stretch="Uniform" TileMode="None"/>
             </Button.Background>
         </Button>
-        <Button x:Name="ChoosButton3" Grid.Row="1" Grid.Column="2" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Left" Height="492"  VerticalAlignment="Top" Width="192" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton3_Click" RenderTransformOrigin="0.517,0.494" ClickMode="Release" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <Button x:Name="ChoosButton3" Grid.Row="1" Grid.Column="2" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Center" Height="449"  VerticalAlignment="Bottom" Width="192" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton3_Click" RenderTransformOrigin="0.517,0.494" ClickMode="Release" BorderBrush="{x:Null}" Foreground="{x:Null}" >
             <Button.Background>
                 <ImageBrush ImageSource="/voranggeher.png"/>
             </Button.Background>

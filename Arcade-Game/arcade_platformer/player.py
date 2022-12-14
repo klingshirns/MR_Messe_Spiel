@@ -46,13 +46,13 @@ class Player(arcade.Sprite):
     def load_player_path(self):
 
         #open the .json file, which contains the paths of the players
-        f = open('json/player.json')
+        file = open('json/player.json')
 
         #load the .json file
-        player_file = json.load (f)
+        player_file = json.load (file)
 
         #close the .json file
-        f.close
+        file.close
 
         #create variable for the "players" container
         player_container = player_file['players']

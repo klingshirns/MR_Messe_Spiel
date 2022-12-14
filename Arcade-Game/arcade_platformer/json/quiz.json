@@ -119,7 +119,7 @@
         {
             "No": 6,
             "Keyword" : "Advantages",
-            "Question" : "Was sind deine Vorteile während der Ausbildung",
+            "Question" : "Was sind deine Vorteile während der Ausbildung?",
             "Answers":
             [
                 {
@@ -256,7 +256,7 @@
                 },
                 {
                     "ID" : "c",
-                    "Answer": "Chipsatz",
+                    "Answer": "Cache",
                     "Truth" : false
                 }
             ]

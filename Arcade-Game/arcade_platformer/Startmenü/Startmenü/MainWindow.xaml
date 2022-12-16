@@ -15,14 +15,14 @@
             <ImageBrush ImageSource="/Teams_hintergrund_Impulsgrafik-210915.jpg"/>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*" />
+            <RowDefinition Height="0.8*" />
             <RowDefinition Height="3*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="0.5*" />
         </Grid.RowDefinitions>
-        <Label Grid.Row="1" Content="Mr. Run" HorizontalAlignment="Center" Height="102" VerticalAlignment="Center" FontFamily="Arial" FontSize="100" FontWeight="Bold" Width="376"/>
+        <Label Grid.Row="1" Content="Mr. Run" HorizontalAlignment="Center" Height="110" VerticalAlignment="Center" FontFamily="Arial" FontSize="100" FontWeight="Bold" Width="376"/>
         <Button Grid.Row="2" Content="Spielen" HorizontalAlignment="Center" Height="70" VerticalAlignment="Top" Width="600" FontFamily="Arial" FontSize="48" FontWeight="Bold" Click="Button_Click_2" BorderThickness="1,1,1,1" ClickMode="Release">
             <Button.Resources>
                 <Style TargetType="Border">

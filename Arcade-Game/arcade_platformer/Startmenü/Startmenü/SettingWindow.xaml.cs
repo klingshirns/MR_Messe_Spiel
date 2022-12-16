@@ -1,19 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Collections.Generic;
 using System.IO;
-using Nancy.Json;
-using System.Threading;
+using System.Windows;
 
 namespace Startmenü
 {
@@ -91,22 +78,27 @@ namespace Startmenü
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            label.Content = "Technische Ausbildung:\n - eindeutige Prioritäten\n - setzten auf 80 Prozent Lösungen und verbessern bei Bedarf\n - Lösungen klein und kompakt, kein Schnickschnack\n - denken und handeln ergebnisorientiert\n";
-            
+            label.Content = "Technische Ausbildung:\n";
+            label2.Content = "- setzten auf 80 Prozent Lösungen und verbessern bei Bedarf\n- Lösungen klein und kompakt, kein Schnickschnack";
+            label3.Content = "- eindeutige Prioritäten\n- denken und handeln ergebnisorientiert";
 
             setting.SelectedPlayer = 0;
         }
 
         private void ChoosButton2_Click(object sender, RoutedEventArgs e)
         {
-            label.Content = "kaufmänische Ausbildung:\n - ";
+            label.Content = "Duale Studium-Richtung";
+            label2.Content = "- Bei Entscheidungen in Kunden hinein versetzen\n- Einsetzung für verlässliche und gewinnbringende Partnerschaften";
+            label3.Content = "- genaues Hinhören bei Kunden\n- aktive Entwicklungen mit Kunden teilen\n- professionelles Auftreten bei internen und externen Kunden";
 
             setting.SelectedPlayer = 1;
         }
 
         private void ChoosButton3_Click(object sender, RoutedEventArgs e)
-        { 
-            label.Content = "duale Studium-Richtung";
+        {
+            label.Content = "Kaufmänische Ausbildung:\n";
+            label2.Content = "- strategische Leitplanken\n- Engagement und Zuverlässigkeit bei neuen Themen\n- echter Kämpfer, der so schnell nichts aufhält\n- Mitziehung anderer durch Begeisterung";
+            label3.Content = "- treffen schnelle Entscheidungen\n- unterstützen zielstrebige KollegInnen\n- setzen entschiedene Themen zielstrebig um";
 
             setting.SelectedPlayer = 2;
         }
@@ -114,6 +106,8 @@ namespace Startmenü
         private void ChoosButton4_Click(object sender, RoutedEventArgs e)
         {
             label.Content = "Maschinenfabrik Reinhausen";
+            label2.Content = "- Informationen schnell und verständlich verteilen\n- gegenseitig einbringen passend zu unseren Kompetenzen und Fähigkeiten\n- Feedback bei fehlende Zusammenarbeit und suchen gemeinsame Lösungen";
+            label3.Content = "- Vertretung gemeinsamer getroffene Entscheidungen\n- Leistung anderer wertschätzen\n- vertrauenswürdige Ausstrahlung";
 
             setting.SelectedPlayer = 3;
         }

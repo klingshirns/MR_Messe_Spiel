@@ -19,7 +19,7 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border Name="border" 
-                        BorderThickness="1"
+                        BorderThickness="2"
                         Padding="4,2" 
                         BorderBrush="Transparent" 
                         CornerRadius="3" 
@@ -41,12 +41,13 @@
             <ImageBrush ImageSource="/Teams_hintergrund_Digi_Netz-210915.jpg"/>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="0.5*" />
-            <RowDefinition Height="4*" />
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="0.3*" />
+            <RowDefinition Height="265*" />
+            <RowDefinition Height="60*" />
+            <RowDefinition Height="450*" />
+            <RowDefinition Height="56*" />
+            <RowDefinition Height="120*" />
+            <RowDefinition Height="112.5" />
+            <RowDefinition Height="34*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
@@ -64,9 +65,9 @@
             Grid.RowSpan="1"
             Grid.Column="0"
             Grid.ColumnSpan="2"
-            Text="Charakters"
+            Text="Figuren"
             FontSize="100"
-            Foreground="White" FontFamily="Arial">
+            Foreground="#FFDDDDDD" FontFamily="Arial">
             <TextBlock.Effect>
                 <DropShadowEffect
                     ShadowDepth="6"
@@ -77,32 +78,47 @@
             </TextBlock.Effect>
         </TextBlock>
 
-        <Button Name="Exitbut" Grid.Row="4" Grid.Column="4" Grid.RowSpan="2" Content="Exit" HorizontalAlignment="Center" Height="60" VerticalAlignment="Center" Width="200" FontFamily="Arial" FontSize="24" FontWeight="Bold" Click="Exitbut_Click_1"/>
-        <Button x:Name="ChoosButton1" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource MyButtonStyle}" Content="" HorizontalAlignment="Center" Height="300" VerticalAlignment="Bottom" Width="236"  FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="Button_Click_6" RenderTransformOrigin="0.579,0.538" ClickMode="Release" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <Button Name="Exitbut" Grid.Row="5" Grid.Column="2" Grid.RowSpan="2" Content="Zurück" HorizontalAlignment="Center" Height="60" VerticalAlignment="Center" Width="200" FontFamily="Arial" FontSize="24" FontWeight="Bold" Click="Exitbut_Click_1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="ChoosButton1" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, -24" Style="{StaticResource MyButtonStyle}" Content="" HorizontalAlignment="Center" Height="260" VerticalAlignment="Bottom" Width="210" Click="Button_Click_6" RenderTransformOrigin="0.579,0.538" ClickMode="Hover" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/einfachmacher.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="ChoosButton2" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Center" Height="300"  VerticalAlignment="Bottom" Width="268" FontSize="18" FontWeight="Bold" FontFamily="Arial" Click="ChoosButton2_Click" RenderTransformOrigin="0.512,0.612" ClickMode="Release" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <Button x:Name="ChoosButton2" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" Margin="0, -7" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Center" Height="270"  VerticalAlignment="Bottom" Width="210" Click="ChoosButton2_Click" RenderTransformOrigin="0.512,0.612" ClickMode="Hover" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Kundenversteher.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="ChoosButton4" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="3" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Center" Height="475"  VerticalAlignment="Bottom" Width="475" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton4_Click" ClickMode="Release" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand">
+        <Button x:Name="ChoosButton4" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="3" Margin="0,-40" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Center" Height="350"  VerticalAlignment="Bottom" Width="350" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton4_Click" ClickMode="Hover" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand">
             <Button.Background>
                 <ImageBrush ImageSource="/Zusamenbringer.png" Stretch="Uniform" TileMode="None"/>
             </Button.Background>
         </Button>
-        <Button x:Name="ChoosButton3" Grid.Row="2" Grid.Column="2" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Left" Height="449"  VerticalAlignment="Bottom" Width="192" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton3_Click" RenderTransformOrigin="0.517,0.494" ClickMode="Release" BorderBrush="{x:Null}" Foreground="{x:Null}" >
+        <Button x:Name="ChoosButton3" Grid.Row="2" Grid.Column="2" Margin="0, -25" Style="{StaticResource MyButtonStyle}" HorizontalAlignment="Left" Height="350"  VerticalAlignment="Bottom" Width="180" FontFamily="Arial" FontWeight="Bold" FontSize="18" Click="ChoosButton3_Click" RenderTransformOrigin="0.517,0.494" ClickMode="Hover" BorderBrush="{x:Null}" Foreground="{x:Null}" >
             <Button.Background>
                 <ImageBrush ImageSource="/voranggeher.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="Save" Grid.Row="4" Grid.Column="5" Grid.RowSpan="2"  Content="Save" HorizontalAlignment="Center" Height="60" VerticalAlignment="Center" Width="200" FontWeight="Bold" FontSize="24" FontFamily="Arial" Click="Save_Click"/>
-        <Label x:Name="label" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="200" Width="1252" FontFamily="Arial Black" FontSize="20" HorizontalContentAlignment="Center" Background="White" Opacity="0.5"/>
-        <Label Content="Einfachmacher" Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="142" FontFamily="Arial Black" FontSize="16" Height="28" Foreground="White"/>
-        <Label Content="Vorangeher" Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Left" Height="28" VerticalAlignment="Center" Width="160" FontFamily="Arial Black" FontSize="16" Foreground="White" HorizontalContentAlignment="Right"/>
-        <Label Content="Kundenversteher" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="16" RenderTransformOrigin="0.712,-0.666" Foreground="White"/>
-        <Label Content="Zusammenbringer" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="3" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center" Width="202" FontFamily="Arial Black" FontSize="16" RenderTransformOrigin="0.654,-0.13" Foreground="White"/>
+        <Button x:Name="Save" Grid.Row="5" Grid.Column="4" Grid.RowSpan="2"  Content="Speichern" HorizontalAlignment="Center" Height="60" VerticalAlignment="Center" Width="200" FontWeight="Bold" FontSize="24" FontFamily="Arial" Click="Save_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="Einfachmacher" Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="160" FontFamily="Arial" FontSize="22" Height="35" Foreground="#FFDDDDDD"/>
+        <Label Content="Vorangeher" Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="150" FontFamily="Arial" FontSize="22" Foreground="#FFDDDDDD" HorizontalContentAlignment="Right"/>
+        <Label Content="Kundenversteher" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" RenderTransformOrigin="0.712,-0.666" Foreground="#FFDDDDDD" Height="35"/>
+        <Label Content="Zusammenbringer" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="3" HorizontalAlignment="Center" Height="35" VerticalAlignment="Center" Width="202" FontFamily="Arial" FontSize="22" RenderTransformOrigin="0.654,-0.13" Foreground="#FFDDDDDD"/>
+        <Label Content="Powered by MR - Azubis - 2021" Grid.Row="6" Grid.Column="6" HorizontalAlignment="Center" Height="31" VerticalAlignment="Bottom" Width="222" FontFamily="Arial" FontWeight="Bold" FontSize="14" Foreground="#FFDDDDDD"/>
+        <Label x:Name="label" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Top" Height="33" Width="1252" FontFamily="Arial Black" FontSize="18" HorizontalContentAlignment="Center" Background="#FFDDDDDD"/>
+        <Label x:Name="label2" Grid.Column="3" Content="" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="60" Grid.Row="4" VerticalAlignment="Bottom" Width="763" FontFamily="Arial" FontSize="14" HorizontalContentAlignment="Center" Background="#FFDDDDDD"/>
+        <Label x:Name="label3" Grid.Column="1" Content="" Grid.ColumnSpan="2" HorizontalAlignment="Right" Height="60" Grid.Row="4" VerticalAlignment="Bottom" Width="441" FontFamily="Arial" FontSize="14" HorizontalContentAlignment="Center" Background="#FFDDDDDD"/>
     </Grid>
 </Window>

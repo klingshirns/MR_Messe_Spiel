@@ -1,22 +1,5 @@
-﻿using IronPython.Hosting;
-using Microsoft.Scripting.Hosting;
-using OpenXmlPowerTools;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Interop;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Startmenü
 {
@@ -38,6 +21,9 @@ namespace Startmenü
         {
             Logout logout = new Logout();
             logout.Show();
+
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.AllowsTransparency = true;
         }
 
         //Settings will open
@@ -51,7 +37,7 @@ namespace Startmenü
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Process.Start(Filename);
-            Process.Start(@"..\..\..\..\main.py");
+            Process.Start(@"..\..\..\..\Python_Main_Game\main.py");
         }
 
         private void Testbu_Click(object sender, RoutedEventArgs e)

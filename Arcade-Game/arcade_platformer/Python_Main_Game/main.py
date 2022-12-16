@@ -306,7 +306,7 @@ class MyGame(arcade.Window):
                 info_boxes = ["info_electro_it"] #Array for info_boxes (filename)
                 info_box = info_boxes[info_box_id] # Get info box from array
                 # loading info box image
-                self.load_info_box = arcade.load_texture(f"../../assets/images/{info_box}.jpg")
+                self.load_info_box = arcade.load_texture(f"../../assets/images/Info_Boxes/{info_box}.jpg")
                 # sets value to draw info box to true
                 self.should_load_info_box = True
 

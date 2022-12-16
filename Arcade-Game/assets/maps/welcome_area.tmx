@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="128" tileheight="128" infinite="0" nextlayerid="18" nextobjectid="32">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="128" tileheight="128" infinite="0" nextlayerid="18" nextobjectid="33">
  <tileset firstgid="1" source="Tilesets/MR-Logo.tsx"/>
  <tileset firstgid="7" source="Tilesets/ground.tsx"/>
  <tileset firstgid="135" source="Tilesets/interactives.tsx"/>
- <tileset firstgid="263" source="transformer_single.tsx"/>
+ <tileset firstgid="263" source="Tilesets/transformer_single.tsx"/>
  <tileset firstgid="264" source="Tilesets/alienBlue_front.tsx"/>
- <tileset firstgid="265" source="sprechblase.tsx"/>
+ <tileset firstgid="265" source="Tilesets/sprechblase.tsx"/>
  <layer id="1" name="ground" width="50" height="20">
   <data encoding="base64" compression="zlib">
    eJztzbEJAAAIBLFfw/0XdQWtREjg6ksAAAB+qmVXX2lSA4qYD9M=
@@ -54,12 +54,8 @@
    </properties>
   </object>
   <object id="28" gid="2147483913" x="4563" y="1992" width="1030" height="208"/>
+  <object id="32" gid="169" x="1693" y="2177" width="264" height="180"/>
  </objectgroup>
- <layer id="3" name="goals" width="50" height="20">
-  <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20MH6AAAACAtwEPoAAB
-  </data>
- </layer>
  <layer id="4" name="coins" width="50" height="20" opacity="0.96">
   <data encoding="base64" compression="zlib">
    eJztwTEBAAAAwqD1T20MH6AAAACAtwEPoAAB

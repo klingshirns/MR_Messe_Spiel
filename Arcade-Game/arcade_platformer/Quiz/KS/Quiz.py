@@ -6,19 +6,19 @@ import json
 # ----------------------------------
 
 class Controller():
-    def __init__(self, tk):
-        self.tk = tk
+    def __init__(self, root):
+        self.root = root
         self.model = Model(self)
         self.view = View(self)
 
     def quitButtonPressed(self):
-        self.tk.destroy()
+        self.root.destroy()
     
     def answerButtonPressed(self, id):
         self.model.checkAnswer(id)
+        self.model.changeLabels()
 
-    def increaseQuestionNumber(self):
-        pass
+
 
 #----------------------------------
 # View
@@ -31,21 +31,20 @@ class View():
         self.controller = Controller
         self.frame = Frame()
         self.frame.grid(row=0, column=0)
+        self.questionString = self.controller.model.getQuestionString()
 
         self.show()
 
-        
     def show(self):
-        pass
         #--------------------------
         # Question
         #--------------------------
-        Label(self.frame, text="Frage", ).grid(row=0, column=0, padx=10, pady=10, sticky='w')
+        self.question_label = Label(self.frame, text=self.questionString).grid(row=0, column=0, padx=10, pady=10, sticky='w')
         
         #--------------------------
         # Answers + Buttons
         #--------------------------
-        Label(self.frame,text="Answer 1").grid(row = 1, column = 0 , padx=10, pady=10, sticky='w')
+        self.question_label = Label(self.frame,text="Answer 1").grid(row = 1, column = 0 , padx=10, pady=10, sticky='w')
 
         Button(self.frame,text="a", command=lambda: self.controller.answerButtonPressed(0)).grid(row = 1, column = 2, padx=10, pady=10)
 
@@ -75,6 +74,8 @@ class Model():
 
     def __init__(self, Controller):
         self.quiz_Data = None
+        self.currentQuNo = 0
+        self.controller = Controller
 
         self.loadJSON()
 
@@ -88,30 +89,53 @@ class Model():
 
     def checkAnswer(self, id_answered):
 
-        if id_answered != (0 or 1 or 2):
-            pass
+        myList = [0,1,2]
 
-        else:
-            bool_answer = self.quiz_Data['general'][0]['answers'][id_answered]['truth']
+        if id_answered in myList:
+
+            bool_answer = self.quiz_Data['general'][self.currentQuNo]['answers'][id_answered]['truth']
 
             if bool_answer == True:
-
                 print("correct")
-
+                # Richtig! Show true information
             else:
                 print("false")
+                # Falsch! Show true information
 
+        self.increaseQuestionNumber()
 
+    def getNumberOfQuestions(self):
+        return len(self.quiz_Data['general'])
+
+    def increaseQuestionNumber(self):
+        # Get the Number of Questions listed in the JSON File
+        numberOfQuestions = self.getNumberOfQuestions() 
+        #Index starts at zero, but this return Value at one
+        numberOfQuestions -= 1 
+
+        if self.currentQuNo < numberOfQuestions:
+            self.currentQuNo += 1
+            print(self.currentQuNo)
+
+        else:
+            print("End of Quiz")
+            self.controller.root.destroy()
+
+    def getQuestionString(self):
+        return str(self.quiz_Data['general'][self.currentQuNo]['Question'])
+
+    def changeLabels(self):
+        pass
+        
 #----------------------------------
 # Main
 #----------------------------------
 def main():
-    tk = Tk()
-    frame = Frame(tk)
-    tk.title('Quiz')
-    Controller(tk)
-    tk.mainloop()
+    root = Tk()
+    Frame(root)
+    root.title('Quiz')
+    Controller(root)
+    root.mainloop()
 
 if __name__ == "__main__":
     main()
-

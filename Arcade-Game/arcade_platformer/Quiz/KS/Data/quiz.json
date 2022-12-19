@@ -2,9 +2,9 @@
     "general":
     [
         {
-            "No" : "1",
+            "No" : "0",
             "Keyword" : "Founding",
-            "Question": "Wann wurde die Maschinenfabrik Reinhausen gegründet",
+            "Question": "Wann wurde die Maschinenfabrik Reinhausen gegruendet",
             "answers":
             [
                 {
@@ -25,140 +25,140 @@
             ]
         },
         {
-            "No" : "2",
+            "No" : "1",
             "Keyword" : "Founding Members",
-            "Question" : "Wer waren die Gründungsmitglieder der MR?",
-            "Answers":
+            "Question" : "Wer waren die Gruendungsmitglieder der MR?",
+            "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "None",
-                    "Truth": null
+                    "Answer": "Karl Rapp und Gustav Otto",
+                    "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "Nikola Teasla und Thomas Edison",
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "Die Gebrüder Scheubeck",
+                    "truth" : true
+                }
+            ]
+        },
+        {
+            "No": "2",
+            "Keyword" : "Invention Tap Changer",
+            "Question" : "Wann wurde der erste Laststufenschalter erfunden?",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "1929",
+                    "truth": true
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "1672",
+                    "truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "1847",
+                    "truth" : false
                 }
             ]
         },
         {
             "No": "3",
-            "Keyword" : "Invention Tap Changer",
-            "Question" : "Wann wurde der erste Laststufenschalter erfunden?",
-            "Answers":
+            "Keyword" : "Company Locations",
+            "Question" : "In wie vielen Laendern sind wir vertreten?",
+            "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "None",
-                    "Truth": null
+                    "Answer": "130",
+                    "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "13",
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "28",
+                    "truth" : true
                 }
             ]
         },
         {
             "No": "4",
-            "Keyword" : "Company Locations",
-            "Question" : "In wie vielen Ländern sind wir vertreten?",
-            "Answers":
+            "Keyword" : "Training offers",
+            "Question" : "wie viele Ausbildungsangebote gibt es?",
+            "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "None",
-                    "Truth": null
+                    "truth": false
                 },
                 {
                     "ID" : "b",
                     "Answer": "None",
-                    "Truth" : null
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "9",
+                    "truth" : true
                 }
             ]
         },
         {
             "No": "5",
-            "Keyword" : "Training offers",
-            "Question" : "wie viele Ausbildungsangebote gibt es?",
-            "Answers":
+            "Keyword" : "Advantages",
+            "Question" : "Was sind deine Vorteile während der Ausbildung?",
+            "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "None",
-                    "Truth": null
+                    "Answer": "35-Stunden Woche",
+                    "truth": true
                 },
                 {
                     "ID" : "b",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "iPad oder Laptop",
+                    "truth" : true
                 },
                 {
                     "ID" : "c",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "akktraktive Vergünstigungen",
+                    "truth" : true
                 }
             ]
         },
         {
             "No": "6",
-            "Keyword" : "Advantages",
-            "Question" : "Was sind deine Vorteile während der Ausbildung?",
-            "Answers":
-            [
-                {
-                    "ID" : "a",
-                    "Answer": "None",
-                    "Truth": null
-                },
-                {
-                    "ID" : "b",
-                    "Answer": "None",
-                    "Truth" : null
-                },
-                {
-                    "ID" : "c",
-                    "Answer": "None",
-                    "Truth" : null
-                }
-            ]
-        },
-        {
-            "No": "7",
             "Keyword" : "Number of trainees",
-            "Question" : "Wie viele Auszubildende werden derzeit in der MR auf die späteren Unternehmensaufgaben vorbereitet?",
-            "Answers":
+            "Question" : "Wie viele Auszubildende werden derzeit in der MR auf die spaeteren Unternehmensaufgaben vorbereitet?",
+            "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "None",
-                    "Truth": null
+                    "truth": true
                 },
                 {
                     "ID" : "b",
                     "Answer": "None",
-                    "Truth" : null
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
                     "Answer": "None",
-                    "Truth" : null
+                    "truth" : false
                 }
             ]
         }
@@ -167,97 +167,97 @@
     "Electro_IT":
     [
         {
-            "No" : 1,
+            "No" : "0",
             "Keyword" : "Hardware",
             "Question": "Was versteht man unter Hardware?",
-            "Answers":
+            "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "Eisen, Kunststoff, ...",
-                    "Truth": false
+                    "truth": false
                 },
                 {
                     "ID" : "b",
                     "Answer": "Elektronische Bauteile eines Computers",
-                    "Truth" : true
+                    "truth" : true
                 },
                 {
                     "ID" : "c",
                     "Answer": "Betriebssysteme wie Windows oder Linux",
-                    "Truth" : false
+                    "truth" : false
                 }
             ]
         },
 
         {
-            "No" : 2,
+            "No" : "1",
             "Keyword" : "Software",
             "Question": "Was versteht man unter Software?",
-            "Answers":
+            "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "Betriebssystem, Programme und Anwendungen",
-                    "Truth": true
+                    "truth": true
                 },
                 {
                     "ID" : "b",
                     "Answer": "Schaumstoff",
-                    "Truth" : false
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
                     "Answer": "Lüfter",
-                    "Truth" : false
+                    "truth" : false
                 }
             ]
         },
 
         {
-            "No" : 3,
+            "No" : "2",
             "Keyword" : "CPU",
             "Question": "Was bedeutet CPU?",
-            "Answers":
+            "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "Grafikkarte",
-                    "Truth": false
+                    "truth": false
                 },
                 {
                     "ID" : "b",
                     "Answer": "Prozessor",
-                    "Truth" : true
+                    "truth" : true
                 },
                 {
                     "ID" : "c",
                     "Answer": "Netzteil",
-                    "Truth" : false
+                    "truth" : false
                 }
             ]
         },
 
         {
-            "No" : 4,
+            "No" : "3",
             "Keyword" : "Storage",
             "Question": "Worauf kann man Daten dauerhaft abspeichern?",
-            "Answers":
+            "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "Arbeitsspeicher",
-                    "Truth": true
+                    "truth": true
                 },
                 {
                     "ID" : "b",
                     "Answer": "Festplatte (SSD, HDD)",
-                    "Truth" : false
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
                     "Answer": "Cache",
-                    "Truth" : false
+                    "truth" : false
                 }
             ]
         }

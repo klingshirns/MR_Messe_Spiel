@@ -4,25 +4,26 @@
         {
             "No" : "0",
             "Keyword" : "Founding",
-            "Question": "Wann wurde die Maschinenfabrik Reinhausen gegruendet",
+            "Question": "Wann wurde die Maschinenfabrik Reinhausen gegruendet?",
             "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "1929",
-                    "truth": true
+                    "truth": false
                 },
                 {
                     "ID" : "b",
                     "Answer": "1986",
-                    "truth" : false
+                    "truth" : true
                 },
                 {
                     "ID" : "c",
                     "Answer": "1999",
                     "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "Im Jahr 1886 wurde das Unternehmen als Reparaturbetriebs zur Herstellung von Voll- und Spaltgattersägen gegründet"
         },
         {
             "No" : "1",
@@ -42,10 +43,11 @@
                 },
                 {
                     "ID" : "c",
-                    "Answer": "Die Gebrüder Scheubeck",
+                    "Answer": "Die Gebrueder Scheubeck",
                     "truth" : true
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
         {
             "No": "2",
@@ -68,7 +70,8 @@
                     "Answer": "1847",
                     "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
         {
             "No": "3",
@@ -91,22 +94,23 @@
                     "Answer": "28",
                     "truth" : true
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
         {
             "No": "4",
             "Keyword" : "Training offers",
-            "Question" : "wie viele Ausbildungsangebote gibt es?",
+            "Question" : "Wie viele Ausbildungsangebote gibt es?",
             "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "None",
+                    "Answer": "13",
                     "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "None",
+                    "Answer": "5",
                     "truth" : false
                 },
                 {
@@ -114,12 +118,13 @@
                     "Answer": "9",
                     "truth" : true
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
         {
             "No": "5",
             "Keyword" : "Advantages",
-            "Question" : "Was sind deine Vorteile während der Ausbildung?",
+            "Question" : "Was sind deine Vorteile waehrend der Ausbildung?",
             "answers":
             [
                 {
@@ -134,33 +139,35 @@
                 },
                 {
                     "ID" : "c",
-                    "Answer": "akktraktive Vergünstigungen",
+                    "Answer": "attraktive Verguenstigungen",
                     "truth" : true
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
         {
             "No": "6",
             "Keyword" : "Number of trainees",
-            "Question" : "Wie viele Auszubildende werden derzeit in der MR auf die spaeteren Unternehmensaufgaben vorbereitet?",
+            "Question" : "Wie viele Auszubildende werden derzeit ausgebildet?",
             "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "None",
+                    "Answer": "103",
                     "truth": true
                 },
                 {
                     "ID" : "b",
-                    "Answer": "None",
+                    "Answer": "34",
                     "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "None",
+                    "Answer": "73",
                     "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "none"
         }
     ],
 
@@ -187,7 +194,8 @@
                     "Answer": "Betriebssysteme wie Windows oder Linux",
                     "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
 
         {
@@ -211,7 +219,8 @@
                     "Answer": "Lüfter",
                     "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
 
         {
@@ -235,7 +244,8 @@
                     "Answer": "Netzteil",
                     "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
 
         {
@@ -259,7 +269,8 @@
                     "Answer": "Cache",
                     "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "none"
         }
     ]
 }

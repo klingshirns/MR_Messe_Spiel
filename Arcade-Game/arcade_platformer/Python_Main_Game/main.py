@@ -135,7 +135,7 @@ class MyGame(arcade.Window):
         }
 
         # Array to hold map names
-        self.maps = ["welcome_area_new", "electronic_it"]
+        self.maps = ["welcome_area_2", "electronic_it"]
 
         current_map = self.maps[self.level] #get current map_name from Array with index
         map_name = f"../../assets/maps/{current_map}.tmx" # safe current map name with path

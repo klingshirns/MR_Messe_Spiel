@@ -73,7 +73,7 @@
 </data>
  </layer>
  <objectgroup id="3" name="coins">
-  <object id="1" gid="262" x="1792" y="2688" width="128" height="127"/>
+  <object id="1" gid="262" x="1902.12" y="2182.74" width="128" height="127"/>
   <object id="2" gid="262" x="1348.15" y="1482.62" width="128" height="127"/>
   <object id="3" gid="262" x="6016" y="2688" width="128" height="127"/>
   <object id="4" gid="262" x="4096" y="2688" width="128" height="127"/>

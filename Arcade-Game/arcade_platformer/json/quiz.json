@@ -1,265 +1,276 @@
 {
-    "General":
+    "general":
     [
         {
-            "No" : 1,
+            "No" : "0",
             "Keyword" : "Founding",
-            "Question": "Wann wurde die Maschinenfabrik Reinhausen gegründet",
-            "Answers":
+            "Question": "Wann wurde die Maschinenfabrik Reinhausen gegruendet?",
+            "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "1929",
-                    "Truth": true
+                    "truth": false
                 },
                 {
                     "ID" : "b",
                     "Answer": "1986",
-                    "Truth" : false
+                    "truth" : true
                 },
                 {
                     "ID" : "c",
                     "Answer": "1999",
-                    "Truth" : false
+                    "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "Im Jahr 1886 wurde das Unternehmen als Reparaturbetriebs zur Herstellung von Voll- und Spaltgattersägen gegründet"
         },
         {
-            "No" : 2,
+            "No" : "1",
             "Keyword" : "Founding Members",
-            "Question" : "Wer waren die Gründungsmitglieder der MR?",
-            "Answers":
+            "Question" : "Wer waren die Gruendungsmitglieder der MR?",
+            "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "None",
-                    "Truth": null
+                    "Answer": "Karl Rapp und Gustav Otto",
+                    "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "Nikola Teasla und Thomas Edison",
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "Die Gebrueder Scheubeck",
+                    "truth" : true
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
         {
-            "No": 3,
+            "No": "2",
             "Keyword" : "Invention Tap Changer",
             "Question" : "Wann wurde der erste Laststufenschalter erfunden?",
-            "Answers":
+            "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "None",
-                    "Truth": null
+                    "Answer": "1929",
+                    "truth": true
                 },
                 {
                     "ID" : "b",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "1672",
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "1847",
+                    "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
         {
-            "No": 4,
+            "No": "3",
             "Keyword" : "Company Locations",
-            "Question" : "In wie vielen Ländern sind wir vertreten?",
-            "Answers":
+            "Question" : "In wie vielen Laendern sind wir vertreten?",
+            "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "None",
-                    "Truth": null
+                    "Answer": "130",
+                    "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "13",
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "28",
+                    "truth" : true
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
         {
-            "No": 5,
+            "No": "4",
             "Keyword" : "Training offers",
-            "Question" : "wie viele Ausbildungsangebote gibt es?",
-            "Answers":
+            "Question" : "Wie viele Ausbildungsangebote gibt es?",
+            "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "None",
-                    "Truth": null
+                    "Answer": "13",
+                    "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "5",
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "9",
+                    "truth" : true
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
         {
-            "No": 6,
+            "No": "5",
             "Keyword" : "Advantages",
-            "Question" : "Was sind deine Vorteile während der Ausbildung?",
-            "Answers":
+            "Question" : "Was sind deine Vorteile waehrend der Ausbildung?",
+            "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "None",
-                    "Truth": null
+                    "Answer": "35-Stunden Woche",
+                    "truth": true
                 },
                 {
                     "ID" : "b",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "iPad oder Laptop",
+                    "truth" : true
                 },
                 {
                     "ID" : "c",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "attraktive Verguenstigungen",
+                    "truth" : true
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
         {
-            "No": 7,
+            "No": "6",
             "Keyword" : "Number of trainees",
-            "Question" : "Wie viele Auszubildende werden derzeit in der MR auf die späteren Unternehmensaufgaben vorbereitet?",
-            "Answers":
+            "Question" : "Wie viele Auszubildende werden derzeit ausgebildet?",
+            "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "None",
-                    "Truth": null
+                    "Answer": "103",
+                    "truth": true
                 },
                 {
                     "ID" : "b",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "34",
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "None",
-                    "Truth" : null
+                    "Answer": "73",
+                    "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "none"
         }
     ],
 
     "Electro_IT":
     [
         {
-            "No" : 1,
+            "No" : "0",
             "Keyword" : "Hardware",
             "Question": "Was versteht man unter Hardware?",
-            "Answers":
+            "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "Eisen, Kunststoff, ...",
-                    "Truth": false
+                    "truth": false
                 },
                 {
                     "ID" : "b",
                     "Answer": "Elektronische Bauteile eines Computers",
-                    "Truth" : true
+                    "truth" : true
                 },
                 {
                     "ID" : "c",
                     "Answer": "Betriebssysteme wie Windows oder Linux",
-                    "Truth" : false
+                    "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
 
         {
-            "No" : 2,
+            "No" : "1",
             "Keyword" : "Software",
             "Question": "Was versteht man unter Software?",
-            "Answers":
+            "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "Betriebssystem, Programme und Anwendungen",
-                    "Truth": true
+                    "truth": true
                 },
                 {
                     "ID" : "b",
                     "Answer": "Schaumstoff",
-                    "Truth" : false
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
                     "Answer": "Lüfter",
-                    "Truth" : false
+                    "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
 
         {
-            "No" : 3,
+            "No" : "2",
             "Keyword" : "CPU",
             "Question": "Was bedeutet CPU?",
-            "Answers":
+            "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "Grafikkarte",
-                    "Truth": false
+                    "truth": false
                 },
                 {
                     "ID" : "b",
                     "Answer": "Prozessor",
-                    "Truth" : true
+                    "truth" : true
                 },
                 {
                     "ID" : "c",
                     "Answer": "Netzteil",
-                    "Truth" : false
+                    "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "none"
         },
 
         {
-            "No" : 4,
+            "No" : "3",
             "Keyword" : "Storage",
             "Question": "Worauf kann man Daten dauerhaft abspeichern?",
-            "Answers":
+            "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "Arbeitsspeicher",
-                    "Truth": true
+                    "truth": true
                 },
                 {
                     "ID" : "b",
                     "Answer": "Festplatte (SSD, HDD)",
-                    "Truth" : false
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
                     "Answer": "Cache",
-                    "Truth" : false
+                    "truth" : false
                 }
-            ]
+            ],
+            "answer_info": "none"
         }
     ]
 }

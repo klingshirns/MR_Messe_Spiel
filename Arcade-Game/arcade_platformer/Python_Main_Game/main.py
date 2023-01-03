@@ -6,6 +6,7 @@ import arcade
 
 from player import Player
 from drawText import DrawText
+import quiz
 
 
 # Constants
@@ -36,9 +37,7 @@ LAYER_NAME_COINS = "coins"
 LAYER_NAME_GOALS = "goals"
 LAYER_NAME_LEVEL_PORTAL = "level_portal"
 LAYER_NAME_INFO_BOXES = "info_boxes"
-
-# Creating variable 'player' that holds the class 'Player'
-# -> function does not need to be called seperately because of __init__
+LAYER_NAME_WIZZARD = "wizzard"
 
 
 class MyGame(arcade.Window):
@@ -81,9 +80,6 @@ class MyGame(arcade.Window):
         #Level
         self.level = 0
 
-        #Reset Level
-        self.reset_level = True
-
         #Level entering Key (Enter)
         self.level_key = False
 
@@ -97,7 +93,7 @@ class MyGame(arcade.Window):
         self.should_load_info_box = False
 
         #setting the background-color for the map
-        arcade.set_background_color(arcade.csscolor.GREY)
+        arcade.set_background_color(arcade.csscolor.CORNFLOWER_BLUE)
 
     def setup(self):
         """Set up the game here. Call this function to restart the game."""
@@ -132,10 +128,14 @@ class MyGame(arcade.Window):
             LAYER_NAME_INFO_BOXES: {
                 "use_spatial_hash": True
             },
+
+            LAYER_NAME_WIZZARD: {
+                "use spatial hash": True
+            }
         }
 
         # Array to hold map names
-        self.maps = ["welcome_area", "electronic_it"]
+        self.maps = ["welcome_area_2", "electronic_it"]
 
         current_map = self.maps[self.level] #get current map_name from Array with index
         map_name = f"../../assets/maps/{current_map}.tmx" # safe current map name with path
@@ -161,7 +161,7 @@ class MyGame(arcade.Window):
             arcade.set_background_color(self.tile_map.background_color)
 
         # load background image
-        self.background = arcade.load_texture(f"../../assets/images/background/background.gif")
+        #self.background = arcade.load_texture(f"../../assets/images/background/background.gif")
 
         # Create the 'physics engine'
         self.physics_engine = arcade.PhysicsEnginePlatformer(
@@ -181,9 +181,9 @@ class MyGame(arcade.Window):
         self.camera.use()
 
         # Draw background image
-        arcade.draw_lrwh_rectangle_textured(0, 128,
-                                            3000, 1000,
-                                            self.background)
+        #arcade.draw_lrwh_rectangle_textured(0, 128,
+        #                                    3000, 1000,
+        #                                    self.background)
 
 
         # Draw our Scene
@@ -309,6 +309,21 @@ class MyGame(arcade.Window):
                 self.load_info_box = arcade.load_texture(f"../../assets/images/Info_Boxes/{info_box}.jpg")
                 # sets value to draw info box to true
                 self.should_load_info_box = True
+
+        # Checks if the player colided with wizzardand puts it in a variable
+        wizzard_hit = arcade.check_for_collision_with_list(
+            self.player_sprite, self.scene[LAYER_NAME_WIZZARD])
+
+        for wizzard in wizzard_hit:
+            if self.level_key: 
+
+                quiz.main()
+
+                wizzard_id = int(wizzard.properties["ID"])
+
+                self.level = wizzard_id
+
+                self.setup()
 
         # Draw texts on screen
         DrawText(self.level)

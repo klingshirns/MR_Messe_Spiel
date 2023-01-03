@@ -91,7 +91,7 @@ namespace Startmenü
             label2.Content = "- Bei Entscheidungen in Kunden hinein versetzen\n- Einsetzung für verlässliche und gewinnbringende Partnerschaften";
             label3.Content = "- genaues Hinhören bei Kunden\n- aktive Entwicklungen mit Kunden teilen\n- professionelles Auftreten bei internen und externen Kunden";
 
-            setting.SelectedPlayer = 1;
+            setting.SelectedPlayer = 2;
         }
 
         private void ChoosButton3_Click(object sender, RoutedEventArgs e)
@@ -100,7 +100,7 @@ namespace Startmenü
             label2.Content = "- strategische Leitplanken\n- Engagement und Zuverlässigkeit bei neuen Themen\n- echter Kämpfer, der so schnell nichts aufhält\n- Mitziehung anderer durch Begeisterung";
             label3.Content = "- treffen schnelle Entscheidungen\n- unterstützen zielstrebige KollegInnen\n- setzen entschiedene Themen zielstrebig um";
 
-            setting.SelectedPlayer = 2;
+            setting.SelectedPlayer = 1;
         }
 
         private void ChoosButton4_Click(object sender, RoutedEventArgs e)
@@ -121,7 +121,7 @@ namespace Startmenü
                 List<Player> players = new List<Player>();
                 players.Add(new Player() { Name = "Einfachmacher", Imgpath = @"..\..\..\..\..\assets\images\player\einfachmacher.png", No = 0 });
                 players.Add(new Player() { Name = "Kundenversteher", Imgpath = @"..\..\..\..\..\assets\images\player\Original\Kundenversteher.png", No = 1 });
-                players.Add(new Player() { Name = "Vorangeher", Imgpath = @"..\..\..\..\..\assets\images\player\Original\vorangeher.png", No = 2 });
+                players.Add(new Player() { Name = "Vorangeher", Imgpath = @"..\..\..\..\..\assets\images\player\Original\Vorangeher.png", No = 2 });
                 players.Add(new Player() { Name = "Zusammenbringer", Imgpath = @"..\..\..\..\..\assets\images\player\Original\Zusammenbringer.png", No = 3 });
                 result.Players = players.ToArray();
                 result.SelectedPlayer = 1;

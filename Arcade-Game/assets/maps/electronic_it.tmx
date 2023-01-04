@@ -54,7 +54,11 @@
 </data>
  </layer>
  <objectgroup id="7" name="wizzard">
-  <object id="5" gid="264" x="7144.76" y="2054.55" width="131" height="188"/>
+  <object id="5" gid="264" x="7144.76" y="2054.55" width="131" height="188">
+   <properties>
+    <property name="ID" type="int" value="0"/>
+   </properties>
+  </object>
   <object id="6" gid="129" x="6466.27" y="1876.67" width="841.212" height="212.424"/>
  </objectgroup>
  <layer id="4" name="background" width="60" height="20">

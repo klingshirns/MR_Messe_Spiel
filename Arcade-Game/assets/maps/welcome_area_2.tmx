@@ -203,7 +203,11 @@
  <objectgroup id="4" name="info_boxes">
   <object id="48" gid="163" x="1143.39" y="3838.3" width="128" height="128"/>
   <object id="49" gid="163" x="4020" y="3840" width="128" height="128"/>
-  <object id="50" gid="163" x="3328" y="5759.33" width="128" height="128"/>
+  <object id="50" gid="163" x="3328" y="5759.33" width="128" height="128">
+   <properties>
+    <property name="ID" type="int" value="0"/>
+   </properties>
+  </object>
   <object id="51" gid="163" x="5846" y="4863.33" width="128" height="128"/>
   <object id="54" gid="163" x="7118.67" y="2813.33" width="128" height="128"/>
   <object id="55" gid="163" x="8740" y="2688" width="128" height="128"/>

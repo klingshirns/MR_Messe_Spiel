@@ -23,7 +23,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Im Jahr 1886 wurde das Unternehmen als Reparaturbetriebs zur Herstellung von Voll- und Spaltgattersägen gegründet"
+            "answer_info": "Im Jahr 1886 wurde das Unternehmen als Reparaturbetrieb zur Herstellung von Voll- und Spaltgattersaegen gegruendet"
         },
         {
             "No" : "1",
@@ -47,7 +47,7 @@
                     "truth" : true
                 }
             ],
-            "answer_info": "none"
+            "answer_info": "Die Gebrueder Scheubeck legten den Grundstein fuer die Maschinenfabrik Reinhausen"
         },
         {
             "No": "2",
@@ -71,7 +71,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "none"
+            "answer_info": "Die Gebrueder Scheubeck entwickelten 1929 den ersten Prototypen eines Laststufenschalters"
         },
         {
             "No": "3",
@@ -91,11 +91,11 @@
                 },
                 {
                     "ID" : "c",
-                    "Answer": "28",
+                    "Answer": "49",
                     "truth" : true
                 }
             ],
-            "answer_info": "none"
+            "answer_info": "Mit 49 Niederlassungen sowie Tochterunternehmen sind wir auf der ganzen Welt vertreten"
         },
         {
             "No": "4",
@@ -119,7 +119,7 @@
                     "truth" : true
                 }
             ],
-            "answer_info": "none"
+            "answer_info": "Derzeit bietet die Maschinenfabrik Reinhausen 9 verschiedene Ausbildungsangebote an"
         },
         {
             "No": "5",
@@ -143,7 +143,7 @@
                     "truth" : true
                 }
             ],
-            "answer_info": "none"
+            "answer_info": "Alle! Bei uns erhältst die zu Beginn ein iPad bzw. ein Notebook, hast eine angenehme 35 Stunden Woche und erhältst attraktive Vergünstigungen"
         },
         {
             "No": "6",
@@ -167,7 +167,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "none"
+            "answer_info": "Derzeit bilden wir 103 Azubis aus"
         }
     ],
 

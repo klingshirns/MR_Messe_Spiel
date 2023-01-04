@@ -135,7 +135,7 @@ class MyGame(arcade.Window):
         }
 
         # Array to hold map names
-        self.maps = ["welcome_area_2", "electronic_it"]
+        self.maps = ["welcome_area_2", "IT-Systemelektroniker"]
 
         current_map = self.maps[self.level] #get current map_name from Array with index
         map_name = f"../../assets/maps/{current_map}.tmx" # safe current map name with path
@@ -285,13 +285,18 @@ class MyGame(arcade.Window):
             self.player_sprite, self.scene[LAYER_NAME_LEVEL_PORTAL])
 
         # Takes the value from the level portal hit and changes Level Value + reloads game
-        for level_portal in portal_hit:
+        # for level_portal in portal_hit:
+        #     if self.level_key:
+
+        #         self.level = int(level_portal.properties["ID"])
+
+        #         self.setup() # Reloads Game
+
+        if len(portal_hit) > 0:
             if self.level_key:
+                self.level = int(portal_hit[0].properties["ID"])
+                self.setup()
 
-                self.level = int(level_portal.properties["ID"])
-
-                self.setup() # Reloads Game
-        
         # Is the player standing in front of a Info Box?
         # If yes, put it in a variable
         info_box_hit = arcade.check_for_collision_with_list(
@@ -303,7 +308,7 @@ class MyGame(arcade.Window):
                 
                 info_box_id = int(info_box.properties["ID"]) #Get info Box id
 
-                info_boxes = ["info_electro_it"] #Array for info_boxes (filename)
+                info_boxes = ["info_electro_it", "electro"] #Array for info_boxes (filename)
                 info_box = info_boxes[info_box_id] # Get info box from array
                 # loading info box image
                 self.load_info_box = arcade.load_texture(f"../../assets/images/Info_Boxes/{info_box}.jpg")

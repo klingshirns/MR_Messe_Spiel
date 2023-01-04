@@ -12,9 +12,6 @@ class Controller():
         self.model = Model(self)
         self.view = View(self)
         self.quiz_end = False
-
-    def quitButtonPressed(self):
-        self.root.destroy()
     
     def answerButtonPressed(self, id):
         result_condition_bool = self.model.checkAnswer(id)
@@ -92,24 +89,17 @@ class View():
         # Answers + Buttons
         #--------------------------
 
-        Button(self.frame,text="a", command=lambda: self.controller.answerButtonPressed(0), style='Aw.TButton').grid(row=1, column=0, sticky= 'w', padx=10, pady=10)
+        Button(self.frame,text="a", command=lambda: self.controller.answerButtonPressed(0), style='Aw.TButton').grid(row=1, column=0, sticky= 'w', padx=10, pady=15)
         Label(self.frame,textvariable= self.Aw1_text, style= 'Aw.TLabel').grid(row = 1, column=1, sticky='w')
 
 
         #-------------------------
-        Button(self.frame,text="b", command=lambda: self.controller.answerButtonPressed(1), style='Aw.TButton').grid(row = 2, column=0, sticky= 'w', padx=10, pady=10)
+        Button(self.frame,text="b", command=lambda: self.controller.answerButtonPressed(1), style='Aw.TButton').grid(row = 2, column=0, sticky= 'w', padx=10, pady=15)
         Label(self.frame,textvariable= self.Aw2_text, style= 'Aw.TLabel').grid(row = 2, column=1, sticky= 'w')
 
         #-------------------------
-        Button(self.frame,text="c", command=lambda: self.controller.answerButtonPressed(2), style='Aw.TButton').grid(row = 3, column=0, sticky= 'w', padx=10, pady=10)
+        Button(self.frame,text="c", command=lambda: self.controller.answerButtonPressed(2), style='Aw.TButton').grid(row = 3, column=0, sticky= 'w', padx=10, pady=15)
         Label(self.frame,textvariable= self.Aw3_text, style= 'Aw.TLabel').grid(row = 3, column=1, sticky = 'w')
-
-        #-------------------------
-        # Other Buttonns
-        #-------------------------
-
-        Button(self.frame, text="Exit", command=self.controller.quitButtonPressed).grid(row=4, column = 0, sticky= 'w', padx = 10, pady= 25)
-
 
     
     def loadResultView(self, result_condition_bool):
@@ -121,11 +111,10 @@ class View():
         else:
             Label(self.frame, text = 'Falsch', style = 'ResultFalse.TLabel').grid(row=0, padx= 250, pady= 20)
 
-        #Label(self.frame, textvariable = self.result_info_text, style = 'ResultInfo.TLabel').grid(row = 1)
+        Label(self.frame, textvariable = self.result_info_text, style = 'ResultInfo.TLabel', wraplength= 400).grid(row = 1)
 
-        Button(self.frame, text="Weiter", command=self.controller.model.increaseQuestionNumber).grid(row=1, sticky= 'e', padx= 10, pady= 151)
+        Button(self.frame, text="Weiter", command=self.controller.model.increaseQuestionNumber).grid(row=2, sticky= 'e', padx= 10, pady= 40)
 
-        Button(self.frame, text="Exit", command=self.controller.quitButtonPressed).grid(row=1,sticky= 'w', padx = 10)
     
 
     def loadEndOfQuiz(self, intScore, intMaxScore):
@@ -139,8 +128,6 @@ class View():
         
         Label(self.frame, text="Quiz Ende!", style = 'End.TLabel').grid(row=0, padx= 220, pady=20)
         Label(self.frame, text=scoreDisplay, style = 'Score.TLabel') .grid(row=1, pady=20)
-
-        Button(self.frame, text="OK", command=self.controller.quitButtonPressed).grid(row=2, sticky='e', pady= 85)
 
 
     def clearFrame(self):
@@ -188,17 +175,17 @@ class View():
 
         #--------------------------
         # Label End Of Quiz
-        self.style.configure('End.TLabel', font=("Comic Sans MS", 22), foreground='royal blue')
+        self.style.configure('End.TLabel', font=("Arial", 22), foreground='royal blue')
         self.style.configure('Score.TLabel', font= ('Arial', 14), foreground = 'black')
 
         #-----------------------------
         # Result Label
-        self.style.configure('ResultFalse.TLabel', font = ('Comic Sans MS', 22), foreground='red') 
-        self.style.configure('ResultTrue.TLabel', font = ('Comic Sans MS', 22), foreground='green') 
+        self.style.configure('ResultFalse.TLabel', font = ('Arial', 22), foreground='red') 
+        self.style.configure('ResultTrue.TLabel', font = ('Arial', 22), foreground='green') 
 
         #-----------------------------
         # Result Info Text
-        self.style.configure('ResultInfo.TLabel', font = ('Arial', 12), foreground = 'black')
+        self.style.configure('ResultInfo.TLabel', font = ('Arial', 16), foreground = 'black')
         
 
 #----------------------------------
@@ -262,8 +249,6 @@ class Model():
             self.controller.question_view()
 
         else:
-
-            #self.controller.root.destroy()
             self.controller.endOfQuiz(self.score, self.maxScore)
 
 

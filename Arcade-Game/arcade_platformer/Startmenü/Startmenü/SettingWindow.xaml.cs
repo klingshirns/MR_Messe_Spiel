@@ -48,34 +48,7 @@ namespace Startmenü
             this.Close();
         }
 
-        //Info of "Einfachmacher" will open
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            Info1 info1 = new Info1();
-            info1.Show();
-        }
-
-        //Info of "Vorangeher" will open
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            Info2 info2 = new Info2();
-            info2.Show();
-        }
-
-        //Info of "Kundenversteher" will open
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-            Info3 info3 = new Info3();
-            info3.Show();
-        }
-
-        //Info of "Zusammenbringer" will open
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-            Info4 info4 = new Info4();
-            info4.Show();
-        }
-
+        //Einfachmacher
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
             label.Content = "Technische Ausbildung:\n";
@@ -85,6 +58,7 @@ namespace Startmenü
             setting.SelectedPlayer = 0;
         }
 
+        //Kundenversteher
         private void ChoosButton2_Click(object sender, RoutedEventArgs e)
         {
             label.Content = "Duale Studium-Richtung";
@@ -94,6 +68,7 @@ namespace Startmenü
             setting.SelectedPlayer = 2;
         }
 
+        //Vorangeher
         private void ChoosButton3_Click(object sender, RoutedEventArgs e)
         {
             label.Content = "Kaufmänische Ausbildung:\n";
@@ -103,6 +78,7 @@ namespace Startmenü
             setting.SelectedPlayer = 1;
         }
 
+        //Zusammenbringer
         private void ChoosButton4_Click(object sender, RoutedEventArgs e)
         {
             label.Content = "Maschinenfabrik Reinhausen";

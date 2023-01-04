@@ -104,21 +104,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Hedgewindow.xaml.cs">
-      <DependentUpon>Hedgewindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Info1.xaml.cs">
-      <DependentUpon>Info1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Info2.xaml.cs">
-      <DependentUpon>Info2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Info3.xaml.cs">
-      <DependentUpon>Info3.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Info4.xaml.cs">
-      <DependentUpon>Info4.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Logout.xaml.cs">
       <DependentUpon>Logout.xaml</DependentUpon>
     </Compile>
@@ -129,26 +114,6 @@
     <Compile Include="WrongPassword.xaml.cs">
       <DependentUpon>WrongPassword.xaml</DependentUpon>
     </Compile>
-    <Page Include="Hedgewindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Info1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Info2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Info3.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Info4.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Logout.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -202,28 +167,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="image2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="MR-Logo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="background2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="background3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="background4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="backgropund5jpg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="background6.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="einfachmacher.png" />
@@ -236,15 +180,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Zusamenbringer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="wichtig.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Hilfe.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="MicrosoftTeams-image.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Teams_hintergrund_Impulsgrafik-210915.jpg" />

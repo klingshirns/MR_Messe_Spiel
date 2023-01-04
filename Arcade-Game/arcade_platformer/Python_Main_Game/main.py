@@ -17,8 +17,8 @@ import quiz
 #SCREEN_HEIGHT = 600
 
 # Constants
-SCREEN_WIDTH = 2560
-SCREEN_HEIGHT = 1440
+SCREEN_WIDTH = 1920
+SCREEN_HEIGHT = 1050
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Constants used to scale our sprites from their original size
@@ -32,7 +32,7 @@ GRID_PIXEL_SIZE = SPRITE_PIXEL_SIZE * TILE_SCALING
 # Movement speed of player, in pixels per frame
 PLAYER_MOVEMENT_SPEED = 5
 GRAVITY = 0.8
-PLAYER_JUMP_SPEED = 11
+PLAYER_JUMP_SPEED = 14
 
 # Player starting position
 PLAYER_START_X = 64
@@ -142,7 +142,9 @@ class MyGame(arcade.Window):
         }
 
         # Array to hold map names
-        self.maps = ["welcome_area_2", "IT-Systemelektroniker"]
+        self.maps = ["welcome_area2", "IT-Systemelektroniker", "Elektroniker", 
+                    "Fachinformatiker", "Fachkraft_für_lagerlogistik", "Industriekaufleute", 
+                    "Industriemechaniker", "Mechatroniker", "Werkzeugmechaniker", "Zerspannungsmechaniker"]
 
         current_map = self.maps[self.level] #get current map_name from Array with index
         map_name = f"../../assets/maps/{current_map}.tmx" # safe current map name with path
@@ -168,7 +170,7 @@ class MyGame(arcade.Window):
             arcade.set_background_color(self.tile_map.background_color)
 
         # load background image
-        #self.background = arcade.load_texture(f"../../assets/images/background/background.gif")
+        self.background = arcade.load_texture(f"../../assets/images/background/Teams_hintergrund_Digi_Netz-210915.jpg")
 
         # Create the 'physics engine'
         self.physics_engine = arcade.PhysicsEnginePlatformer(
@@ -188,9 +190,9 @@ class MyGame(arcade.Window):
         self.camera.use()
 
         # Draw background image
-        #arcade.draw_lrwh_rectangle_textured(0, 128,
-        #                                    3000, 1000,
-        #                                    self.background)
+        arcade.draw_lrwh_rectangle_textured(0, 0,
+                                            7680, 4320,
+                                            self.background)
 
 
         # Draw our Scene
@@ -315,7 +317,7 @@ class MyGame(arcade.Window):
                 
                 info_box_id = int(info_box.properties["ID"]) #Get info Box id
 
-                info_boxes = ["info_electro_it", "electro"] #Array for info_boxes (filename)
+                info_boxes = ["info_electro_it", "info_electro"] #Array for info_boxes (filename)
                 info_box = info_boxes[info_box_id] # Get info box from array
                 # loading info box image
                 self.load_info_box = arcade.load_texture(f"../../assets/images/Info_Boxes/{info_box}.jpg")

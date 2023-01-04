@@ -9,7 +9,7 @@
         ResizeMode="NoResize"
         WindowState="Maximized"
         WindowStartupLocation="CenterScreen"
-        Title="SettingWindow" Width="1920" Height="1080">
+        Title="SettingWindow" Width="2560" Height="1440">
     <Window.Resources>
         <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
         <Style x:Key="MyButtonStyle" TargetType="Button">

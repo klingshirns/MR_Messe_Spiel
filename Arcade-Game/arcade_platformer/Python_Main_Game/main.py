@@ -10,15 +10,15 @@ import quiz
 
 
 #Constans
-#SCREEN_WIDTH = 1400
-#SCREEN_HEIGHT = 2500
+#SCREEN_WIDTH = 1920
+#SCREEN_HEIGHT = 1050
 #or
-SCREEN_WIDTH = 1000
-SCREEN_HEIGHT = 600
+#SCREEN_WIDTH = 1000
+#SCREEN_HEIGHT = 600
 
 # Constants
-#SCREEN_WIDTH = 1600
-#SCREEN_HEIGHT = 900
+SCREEN_WIDTH = 1000
+SCREEN_HEIGHT = 600
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Constants used to scale our sprites from their original size
@@ -170,7 +170,7 @@ class MyGame(arcade.Window):
             arcade.set_background_color(self.tile_map.background_color)
 
         # load background image
-        #self.background = arcade.load_texture(f"../../assets/images/background/background.gif")
+        self.background = arcade.load_texture(f"../../assets/images/background/Teams_hintergrund_Digi_Netz-210915.jpg")
 
         # Create the 'physics engine'
         self.physics_engine = arcade.PhysicsEnginePlatformer(
@@ -190,9 +190,9 @@ class MyGame(arcade.Window):
         self.camera.use()
 
         # Draw background image
-        #arcade.draw_lrwh_rectangle_textured(0, 128,
-        #                                    3000, 1000,
-        #                                    self.background)
+        arcade.draw_lrwh_rectangle_textured(0, 0,
+                                            7680, 4320,
+                                            self.background)
 
 
         # Draw our Scene

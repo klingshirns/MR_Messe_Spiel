@@ -9,7 +9,7 @@
         ResizeMode="NoResize" 
         WindowState="Maximized"
         WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Width="1920" Height="1080">
+        Title="MainWindow" Width="2560" Height="1440">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Teams_hintergrund_Impulsgrafik-210915.jpg"/>

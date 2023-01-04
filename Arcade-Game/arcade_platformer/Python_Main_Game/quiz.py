@@ -28,6 +28,9 @@ class Controller():
         self.view.clearFrame()
         self.view.loadEndOfQuiz(score, maxScore)
 
+    def quitButtonPressed(self):
+        self.root.destroy()
+
 
 #----------------------------------
 # View
@@ -129,6 +132,7 @@ class View():
         Label(self.frame, text="Quiz Ende!", style = 'End.TLabel').grid(row=0, padx= 220, pady=20)
         Label(self.frame, text=scoreDisplay, style = 'Score.TLabel') .grid(row=1, pady=20)
 
+        Button(self.frame, text="OK", command=self.controller.quitButtonPressed).grid(row=2, sticky= 'e')
 
     def clearFrame(self):
         for widgets in self.frame.winfo_children():

@@ -32,7 +32,7 @@ GRID_PIXEL_SIZE = SPRITE_PIXEL_SIZE * TILE_SCALING
 # Movement speed of player, in pixels per frame
 PLAYER_MOVEMENT_SPEED = 5
 GRAVITY = 0.8
-PLAYER_JUMP_SPEED = 11
+PLAYER_JUMP_SPEED = 14
 
 # Player starting position
 PLAYER_START_X = 64
@@ -142,7 +142,9 @@ class MyGame(arcade.Window):
         }
 
         # Array to hold map names
-        self.maps = ["welcome_area_2", "IT-Systemelektroniker"]
+        self.maps = ["welcome_area2", "IT-Systemelektroniker", "Elektroniker", 
+                    "Fachinformatiker", "Fachkraft_für_lagerlogistik", "Industriekaufleute", 
+                    "Industriemechaniker", "Mechatroniker", "Werkzeugmechaniker", "Zerspannungsmechaniker"]
 
         current_map = self.maps[self.level] #get current map_name from Array with index
         map_name = f"../../assets/maps/{current_map}.tmx" # safe current map name with path
@@ -315,7 +317,7 @@ class MyGame(arcade.Window):
                 
                 info_box_id = int(info_box.properties["ID"]) #Get info Box id
 
-                info_boxes = ["info_electro_it", "electro"] #Array for info_boxes (filename)
+                info_boxes = ["info_electro_it", "info_electro"] #Array for info_boxes (filename)
                 info_box = info_boxes[info_box_id] # Get info box from array
                 # loading info box image
                 self.load_info_box = arcade.load_texture(f"../../assets/images/Info_Boxes/{info_box}.jpg")

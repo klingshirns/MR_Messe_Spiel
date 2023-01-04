@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="60" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="9" nextobjectid="17">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="60" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="9" nextobjectid="20">
  <tileset firstgid="1" source="Tilesets/ground.tsx"/>
  <tileset firstgid="129" source="Tilesets/interactives.tsx"/>
  <tileset firstgid="257" source="Tilesets/alienBlue_front.tsx"/>
@@ -79,15 +79,21 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="7" name="level_portal"/>
+ <objectgroup id="7" name="level_portal">
+  <object id="17" gid="19" x="7552" y="3836" width="128" height="128"/>
+ </objectgroup>
  <objectgroup id="5" name="info_boxes">
-  <object id="3" gid="163" x="512" y="2560.67" width="128" height="128"/>
   <object id="4" gid="167" x="568" y="2524" width="128" height="128"/>
   <object id="5" gid="167" x="542" y="2550" width="128" height="128"/>
   <object id="6" gid="167" x="482" y="2522" width="128" height="128"/>
   <object id="7" gid="167" x="382" y="2374" width="128" height="128"/>
   <object id="8" gid="167" x="374" y="2338" width="128" height="128"/>
   <object id="9" gid="167" x="1122" y="2014" width="128" height="128"/>
+  <object id="19" gid="163" x="5117.33" y="2817.33" width="128" height="128">
+   <properties>
+    <property name="ID" type="int" value="0"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="8" name="coins">
   <object id="12" gid="263" x="2176" y="2688" width="128" height="127"/>

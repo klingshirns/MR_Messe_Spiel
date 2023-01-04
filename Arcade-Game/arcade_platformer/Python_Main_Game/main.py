@@ -9,6 +9,13 @@ from drawText import DrawText
 import quiz
 
 
+#Constans
+#SCREEN_WIDTH = 1920
+#SCREEN_HEIGHT = 1050
+#or
+#SCREEN_WIDTH = 1000
+#SCREEN_HEIGHT = 600
+
 # Constants
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 600

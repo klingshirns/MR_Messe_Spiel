@@ -20,6 +20,7 @@ class Player(arcade.Sprite):
 
         self.scale = CHARACTER_SCALING
         self.textures = []
+        self.customer_understander = False
 
         player_path = self.load_player_path()
 
@@ -37,11 +38,20 @@ class Player(arcade.Sprite):
         self.center_x += self.change_x
         self.center_y += self.change_y
 
-        # Face Left or right
-        if self.change_x < 0:
-            self.texture = self.textures[TEXTURE_LEFT]
-        elif self.change_x > 0:
-            self.texture = self.textures [TEXTURE_RIGHT]
+        if self.customer_understander:
+            # Face Left or right
+            if self.change_x < 0:
+                self.texture = self.textures[TEXTURE_RIGHT]
+            elif self.change_x > 0:
+                self.texture = self.textures [TEXTURE_LEFT]
+
+        else:
+            # Face Left or right
+            if self.change_x < 0:
+                self.texture = self.textures[TEXTURE_LEFT]
+            elif self.change_x > 0:
+                self.texture = self.textures [TEXTURE_RIGHT]
+
     
     def load_player_path(self):
 
@@ -59,6 +69,10 @@ class Player(arcade.Sprite):
 
         #create variable for the selected player
         selected_player = player_file['selectedPlayer']
+
+        # Customer Understander? Flipped Wrong
+        if selected_player == 2:
+            self.customer_understander = True
 
         #checks which charackter is selected by a number [0;1;2;3]
         if player_file["selectedPlayer"] == selected_player:

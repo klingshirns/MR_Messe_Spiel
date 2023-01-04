@@ -10,15 +10,15 @@ import quiz
 
 
 #Constans
-#SCREEN_WIDTH = 1920
-#SCREEN_HEIGHT = 1050
+#SCREEN_WIDTH = 1400
+#SCREEN_HEIGHT = 2500
 #or
-#SCREEN_WIDTH = 1000
-#SCREEN_HEIGHT = 600
-
-# Constants
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 600
+
+# Constants
+#SCREEN_WIDTH = 1600
+#SCREEN_HEIGHT = 900
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Constants used to scale our sprites from their original size
@@ -293,14 +293,7 @@ class MyGame(arcade.Window):
         portal_hit = arcade.check_for_collision_with_list(
             self.player_sprite, self.scene[LAYER_NAME_LEVEL_PORTAL])
 
-        # Takes the value from the level portal hit and changes Level Value + reloads game
-        # for level_portal in portal_hit:
-        #     if self.level_key:
-
-        #         self.level = int(level_portal.properties["ID"])
-
-        #         self.setup() # Reloads Game
-
+        # If portal was hit, check if key was pressed and load next level if so
         if len(portal_hit) > 0:
             if self.level_key:
                 self.level = int(portal_hit[0].properties["ID"])
@@ -336,6 +329,7 @@ class MyGame(arcade.Window):
                 wizzard_id = int(wizzard.properties["ID"])
 
                 self.level = wizzard_id
+                self.level_key = False
 
                 self.setup()
 

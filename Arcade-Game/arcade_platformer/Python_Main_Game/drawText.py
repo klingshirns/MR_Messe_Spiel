@@ -23,7 +23,7 @@ class DrawText:
 
     def drawWelcomeArea(self):
 
-        # Elektro-IT
+        # ID 1
         arcade.draw_text(
             "Elektro-IT",
             1750,
@@ -33,25 +33,37 @@ class DrawText:
             font_name=("Comic Sans MS")
         )
         
-        # Mechatronics
-        # arcade.draw_text(
-        #     "Mechatronik",
-        #     start_x= 1480,
-        #     start_y= 385,
-        #     color= arcade.color.BLACK,
-        #     font_size= 26,
-        #     font_name=("Comic Sans MS")
-        # )
+        # ID 2
+        arcade.draw_text(
+            "Elektro",
+            start_x= 2980,
+            start_y= 880,
+            color= arcade.color.BLACK,
+            font_size= 26,
+            font_name=("Comic Sans MS")
+        )
 
-        # #Wizzard
-        # arcade.draw_text(
-        #     "Stelle mir ein paar Fragen!",
-        #     start_x = 2330,
-        #     start_y = 330,
-        #     color= arcade.color.BLACK,
-        #     font_size= 22,
-        #     font_name = ("Comic Sans MS")
-        # )
+        # ID 3
+        arcade.draw_text(
+            "Fachinformatiker",
+            start_x = 1680,
+            start_y = 1400,
+            color= arcade.color.BLACK,
+            font_size= 22,
+            font_name = ("Comic Sans MS")
+        )
+
+        # ID 4
+        arcade.draw_text(
+            "Elektro - IT",
+            start_x = 360,
+            start_y = 1400,
+            color= arcade.color.BLACK,
+            font_size= 22,
+            font_name = ("Comic Sans MS")
+        )
+
+
     
     # def drawElectroIT(self):
 

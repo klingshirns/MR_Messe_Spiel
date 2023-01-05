@@ -17,8 +17,8 @@ import quiz
 #SCREEN_HEIGHT = 600
 
 # Constants
-SCREEN_WIDTH = 1000
-SCREEN_HEIGHT = 600
+SCREEN_WIDTH = 1400
+SCREEN_HEIGHT = 2400
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Constants used to scale our sprites from their original size
@@ -142,9 +142,9 @@ class MyGame(arcade.Window):
         }
 
         # Array to hold map names
-        self.maps = ["welcome_area2", "IT-Systemelektroniker", "Elektroniker", 
-                    "Fachinformatiker", "Fachkraft_für_lagerlogistik", "Industriekaufleute", 
-                    "Industriemechaniker", "Mechatroniker", "Werkzeugmechaniker", "Zerspannungsmechaniker"]
+        self.maps = ["welcome_area2", "Fachkraft_für_lagerlogistik", "Industriekaufleute", 
+                    "Fachinformatiker", "IT-Systemelektroniker", "Elektroniker", 
+                     "Mechatroniker", "Industriemechaniker", "Werkzeugmechaniker", "Zerspannungsmechaniker"]
 
         current_map = self.maps[self.level] #get current map_name from Array with index
         map_name = f"../../assets/maps/{current_map}.tmx" # safe current map name with path

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="120" height="50" tilewidth="128" tileheight="128" infinite="0" nextlayerid="9" nextobjectid="74">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="120" height="50" tilewidth="128" tileheight="128" infinite="0" nextlayerid="9" nextobjectid="77">
  <tileset firstgid="1" source="Tilesets/ground.tsx"/>
  <tileset firstgid="129" source="Tilesets/interactives.tsx"/>
  <tileset firstgid="257" source="Tilesets/MR-Logo.tsx"/>
@@ -115,92 +115,109 @@
  <objectgroup id="3" name="level_portal">
   <object id="7" gid="220" x="3584.67" y="5760.67" width="128" height="128">
    <properties>
-    <property name="ID" type="int" value="3"/>
+    <property name="Beruf" value="Fachkraft - Lagerlogistik"/>
+    <property name="ID" type="int" value="1"/>
    </properties>
   </object>
   <object id="8" gid="212" x="3584.67" y="5633.33" width="128" height="128">
    <properties>
-    <property name="Beruf" value="Elektro-IT"/>
-    <property name="ID" type="int" value="3"/>
+    <property name="Beruf" value="Fachkraft - Lagerlogistik"/>
+    <property name="ID" type="int" value="1"/>
    </properties>
   </object>
   <object id="28" gid="220" x="14848" y="4480.03" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Werkzeugmechaniker"/>
     <property name="ID" type="int" value="8"/>
    </properties>
   </object>
   <object id="29" gid="212" x="14848" y="4352" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Werkzeugmechaniker"/>
     <property name="ID" type="int" value="8"/>
    </properties>
   </object>
   <object id="30" gid="220" x="13952" y="2560.01" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Zerspanner"/>
     <property name="ID" type="int" value="9"/>
    </properties>
   </object>
   <object id="31" gid="212" x="13952" y="2431.99" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Zerspannungsmechaniker"/>
     <property name="ID" type="int" value="9"/>
    </properties>
   </object>
   <object id="34" gid="220" x="11520.3" y="3200" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Industriemechaniker"/>
     <property name="ID" type="int" value="7"/>
    </properties>
   </object>
   <object id="35" gid="212" x="11520.3" y="3072" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Industriemechaniker"/>
     <property name="ID" type="int" value="7"/>
    </properties>
   </object>
   <object id="36" gid="220" x="8960.09" y="2687.91" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Mechatronik"/>
     <property name="ID" type="int" value="6"/>
    </properties>
   </object>
   <object id="37" gid="212" x="8960.24" y="2560.27" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Mechatronik"/>
     <property name="ID" type="int" value="6"/>
    </properties>
   </object>
   <object id="38" gid="220" x="6784.25" y="2816.25" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Elektro"/>
     <property name="ID" type="int" value="5"/>
    </properties>
   </object>
   <object id="39" gid="212" x="6784.25" y="2688.25" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Elektro"/>
     <property name="ID" type="int" value="5"/>
    </properties>
   </object>
   <object id="41" gid="220" x="6016.25" y="4864" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Kaufmännisch"/>
     <property name="ID" type="int" value="2"/>
    </properties>
   </object>
   <object id="42" gid="212" x="6016.25" y="4736.25" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Kaufmännisch"/>
     <property name="ID" type="int" value="2"/>
    </properties>
   </object>
   <object id="43" gid="220" x="3584" y="3840.67" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Fachinformatiker"/>
     <property name="ID" type="int" value="3"/>
    </properties>
   </object>
   <object id="44" gid="212" x="3584.67" y="3713.33" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Fachinformatiker"/>
     <property name="ID" type="int" value="3"/>
    </properties>
   </object>
   <object id="46" gid="220" x="768" y="3840" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Elektro - IT"/>
     <property name="ID" type="int" value="4"/>
    </properties>
   </object>
   <object id="47" gid="212" x="768" y="3712" width="128" height="128">
    <properties>
+    <property name="Beruf" value="Elektro - IT"/>
     <property name="ID" type="int" value="4"/>
    </properties>
   </object>
@@ -272,6 +289,6 @@
 </data>
  </layer>
  <objectgroup id="8" name="wizzard">
-  <object id="73" gid="36" x="12416.7" y="6399.33" width="128" height="128"/>
+  <object id="74" gid="36" x="14336" y="6398.67" width="128" height="128"/>
  </objectgroup>
 </map>

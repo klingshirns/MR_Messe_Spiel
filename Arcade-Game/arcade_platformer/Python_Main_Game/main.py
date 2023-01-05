@@ -142,7 +142,7 @@ class MyGame(arcade.Window):
         }
 
         # Array to hold map names
-        self.maps = ["welcome_area2", "Fachkraft_für_lagerlogistik", "Industriekaufleute", 
+        self.maps = ["welcome_area", "Fachkraft_für_lagerlogistik", "Industriekaufleute", 
                     "Fachinformatiker", "IT-Systemelektroniker", "Elektroniker", 
                      "Mechatroniker", "Industriemechaniker", "Werkzeugmechaniker", "Zerspannungsmechaniker"]
 

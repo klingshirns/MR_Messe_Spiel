@@ -17,9 +17,14 @@ import quiz
 #SCREEN_HEIGHT = 600
 
 # Constants
-SCREEN_WIDTH = 1000
-SCREEN_HEIGHT = 600
+SCREEN_WIDTH = 1920
+SCREEN_HEIGHT = 1050
 SCREEN_TITLE = "MR Messe Spiel"
+
+# Viewpoint margins
+LEFT_VIEWPORT_MARGIN = 0
+RIGHT_VIEWPORT_MARGIN = 5000
+TOP_VIEWPORT_MARGIN = 1440
 
 # Constants used to scale our sprites from their original size
 TILE_SCALING = 0.5
@@ -54,7 +59,7 @@ class MyGame(arcade.Window):
 
     def __init__(self):
 
-        # Call the parent class and set up the window
+        # Call the parent class and set up the windowich
         super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
 
         # Our TileMap Object
@@ -140,6 +145,7 @@ class MyGame(arcade.Window):
                 "use spatial hash": True
             }
         }
+
 
         # Array to hold map names
         self.maps = ["welcome_area", "Fachkraft_für_lagerlogistik", "Industriekaufleute", 

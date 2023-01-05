@@ -17,8 +17,13 @@ import quiz
 #SCREEN_HEIGHT = 600
 
 # Constants
+<<<<<<< HEAD
 SCREEN_WIDTH = 1920
 SCREEN_HEIGHT = 1050
+=======
+SCREEN_WIDTH = 1400
+SCREEN_HEIGHT = 2400
+>>>>>>> 2e574b0185902cf427872f5eb561952bc3ba2f6a
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Viewpoint margins
@@ -204,7 +209,7 @@ class MyGame(arcade.Window):
         # Draw our Scene
         self.scene.draw()
 
-        DrawText(self.level)
+        #DrawText(self.level)
 
         # Activate the GUI camera before drawing GUI elements
         self.gui_camera.use()

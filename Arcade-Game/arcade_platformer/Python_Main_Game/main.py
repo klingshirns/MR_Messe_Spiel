@@ -17,8 +17,8 @@ import quiz
 #SCREEN_HEIGHT = 600
 
 # Constants
-SCREEN_WIDTH = 1000
-SCREEN_HEIGHT = 600
+SCREEN_WIDTH = 1400
+SCREEN_HEIGHT = 2400
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Constants used to scale our sprites from their original size
@@ -198,7 +198,7 @@ class MyGame(arcade.Window):
         # Draw our Scene
         self.scene.draw()
 
-        DrawText(self.level)
+        #DrawText(self.level)
 
         # Activate the GUI camera before drawing GUI elements
         self.gui_camera.use()

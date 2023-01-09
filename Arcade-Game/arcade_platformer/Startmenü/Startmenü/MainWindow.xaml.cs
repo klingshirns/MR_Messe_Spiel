@@ -1,6 +1,5 @@
 ﻿using System.Diagnostics;
 using System.Windows;
-
 namespace Startmenü
 {
     /// <summary>
@@ -10,6 +9,7 @@ namespace Startmenü
     {
         //path to antimicro file
         public const string Filename = @"..\..\..\..\..\..\Controller-Software\antimicro\antimicro.exe";
+        public const string Filename2 = @"..\..\..\..\..\..\Bedienungsanleitung.pptx";
 
         public MainWindow()
         {
@@ -38,11 +38,6 @@ namespace Startmenü
         {
             Process.Start(Filename);
             Process.Start(@"..\..\..\..\Python_Main_Game\main.py");
-        }
-
-        private void Testbu_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

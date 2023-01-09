@@ -165,3 +165,8 @@ C:\Users\klingshirns\OneDrive - Reinhausen Group\Dokumente\Programmieren\MR_Mess
 C:\Users\klingshirns\OneDrive - Reinhausen Group\Dokumente\Programmieren\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\Hedgewindow.baml
 C:\Users\klingshirns\OneDrive - Reinhausen Group\Dokumente\Programmieren\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\Logout.baml
 C:\Users\klingshirns\OneDrive - Reinhausen Group\Dokumente\Programmieren\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Debug\WrongPassword.baml
+C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\bin\Debug\Syncfusion.Compression.Portable.dll
+C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\bin\Debug\Syncfusion.OfficeChart.Portable.dll
+C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\bin\Debug\Syncfusion.Compression.Portable.xml
+C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\bin\Debug\Syncfusion.OfficeChart.Portable.xml

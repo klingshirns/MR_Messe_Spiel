@@ -20,6 +20,7 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
+
             <RowDefinition Height="0.5*" />
         </Grid.RowDefinitions>
         <Label Grid.Row="1" Content="Mr. Run" HorizontalAlignment="Center" Height="110" VerticalAlignment="Center" FontFamily="Arial" FontSize="100" FontWeight="Bold" Width="376"/>

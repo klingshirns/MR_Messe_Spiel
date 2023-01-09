@@ -10,20 +10,20 @@ import quiz
 
 
 #Constans
+#Landscape Fromat
 #SCREEN_WIDTH = 1920
 #SCREEN_HEIGHT = 1050
 #or
 #SCREEN_WIDTH = 1000
 #SCREEN_HEIGHT = 600
+#or
+#Portrait Format
+#SCREEN_WIDTH = 1400
+#SCREEN_HEIGHT = 2400
 
 # Constants
-<<<<<<< HEAD
 SCREEN_WIDTH = 1920
 SCREEN_HEIGHT = 1050
-=======
-SCREEN_WIDTH = 1400
-SCREEN_HEIGHT = 2400
->>>>>>> 2e574b0185902cf427872f5eb561952bc3ba2f6a
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Viewpoint margins

@@ -14,6 +14,7 @@ import quiz
 #SCREEN_WIDTH = 1920
 #SCREEN_HEIGHT = 1050
 #or
+#Development Format
 #SCREEN_WIDTH = 1000
 #SCREEN_HEIGHT = 600
 #or
@@ -322,7 +323,7 @@ class MyGame(arcade.Window):
                 info_box_id = int(info_box.properties["ID"]) #Get info Box id
 
                 info_boxes = ["info_electro_it", "info_electro"] #Array for info_boxes (filename)
-                info_box = info_boxes[info_box_id] # Get info box from array
+                info_box = info_boxes[info_box_id] # Get info box from arrayS
                 # loading info box image
                 self.load_info_box = arcade.load_texture(f"../../assets/images/Info_Boxes/{info_box}.jpg")
                 # sets value to draw info box to true

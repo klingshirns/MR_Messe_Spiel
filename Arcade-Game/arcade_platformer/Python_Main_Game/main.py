@@ -24,8 +24,6 @@ SCREEN_TITLE = "MR Messe Spiel"
 # Constants used to scale our sprites from their original size
 TILE_SCALING = 0.5
 COIN_SCALING = 0.5
-GOAL_SCALING = 1
-LIFE_SCALING = 0.3
 SPRITE_PIXEL_SIZE =128
 GRID_PIXEL_SIZE = SPRITE_PIXEL_SIZE * TILE_SCALING
 
@@ -41,7 +39,6 @@ PLAYER_START_Y = 1000
 # Layer Names from our TileMap
 LAYER_NAME_PLATFORMS = "ground"
 LAYER_NAME_COINS = "coins"
-LAYER_NAME_GOALS = "goals"
 LAYER_NAME_LEVEL_PORTAL = "level_portal"
 LAYER_NAME_INFO_BOXES = "info_boxes"
 LAYER_NAME_WIZZARD = "wizzard"
@@ -77,12 +74,6 @@ class MyGame(arcade.Window):
 
         # A Camera that can be used to draw GUI elements
         self.gui_camera = None
-
-        # Keep track of the score
-        self.score = 0
-
-        # Do we need to reset the score
-        self.reset_score = True
 
         #Level
         self.level = 0
@@ -121,10 +112,6 @@ class MyGame(arcade.Window):
             },
 
             LAYER_NAME_COINS: {
-                "use_spatial_hash": True
-            },
-
-            LAYER_NAME_GOALS: {
                 "use_spatial_hash": True
             },
 
@@ -198,7 +185,7 @@ class MyGame(arcade.Window):
         # Draw our Scene
         self.scene.draw()
 
-        #DrawText(self.level)
+        DrawText(self.level)
 
         # Activate the GUI camera before drawing GUI elements
         self.gui_camera.use()
@@ -332,9 +319,6 @@ class MyGame(arcade.Window):
                 self.level_key = False
 
                 self.setup()
-
-        # Draw texts on screen
-        DrawText(self.level)
 
         # Position the camera
         self.center_camera_to_player()

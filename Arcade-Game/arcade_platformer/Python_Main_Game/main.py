@@ -10,15 +10,15 @@ import quiz
 
 
 #Constans
-#SCREEN_WIDTH = 1920
-#SCREEN_HEIGHT = 1050
+SCREEN_WIDTH = 1920
+SCREEN_HEIGHT = 1050
 #or
 #SCREEN_WIDTH = 1000
 #SCREEN_HEIGHT = 600
 
 # Constants
-SCREEN_WIDTH = 1400
-SCREEN_HEIGHT = 2400
+#SCREEN_WIDTH = 1400
+#SCREEN_HEIGHT = 2400
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Constants used to scale our sprites from their original size
@@ -139,6 +139,9 @@ class MyGame(arcade.Window):
         # Read in the tiled map
         self.tile_map = arcade.load_tilemap(map_name, TILE_SCALING, layer_options, hit_box_algorithm="Detailed")
 
+        # Calculate the right edge of the map for viewport scrolling
+        self.map_width = ((self.tile_map.tiled_map.map_size.width) * self.tile_map.tiled_map.tile_size.width) / 2
+        print (self.map_width)
 
         # Initialize Scene with our TileMap, this will automatically add all layers
         # from the map as SpriteLists in the scene in the proper order.
@@ -185,7 +188,7 @@ class MyGame(arcade.Window):
         # Draw our Scene
         self.scene.draw()
 
-        DrawText(self.level)
+        #DrawText(self.level)
 
         # Activate the GUI camera before drawing GUI elements
         self.gui_camera.use()
@@ -331,6 +334,13 @@ class MyGame(arcade.Window):
             self.player_sprite.center_x = PLAYER_START_X
             self.player_sprite.center_y = PLAYER_START_Y
 
+        # Coordinates player can not move further 
+        stop_player_right_edge = self.map_width - 32
+        stop_player_left_edge = 32
+        if self.player_sprite.center_x > stop_player_right_edge:
+            self.player_sprite.center_x -= 16
+        if self.player_sprite.center_x < stop_player_left_edge:
+            self.player_sprite.center_x += 16
 
 def main():
     """Main function"""

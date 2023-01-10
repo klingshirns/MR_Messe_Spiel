@@ -95,6 +95,10 @@
   <object id="20" gid="36" x="3966" y="3838.67" width="128" height="128"/>
  </objectgroup>
  <objectgroup id="6" name="info_boxes">
-  <object id="6" gid="163" x="384.125" y="2560.13" width="128" height="128"/>
+  <object id="6" gid="163" x="384.125" y="2560.13" width="128" height="128">
+   <properties>
+    <property name="ID" type="int" value="8"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

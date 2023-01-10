@@ -92,7 +92,7 @@
  <objectgroup id="5" name="info_boxes">
   <object id="1" gid="163" x="3199.15" y="2946.42" width="128" height="128">
    <properties>
-    <property name="ID" type="int" value="1"/>
+    <property name="ID" type="int" value="4"/>
    </properties>
   </object>
  </objectgroup>

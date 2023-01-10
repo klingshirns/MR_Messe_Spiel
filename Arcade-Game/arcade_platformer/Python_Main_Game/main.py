@@ -18,7 +18,7 @@ SCREEN_HEIGHT = 1050
 
 # Constants
 #SCREEN_WIDTH = 1400
-#SCREEN_HEIGHT = 2400
+#SCREEN_HEIGHT = 1000
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Constants used to scale our sprites from their original size
@@ -140,6 +140,7 @@ class MyGame(arcade.Window):
         self.tile_map = arcade.load_tilemap(map_name, TILE_SCALING, layer_options, hit_box_algorithm="Detailed")
 
         # Calculate the right edge of the map for viewport scrolling
+        # /2 because tile scaling is 0.5
         self.map_width = ((self.tile_map.tiled_map.map_size.width) * self.tile_map.tiled_map.tile_size.width) / 2
         print (self.map_width)
 
@@ -252,6 +253,14 @@ class MyGame(arcade.Window):
             screen_center_x = 0
         if screen_center_y < 0:
             screen_center_y = 0
+
+        # Consts to stop camera at the end
+        
+        stop_camera = self.map_width - SCREEN_WIDTH
+        if screen_center_x > stop_camera:
+            screen_center_x = stop_camera
+
+
         player_centered = screen_center_x, screen_center_y
 
         self.camera.move_to(player_centered)

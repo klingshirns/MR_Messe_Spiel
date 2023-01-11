@@ -236,6 +236,17 @@ class MyGame(arcade.Window):
             font_name= ("Comic Sans MS")
         )
 
+        # Draw our Life on screen/Monitor
+        life_text = f"Life:"
+        arcade.draw_text(
+            life_text,
+            10,
+            1000,
+            arcade.color.WHITE,
+            35,
+            font_name = ("Comic Sans MS"),
+        )
+
         # Checks bool value "should_load_info_box" and draws the image
         if self.should_load_info_box:
             arcade.draw_lrwh_rectangle_textured(0,0,SCREEN_WIDTH, SCREEN_HEIGHT, self.load_info_box)

@@ -91,6 +91,9 @@ class MyGame(arcade.Window):
         #Level
         self.level = 0
 
+        #Score 
+        self.score = 0
+
         #Level entering Key (Enter)
         self.level_key = False
 
@@ -103,7 +106,7 @@ class MyGame(arcade.Window):
         #Should load Info Box?
         self.should_load_info_box = False
 
-        self.init_text()
+        
 
         #setting the background-color for the map
         arcade.set_background_color(arcade.csscolor.CORNFLOWER_BLUE)
@@ -117,6 +120,8 @@ class MyGame(arcade.Window):
         # Set up the Cameras
         self.camera = arcade.Camera(self.width, self.height)
         self.gui_camera = arcade.Camera(self.width, self.height)
+
+        self.init_text()
 
 
         # Layer specific options are defined based on Layer names in a dictionary
@@ -207,16 +212,27 @@ class MyGame(arcade.Window):
 
         # Draw our Scene
         self.scene.draw()
-
-        self.text_1.draw()
-        self.text_2.draw()
-        self.text_3.draw()
-        self.text_4.draw()
-        self.text_5.draw()
-        self.text_6.draw()
-        self.text_7.draw()
-        self.text_8.draw()
-        self.text_9.draw()
+        
+        if self.count_text > 0:
+            self.text_1.draw()
+            if self.count_text > 1:
+                self.text_2.draw()
+                if self.count_text > 2:
+                    self.text_3.draw()
+                    if self.count_text > 3:
+                        self.text_4.draw()
+                        if self.count_text > 4:
+                            self.text_5.draw()
+                            if self.count_text > 5:
+                                self.text_6.draw()
+                                if self.count_text > 6:
+                                    self.text_7.draw()
+                                    if self.count_text > 7:
+                                        self.text_8.draw()
+                                        if self.count_text > 8:
+                                            self.text_9.draw()
+        else:
+            pass
 
 
         # Activate the GUI camera before drawing GUI elements
@@ -336,14 +352,20 @@ class MyGame(arcade.Window):
         for info_box in info_box_hit:
             if self.level_key: # Checks if the button to activate the info box was pressed
                 
-                info_box_id = int(info_box.properties["ID"]) #Get info Box id
+                #Get info Box id
+                info_box_id = int(info_box.properties["ID"]) 
 
+                #Array for info_boxes (filename)
                 info_boxes = ["Fachkraft für Lagerlogistik", "Industriekaufleute mit Fremdsprachenkorrespondent", 
                              "Fachinformatiker", "info_electro_it", "info_electro", "Mechatroniker", 
-                             "Industriemechaniker", "Werkzeugmechaniker", "Zerspannungsmechaniker"] #Array for info_boxes (filename)
-                info_box = info_boxes[info_box_id] # Get info box from arrayS
+                             "Industriemechaniker", "Werkzeugmechaniker", "Zerspannungsmechaniker"] 
+
+                # Get info box from arrays
+                info_box = info_boxes[info_box_id] 
+
                 # loading info box image
                 self.load_info_box = arcade.load_texture(f"../../assets/images/Info_Boxes/{info_box}.jpg")
+
                 # sets value to draw info box to true
                 self.should_load_info_box = True
 
@@ -396,6 +418,8 @@ class MyGame(arcade.Window):
         self.text_8 = None
         self.text_9 = None
         self.text_10= None
+
+        self.text_count = 0
 
         if self.level == 0:
             self.drawWelcomeArea()
@@ -477,7 +501,7 @@ class MyGame(arcade.Window):
         )
 
         # ID 5
-        self.text_5 =arcade.Text(
+        self.text_5 = arcade.Text(
             "Elektro",
             start_x = 2980,
             start_y = 2300,
@@ -529,31 +553,31 @@ class MyGame(arcade.Window):
         self.count_text = 9
 
     def drawFachkraftLagerlogistik(self):
-        pass
+        self.count_text = 0
 
     def drawKaufmännisch(self):
-        pass
+        self.count_text = 0
 
     def drawFachinformatiker(self):
-        pass
+        self.count_text = 0
 
     def drawElectroIT(self):
-        pass
+        self.count_text = 0
 
     def drawElectro(self):
-        pass
+        self.count_text = 0
 
     def drawMechatronik(self):
-        pass
+        self.count_text = 0
 
     def drawIndustriemechanik(self):
-        pass
+        self.count_text = 0
 
     def drawWerkzeugmechanik(self):
-        pass
+        self.count_text = 0
 
     def drawZerspannung(self):
-        pass
+        self.count_text = 0
     
     
 def main():

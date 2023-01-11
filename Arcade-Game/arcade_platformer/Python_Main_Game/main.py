@@ -219,18 +219,10 @@ class MyGame(arcade.Window):
         score_text = f"Score: {self.score}"
         arcade.draw_text(
             score_text,
-            10,
-            10,
+            20,
+            20,
             arcade.csscolor.WHITE,
-            18,
-        )
-
-        arcade.draw_text(
-            self.level,
-            0,
-            0,
-            color = arcade.color.BLACK,
-            font_size = 30,
+            24,
         )
 
         # Checks bool value "should_load_info_box" and draws the image

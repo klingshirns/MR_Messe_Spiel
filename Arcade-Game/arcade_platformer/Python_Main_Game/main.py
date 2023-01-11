@@ -8,7 +8,7 @@ from player import Player
 from drawText import DrawText
 import quiz
 
-
+#-----------------------------------------------------------------
 #Constans
 #Landscape Fromat
 #SCREEN_WIDTH = 1920
@@ -35,8 +35,6 @@ TOP_VIEWPORT_MARGIN = 1440
 # Constants used to scale our sprites from their original size
 TILE_SCALING = 0.5
 COIN_SCALING = 0.5
-GOAL_SCALING = 1
-LIFE_SCALING = 0.3
 SPRITE_PIXEL_SIZE =128
 GRID_PIXEL_SIZE = SPRITE_PIXEL_SIZE * TILE_SCALING
 
@@ -52,10 +50,11 @@ PLAYER_START_Y = 1000
 # Layer Names from our TileMap
 LAYER_NAME_PLATFORMS = "ground"
 LAYER_NAME_COINS = "coins"
-LAYER_NAME_GOALS = "goals"
 LAYER_NAME_LEVEL_PORTAL = "level_portal"
 LAYER_NAME_INFO_BOXES = "info_boxes"
 LAYER_NAME_WIZZARD = "wizzard"
+
+#-----------------------------------------------------------------
 
 
 class MyGame(arcade.Window):
@@ -89,12 +88,6 @@ class MyGame(arcade.Window):
         # A Camera that can be used to draw GUI elements
         self.gui_camera = None
 
-        # Keep track of the score
-        self.score = 0
-
-        # Do we need to reset the score
-        self.reset_score = True
-
         #Level
         self.level = 0
 
@@ -110,8 +103,13 @@ class MyGame(arcade.Window):
         #Should load Info Box?
         self.should_load_info_box = False
 
+        self.init_text()
+
         #setting the background-color for the map
         arcade.set_background_color(arcade.csscolor.CORNFLOWER_BLUE)
+
+
+
 
     def setup(self):
         """Set up the game here. Call this function to restart the game."""
@@ -132,10 +130,6 @@ class MyGame(arcade.Window):
             },
 
             LAYER_NAME_COINS: {
-                "use_spatial_hash": True
-            },
-
-            LAYER_NAME_GOALS: {
                 "use_spatial_hash": True
             },
 
@@ -163,6 +157,10 @@ class MyGame(arcade.Window):
 
         # Read in the tiled map
         self.tile_map = arcade.load_tilemap(map_name, TILE_SCALING, layer_options, hit_box_algorithm="Detailed")
+
+        # Calculate the right edge of the map for viewport scrolling
+        # /2 because tile scaling is 0.5
+        self.map_width = ((self.tile_map.tiled_map.map_size.width) * self.tile_map.tiled_map.tile_size.width) / 2
 
 
         # Initialize Scene with our TileMap, this will automatically add all layers
@@ -210,7 +208,16 @@ class MyGame(arcade.Window):
         # Draw our Scene
         self.scene.draw()
 
-        #DrawText(self.level)
+        self.text_1.draw()
+        self.text_2.draw()
+        self.text_3.draw()
+        self.text_4.draw()
+        self.text_5.draw()
+        self.text_6.draw()
+        self.text_7.draw()
+        self.text_8.draw()
+        self.text_9.draw()
+
 
         # Activate the GUI camera before drawing GUI elements
         self.gui_camera.use()
@@ -275,6 +282,14 @@ class MyGame(arcade.Window):
             screen_center_x = 0
         if screen_center_y < 0:
             screen_center_y = 0
+
+        # Consts to stop camera at the end
+        
+        stop_camera = self.map_width - SCREEN_WIDTH
+        if screen_center_x > stop_camera:
+            screen_center_x = stop_camera
+
+
         player_centered = screen_center_x, screen_center_y
 
         self.camera.move_to(player_centered)
@@ -348,9 +363,6 @@ class MyGame(arcade.Window):
 
                 self.setup()
 
-        # Draw texts on screen
-        DrawText(self.level)
-
         # Position the camera
         self.center_camera_to_player()
 
@@ -362,7 +374,188 @@ class MyGame(arcade.Window):
             self.player_sprite.center_x = PLAYER_START_X
             self.player_sprite.center_y = PLAYER_START_Y
 
+        # Coordinates player can not move further 
+        stop_player_right_edge = self.map_width - 32
+        stop_player_left_edge = 32
 
+        # Check if player got to one of the edges
+        if self.player_sprite.center_x > stop_player_right_edge:
+            self.player_sprite.center_x -= 16
+        if self.player_sprite.center_x < stop_player_left_edge:
+            self.player_sprite.center_x += 16
+
+    def init_text(self):
+
+        self.text_1 = None
+        self.text_2 = None
+        self.text_3 = None
+        self.text_4 = None
+        self.text_5 = None
+        self.text_6 = None
+        self.text_7 = None
+        self.text_8 = None
+        self.text_9 = None
+        self.text_10= None
+
+        if self.level == 0:
+            self.drawWelcomeArea()
+
+        elif self.level == 1:
+            self.drawFachkraftLagerlogistik()
+
+        elif self.level == 2:
+            self.drawKaufmännisch()
+
+        elif self.level == 3:
+            self.drawFachinformatiker()
+
+        elif self.level == 4:
+            self.drawElectroIT()
+
+        elif self.level == 5:
+            self.drawElectro()
+
+        elif self.level == 6:
+            self.drawMechatronik()
+
+        elif self.level == 7:
+            self.drawIndustriemechanik()
+
+        elif self.level == 8:
+            self.drawWerkzeugmechanik()
+
+        elif self.level == 9:
+            self.drawZerspannung()
+
+        else:
+                #Default
+                pass
+
+
+    def drawWelcomeArea(self):
+
+
+        # ID 1
+        self.text_1 = arcade.Text(
+            "Fachkraft - Lagerlogistik",
+            1630,
+            430,
+            color= arcade.color.WHITE,
+            font_size= 26,
+            font_name=("Comic Sans MS")
+        )
+
+         
+        # ID 2
+        self.text_2 = arcade.Text(
+            "Kaufmännisch",
+            start_x= 2940,
+            start_y= 880,
+            color= arcade.color.WHITE,
+            font_size= 26,
+            font_name=("Comic Sans MS")
+        )
+
+        # ID 3
+        self.text_3 = arcade.Text(
+            "Fachinformatiker",
+            start_x = 1680,
+            start_y = 1400,
+            color= arcade.color.WHITE,
+            font_size= 22,
+            font_name = ("Comic Sans MS")
+        )
+
+        # ID 4
+        self.text_4 = arcade.Text(
+            "Elektro - IT",
+            start_x = 350,
+            start_y = 1400,
+            color= arcade.color.WHITE,
+            font_size= 22,
+            font_name = ("Comic Sans MS")
+        )
+
+        # ID 5
+        self.text_5 =arcade.Text(
+            "Elektro",
+            start_x = 2980,
+            start_y = 2300,
+            color= arcade.color.WHITE,
+            font_size= 22,
+            font_name = ("Comic Sans MS")
+        )
+
+        # ID 6
+        self.text_6 = arcade.Text(
+            "Mechatronik",
+            start_x = 4560,
+            start_y = 2170,
+            color= arcade.color.WHITE,
+            font_size= 22,
+            font_name = ("Comic Sans MS")
+        )
+
+        # ID 7
+        self.text_7 = arcade.Text(
+            "Industriemeachaniker",
+            start_x = 6000,
+            start_y = 2000,
+            color= arcade.color.WHITE,
+            font_size= 22,
+            font_name = ("Comic Sans MS")
+        )
+
+        # ID 8
+        self.text_8 = arcade.Text(
+            "Werkzeugmechaniker",
+            start_x = 6500,
+            start_y = 2200,
+            color= arcade.color.WHITE,
+            font_size= 22,
+            font_name = ("Comic Sans MS")
+        )
+
+        # ID 9
+        self.text_9 = arcade.Text(
+            "Zerspanner",
+            start_x = 7000,
+            start_y = 1200,
+            color= arcade.color.WHITE,
+            font_size= 22,
+            font_name = ("Comic Sans MS")
+        )
+
+        self.count_text = 9
+
+    def drawFachkraftLagerlogistik(self):
+        pass
+
+    def drawKaufmännisch(self):
+        pass
+
+    def drawFachinformatiker(self):
+        pass
+
+    def drawElectroIT(self):
+        pass
+
+    def drawElectro(self):
+        pass
+
+    def drawMechatronik(self):
+        pass
+
+    def drawIndustriemechanik(self):
+        pass
+
+    def drawWerkzeugmechanik(self):
+        pass
+
+    def drawZerspannung(self):
+        pass
+    
+    
 def main():
     """Main function"""
     window = MyGame()

@@ -73,6 +73,7 @@ class MyGame(arcade.Window):
         # Our Scene Object
         self.scene = None
 
+        self.score = 0
         # Holds background image
         self.background_image = None
 

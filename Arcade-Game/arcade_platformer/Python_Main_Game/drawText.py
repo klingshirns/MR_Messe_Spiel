@@ -8,7 +8,6 @@ class DrawText:
 
     def __init__(self, map_id):
 
-        
         if map_id == 0:
 
             self.drawWelcomeArea()
@@ -24,7 +23,7 @@ class DrawText:
     def drawWelcomeArea(self):
 
         # ID 1
-        arcade.draw_text(
+        self.profession_1 = arcade.Text(
             "Fachkraft - Lagerlogistik",
             1630,
             430,
@@ -32,9 +31,10 @@ class DrawText:
             font_size= 26,
             font_name=("Comic Sans MS")
         )
-        
+
+         
         # ID 2
-        arcade.draw_text(
+        self.profession_2 = arcade.Text(
             "Kaufmännisch",
             start_x= 2940,
             start_y= 880,
@@ -44,7 +44,7 @@ class DrawText:
         )
 
         # ID 3
-        arcade.draw_text(
+        self.profession_3 = arcade.Text(
             "Fachinformatiker",
             start_x = 1680,
             start_y = 1400,
@@ -54,7 +54,7 @@ class DrawText:
         )
 
         # ID 4
-        arcade.draw_text(
+        self.profession_4 = arcade.Text(
             "Elektro - IT",
             start_x = 350,
             start_y = 1400,
@@ -64,7 +64,7 @@ class DrawText:
         )
 
         # ID 5
-        arcade.draw_text(
+        self.profession_5 =arcade.Text(
             "Elektro",
             start_x = 2980,
             start_y = 2300,
@@ -74,7 +74,7 @@ class DrawText:
         )
 
         # ID 6
-        arcade.draw_text(
+        arcade.Text(
             "Mechatronik",
             start_x = 4560,
             start_y = 2170,
@@ -84,7 +84,7 @@ class DrawText:
         )
 
         # ID 7
-        arcade.draw_text(
+        arcade.Text(
             "Industriemeachaniker",
             start_x = 6000,
             start_y = 2000,
@@ -94,7 +94,7 @@ class DrawText:
         )
 
         # ID 8
-        arcade.draw_text(
+        arcade.Text(
             "Werkzeugmechaniker",
             start_x = 6500,
             start_y = 2200,
@@ -104,7 +104,7 @@ class DrawText:
         )
 
         # ID 9
-        arcade.draw_text(
+        arcade.Text(
             "Zerspanner",
             start_x = 7000,
             start_y = 1200,
@@ -116,7 +116,7 @@ class DrawText:
     
     # def drawElectroIT(self):
 
-    #     arcade.draw_text(
+    #     arcade.Text(
     #         "Welcome to IT",
     #         start_x = 200,
     #         start_y= 180,
@@ -124,5 +124,3 @@ class DrawText:
     #         font_size= 26,
     #         font_name=("Comic Sans MS")
     #     )
-
-

@@ -8,17 +8,20 @@ from player import Player
 from drawText import DrawText
 import quiz
 
-
+#-----------------------------------------------------------------
 #Constans
-SCREEN_WIDTH = 1920
-SCREEN_HEIGHT = 1050
-#or
-#SCREEN_WIDTH = 1000
-#SCREEN_HEIGHT = 600
+#-----------------------------------------------------------------
 
-# Constants
+#SCREEN_WIDTH = 1920
+#SCREEN_HEIGHT = 1050
+
+SCREEN_WIDTH = 1000
+SCREEN_HEIGHT = 600
+
 #SCREEN_WIDTH = 1400
 #SCREEN_HEIGHT = 1000
+
+
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Constants used to scale our sprites from their original size
@@ -42,6 +45,8 @@ LAYER_NAME_COINS = "coins"
 LAYER_NAME_LEVEL_PORTAL = "level_portal"
 LAYER_NAME_INFO_BOXES = "info_boxes"
 LAYER_NAME_WIZZARD = "wizzard"
+
+#-----------------------------------------------------------------
 
 
 class MyGame(arcade.Window):
@@ -90,8 +95,14 @@ class MyGame(arcade.Window):
         #Should load Info Box?
         self.should_load_info_box = False
 
+
+        self.drawing_text = DrawText(self)
+
         #setting the background-color for the map
         arcade.set_background_color(arcade.csscolor.CORNFLOWER_BLUE)
+
+
+
 
     def setup(self):
         """Set up the game here. Call this function to restart the game."""
@@ -142,7 +153,7 @@ class MyGame(arcade.Window):
         # Calculate the right edge of the map for viewport scrolling
         # /2 because tile scaling is 0.5
         self.map_width = ((self.tile_map.tiled_map.map_size.width) * self.tile_map.tiled_map.tile_size.width) / 2
-        print (self.map_width)
+
 
         # Initialize Scene with our TileMap, this will automatically add all layers
         # from the map as SpriteLists in the scene in the proper order.
@@ -189,7 +200,7 @@ class MyGame(arcade.Window):
         # Draw our Scene
         self.scene.draw()
 
-        #DrawText(self.level)
+        DrawText(self.level)
 
         # Activate the GUI camera before drawing GUI elements
         self.gui_camera.use()
@@ -346,6 +357,8 @@ class MyGame(arcade.Window):
         # Coordinates player can not move further 
         stop_player_right_edge = self.map_width - 32
         stop_player_left_edge = 32
+
+        # Check if player got to one of the edges
         if self.player_sprite.center_x > stop_player_right_edge:
             self.player_sprite.center_x -= 16
         if self.player_sprite.center_x < stop_player_left_edge:

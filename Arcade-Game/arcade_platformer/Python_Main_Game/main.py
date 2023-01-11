@@ -199,15 +199,15 @@ class MyGame(arcade.Window):
         # Draw our Scene
         self.scene.draw()
 
-        self.profession_1.draw()
-        self.profession_2.draw()
-        self.profession_3.draw()
-        self.profession_4.draw()
-        self.profession_5.draw()
-        self.profession_6.draw()
-        self.profession_7.draw()
-        self.profession_8.draw()
-        self.profession_9.draw()
+        self.text_1.draw()
+        self.text_2.draw()
+        self.text_3.draw()
+        self.text_4.draw()
+        self.text_5.draw()
+        self.text_6.draw()
+        self.text_7.draw()
+        self.text_8.draw()
+        self.text_9.draw()
 
 
         # Activate the GUI camera before drawing GUI elements
@@ -373,20 +373,58 @@ class MyGame(arcade.Window):
             self.player_sprite.center_x += 16
 
     def init_text(self):
+
+        self.text_1 = None
+        self.text_2 = None
+        self.text_3 = None
+        self.text_4 = None
+        self.text_5 = None
+        self.text_6 = None
+        self.text_7 = None
+        self.text_8 = None
+        self.text_9 = None
+        self.text_10= None
+
         if self.level == 0:
             self.drawWelcomeArea()
 
         elif self.level == 1:
+            self.drawFachkraftLagerlogistik()
+
+        elif self.level == 2:
+            self.drawKaufmännisch()
+
+        elif self.level == 3:
+            self.drawFachinformatiker()
+
+        elif self.level == 4:
             self.drawElectroIT()
+
+        elif self.level == 5:
+            self.drawElectro()
+
+        elif self.level == 6:
+            self.drawMechatronik()
+
+        elif self.level == 7:
+            self.drawIndustriemechanik()
+
+        elif self.level == 8:
+            self.drawWerkzeugmechanik()
+
+        elif self.level == 9:
+            self.drawZerspannung()
 
         else:
                 #Default
                 pass
 
+
     def drawWelcomeArea(self):
 
+
         # ID 1
-        self.profession_1 = arcade.Text(
+        self.text_1 = arcade.Text(
             "Fachkraft - Lagerlogistik",
             1630,
             430,
@@ -397,7 +435,7 @@ class MyGame(arcade.Window):
 
          
         # ID 2
-        self.profession_2 = arcade.Text(
+        self.text_2 = arcade.Text(
             "Kaufmännisch",
             start_x= 2940,
             start_y= 880,
@@ -407,7 +445,7 @@ class MyGame(arcade.Window):
         )
 
         # ID 3
-        self.profession_3 = arcade.Text(
+        self.text_3 = arcade.Text(
             "Fachinformatiker",
             start_x = 1680,
             start_y = 1400,
@@ -417,7 +455,7 @@ class MyGame(arcade.Window):
         )
 
         # ID 4
-        self.profession_4 = arcade.Text(
+        self.text_4 = arcade.Text(
             "Elektro - IT",
             start_x = 350,
             start_y = 1400,
@@ -427,7 +465,7 @@ class MyGame(arcade.Window):
         )
 
         # ID 5
-        self.profession_5 =arcade.Text(
+        self.text_5 =arcade.Text(
             "Elektro",
             start_x = 2980,
             start_y = 2300,
@@ -437,7 +475,7 @@ class MyGame(arcade.Window):
         )
 
         # ID 6
-        self.profession_6 = arcade.Text(
+        self.text_6 = arcade.Text(
             "Mechatronik",
             start_x = 4560,
             start_y = 2170,
@@ -447,7 +485,7 @@ class MyGame(arcade.Window):
         )
 
         # ID 7
-        self.profession_7 = arcade.Text(
+        self.text_7 = arcade.Text(
             "Industriemeachaniker",
             start_x = 6000,
             start_y = 2000,
@@ -457,7 +495,7 @@ class MyGame(arcade.Window):
         )
 
         # ID 8
-        self.profession_8 = arcade.Text(
+        self.text_8 = arcade.Text(
             "Werkzeugmechaniker",
             start_x = 6500,
             start_y = 2200,
@@ -467,7 +505,7 @@ class MyGame(arcade.Window):
         )
 
         # ID 9
-        self.profession_9 = arcade.Text(
+        self.text_9 = arcade.Text(
             "Zerspanner",
             start_x = 7000,
             start_y = 1200,
@@ -476,7 +514,36 @@ class MyGame(arcade.Window):
             font_name = ("Comic Sans MS")
         )
 
-         
+        self.count_text = 9
+
+    def drawFachkraftLagerlogistik(self):
+        pass
+
+    def drawKaufmännisch(self):
+        pass
+
+    def drawFachinformatiker(self):
+        pass
+
+    def drawElectroIT(self):
+        pass
+
+    def drawElectro(self):
+        pass
+
+    def drawMechatronik(self):
+        pass
+
+    def drawIndustriemechanik(self):
+        pass
+
+    def drawWerkzeugmechanik(self):
+        pass
+
+    def drawZerspannung(self):
+        pass
+    
+    
 def main():
     """Main function"""
     window = MyGame()

@@ -153,8 +153,10 @@ class MyGame(arcade.Window):
                     "Fachinformatiker", "IT-Systemelektroniker", "Elektroniker", 
                      "Mechatroniker", "Industriemechaniker", "Werkzeugmechaniker", "Zerspannungsmechaniker"]
 
-        current_map = self.maps[self.level] #get current map_name from Array with index
-        map_name = f"../../assets/maps/{current_map}.tmx" # safe current map name with path
+        #get current map_name from Array with index
+        current_map = self.maps[self.level] 
+        # safe current map name with path
+        map_name = f"../../assets/maps/{current_map}.tmx" 
 
         # Read in the tiled map
         self.tile_map = arcade.load_tilemap(map_name, TILE_SCALING, layer_options, hit_box_algorithm="Detailed")
@@ -227,10 +229,11 @@ class MyGame(arcade.Window):
         score_text = f"Score: {self.score}"
         arcade.draw_text(
             score_text,
-            20,
-            20,
+            25,
+            25,
             arcade.csscolor.WHITE,
-            24,
+            35,
+            font_name= ("Comic Sans MS")
         )
 
         # Checks bool value "should_load_info_box" and draws the image

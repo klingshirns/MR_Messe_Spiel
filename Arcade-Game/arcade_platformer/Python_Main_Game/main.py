@@ -35,6 +35,7 @@ TOP_VIEWPORT_MARGIN = 1440
 # Constants used to scale our sprites from their original size
 TILE_SCALING = 0.5
 COIN_SCALING = 0.5
+LIFE_SCALING = 0.3
 SPRITE_PIXEL_SIZE =128
 GRID_PIXEL_SIZE = SPRITE_PIXEL_SIZE * TILE_SCALING
 
@@ -53,6 +54,7 @@ LAYER_NAME_COINS = "coins"
 LAYER_NAME_LEVEL_PORTAL = "level_portal"
 LAYER_NAME_INFO_BOXES = "info_boxes"
 LAYER_NAME_WIZZARD = "wizzard"
+LAYER_NAME_DONT_TOUCH = "enemies"
 
 #-----------------------------------------------------------------
 
@@ -73,12 +75,17 @@ class MyGame(arcade.Window):
         # Our Scene Object
         self.scene = None
 
+        # Our Score
         self.score = 0
+
         # Holds background image
         self.background_image = None
 
         # Separate variable that holds the player sprite
         self.player_sprite = None
+
+        # Our life in hearts
+        self.heart = None
 
         # Our physics engine
         self.physics_engine = None
@@ -92,8 +99,16 @@ class MyGame(arcade.Window):
         #Level
         self.level = 0
 
+<<<<<<< HEAD
+        # Life
+        self.life = 3
+
+        # Reset Life
+        self.reset_life = True
+=======
         #Score 
         self.score = 0
+>>>>>>> 898dc5286eba61b675447f55be77af34d89ad3bf
 
         #Level entering Key (Enter)
         self.level_key = False
@@ -164,6 +179,10 @@ class MyGame(arcade.Window):
             },
 
             LAYER_NAME_WIZZARD: {
+                "use spatial hash": True
+            },
+
+            LAYER_NAME_DONT_TOUCH: {
                 "use spatial hash": True
             }
         }
@@ -263,11 +282,11 @@ class MyGame(arcade.Window):
             font_name= ("Comic Sans MS")
         )
 
-        # Draw our Life on screen/Monitor
-        life_text = f"Life:"
+        # Draw our Life on screen, srolling it with the viewport
+        life_text = f"Life: {self.life} "
         arcade.draw_text(
             life_text,
-            10,
+            25,
             1000,
             arcade.color.WHITE,
             35,
@@ -414,7 +433,27 @@ class MyGame(arcade.Window):
         # Position the camera
         self.center_camera_to_player()
 
-        
+        # Did the plyer touch something they should not?
+        if arcade.check_for_collision_with_list(
+            self.player_sprite, self.scene[LAYER_NAME_DONT_TOUCH]
+        ):
+            # Remove life
+            self.life -= 1
+
+            # checks if life is under 1
+            if self.life <= 0:
+                
+                self.level = 0
+                self.life = 3
+                self.score = 0
+
+                self.setup()
+
+            else:
+                self.player_sprite.center_x = PLAYER_START_X
+                self.player_sprite.center_y = PLAYER_START_Y
+
+
         # Did the player fall off the map?
         if self.player_sprite.center_y < -100:
 

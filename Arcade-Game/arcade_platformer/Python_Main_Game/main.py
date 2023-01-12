@@ -103,8 +103,11 @@ class MyGame(arcade.Window):
         # Hold the loaded info Box to give it to draw element
         self.load_info_box = None
 
-        #Should load Info Box?
+        # Should load Info Box?
         self.should_load_info_box = False
+
+        # Number of texts to load
+        self.count_texts = 0
 
         
 
@@ -213,26 +216,24 @@ class MyGame(arcade.Window):
         # Draw our Scene
         self.scene.draw()
         
-        if self.count_text > 0:
-            self.text_1.draw()
-            if self.count_text > 1:
-                self.text_2.draw()
-                if self.count_text > 2:
-                    self.text_3.draw()
-                    if self.count_text > 3:
-                        self.text_4.draw()
-                        if self.count_text > 4:
-                            self.text_5.draw()
-                            if self.count_text > 5:
-                                self.text_6.draw()
-                                if self.count_text > 6:
-                                    self.text_7.draw()
-                                    if self.count_text > 7:
-                                        self.text_8.draw()
-                                        if self.count_text > 8:
-                                            self.text_9.draw()
-        else:
-            pass
+        #------------------------------------------------------
+        # Draw my texts
+        #------------------------------------------------------
+
+        # Selection for which text can be drawn
+        text_list = [self.text_1.draw(), self.text_2.draw(), self.text_3.draw(),
+                     self.text_4.draw(), self.text_5.draw(), self.text_6.draw(),
+                     self.text_7.draw(), self.text_8.draw(), self.text_9.draw(),
+                    ]
+
+        i = 0
+
+        # Draw the texts
+        while i < self.count_texts:
+            text_list[i]
+            i += 1
+        
+        #------------------------------------------------------
 
 
         # Activate the GUI camera before drawing GUI elements
@@ -417,9 +418,7 @@ class MyGame(arcade.Window):
         self.text_7 = None
         self.text_8 = None
         self.text_9 = None
-        self.text_10= None
 
-        self.text_count = 0
 
         if self.level == 0:
             self.drawWelcomeArea()
@@ -550,34 +549,34 @@ class MyGame(arcade.Window):
             font_name = ("Comic Sans MS")
         )
 
-        self.count_text = 9
+        self.count_texts = 9
 
     def drawFachkraftLagerlogistik(self):
-        self.count_text = 0
+        self.count_texts = 0
 
     def drawKaufmännisch(self):
-        self.count_text = 0
+        self.count_texts = 0
 
     def drawFachinformatiker(self):
-        self.count_text = 0
+        self.count_texts = 0
 
     def drawElectroIT(self):
-        self.count_text = 0
+        self.count_texts = 0
 
     def drawElectro(self):
-        self.count_text = 0
+        self.count_texts = 0
 
     def drawMechatronik(self):
-        self.count_text = 0
+        self.count_texts = 0
 
     def drawIndustriemechanik(self):
-        self.count_text = 0
+        self.count_texts = 0
 
     def drawWerkzeugmechanik(self):
-        self.count_text = 0
+        self.count_texts = 0
 
     def drawZerspannung(self):
-        self.count_text = 0
+        self.count_texts = 0
     
     
 def main():

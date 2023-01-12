@@ -5,7 +5,7 @@ Messe Spiel - Main Class
 import arcade
 
 from player import Player
-from drawText import DrawText
+from TextConstructor import TextObj
 import quiz
 
 #-----------------------------------------------------------------
@@ -23,8 +23,8 @@ import quiz
 #SCREEN_HEIGHT = 2400
 
 # Constants
-SCREEN_WIDTH = 1920
-SCREEN_HEIGHT = 1050
+SCREEN_WIDTH = 1600
+SCREEN_HEIGHT = 1000
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Viewpoint margins
@@ -107,15 +107,28 @@ class MyGame(arcade.Window):
         # Should load Info Box?
         self.should_load_info_box = False
 
-        # Number of texts to load
-        self.count_texts = 0
-
-        
-
         #setting the background-color for the map
         arcade.set_background_color(arcade.csscolor.CORNFLOWER_BLUE)
 
+        self.text_1 = None
+        self.text_2 = None
+        self.text_3 = None
+        self.text_4 = None
+        self.text_5 = None
+        self.text_6 = None
+        self.text_7 = None
+        self.text_8 = None
+        self.text_9 = None
 
+        self.to1 = None
+        self.to2 = None
+        self.to3 = None
+        self.to4 = None
+        self.to5 = None
+        self.to6 = None
+        self.to7 = None
+        self.to8 = None
+        self.to9 = None
 
 
     def setup(self):
@@ -223,18 +236,15 @@ class MyGame(arcade.Window):
         # Draw my texts
         #------------------------------------------------------
 
-        # Selection for which text can be drawn
-        text_list = [self.text_1.draw(), self.text_2.draw(), self.text_3.draw(),
-                     self.text_4.draw(), self.text_5.draw(), self.text_6.draw(),
-                     self.text_7.draw(), self.text_8.draw(), self.text_9.draw(),
-                    ]
-
-        i = 0
-
-        # Draw the texts
-        while i < self.count_texts:
-            text_list[i]
-            i += 1
+        self.text_1.draw()
+        self.text_2.draw()
+        self.text_3.draw()
+        self.text_4.draw()
+        self.text_5.draw()
+        self.text_6.draw()
+        self.text_7.draw()
+        self.text_8.draw()
+        self.text_9.draw()
         
         #------------------------------------------------------
 
@@ -422,18 +432,95 @@ class MyGame(arcade.Window):
         if self.player_sprite.center_x < stop_player_left_edge:
             self.player_sprite.center_x += 16
 
+
+
     def init_text(self):
 
-        self.text_1 = None
-        self.text_2 = None
-        self.text_3 = None
-        self.text_4 = None
-        self.text_5 = None
-        self.text_6 = None
-        self.text_7 = None
-        self.text_8 = None
-        self.text_9 = None
+        self.selectText()
 
+        self.text_1 = arcade.Text(
+        self.to1._text,
+        self.to1._startx,
+        self.to1._starty,
+        self.to1._color,
+        self.to1._font_size,
+        font_name= self.to1._font_name
+        )
+
+        self.text_2 = arcade.Text(
+        self.to2._text,
+        self.to2._startx,
+        self.to2._starty,
+        self.to2._color,
+        self.to2._font_size,
+        font_name= self.to2._font_name
+        )
+
+        self.text_3 = arcade.Text(
+        self.to3._text,
+        self.to3._startx,
+        self.to3._starty,
+        self.to3._color,
+        self.to3._font_size,
+        font_name= self.to3._font_name
+        )
+
+        self.text_4 = arcade.Text(
+        self.to4._text,
+        self.to4._startx,
+        self.to4._starty,
+        self.to4._color,
+        self.to4._font_size,
+        font_name= self.to4._font_name
+        )
+
+        self.text_5 = arcade.Text(
+        self.to5._text,
+        self.to5._startx,
+        self.to5._starty,
+        self.to5._color,
+        self.to5._font_size,
+        font_name= self.to5._font_name
+        )
+
+        self.text_6 = arcade.Text(
+        self.to6._text,
+        self.to6._startx,
+        self.to6._starty,
+        self.to6._color,
+        self.to6._font_size,
+        font_name= self.to6._font_name
+        )
+
+        self.text_7 = arcade.Text(
+        self.to7._text,
+        self.to7._startx,
+        self.to7._starty,
+        self.to7._color,
+        self.to7._font_size,
+        font_name= self.to7._font_name
+        )
+
+        self.text_8 = arcade.Text(
+        self.to8._text,
+        self.to8._startx,
+        self.to8._starty,
+        self.to8._color,
+        self.to8._font_size,
+        font_name= self.to8._font_name
+        )
+
+        self.text_9 = arcade.Text(
+        self.to9._text,
+        self.to9._startx,
+        self.to9._starty,
+        self.to9._color,
+        self.to9._font_size,
+        font_name= self.to9._font_name
+        )
+        
+    
+    def selectText(self):
 
         if self.level == 0:
             self.drawWelcomeArea()
@@ -472,126 +559,124 @@ class MyGame(arcade.Window):
 
     def drawWelcomeArea(self):
 
-
-        # ID 1
-        self.text_1 = arcade.Text(
-            "Fachkraft - Lagerlogistik",
-            1630,
-            430,
-            color= arcade.color.WHITE,
-            font_size= 26,
-            font_name=("Comic Sans MS")
-        )
-
-         
-        # ID 2
-        self.text_2 = arcade.Text(
-            "Kaufmännisch",
-            start_x= 2940,
-            start_y= 880,
-            color= arcade.color.WHITE,
-            font_size= 26,
-            font_name=("Comic Sans MS")
-        )
-
-        # ID 3
-        self.text_3 = arcade.Text(
-            "Fachinformatiker",
-            start_x = 1680,
-            start_y = 1400,
-            color= arcade.color.WHITE,
-            font_size= 22,
-            font_name = ("Comic Sans MS")
-        )
-
-        # ID 4
-        self.text_4 = arcade.Text(
-            "Elektro - IT",
-            start_x = 350,
-            start_y = 1400,
-            color= arcade.color.WHITE,
-            font_size= 22,
-            font_name = ("Comic Sans MS")
-        )
-
-        # ID 5
-        self.text_5 = arcade.Text(
-            "Elektro",
-            start_x = 2980,
-            start_y = 2300,
-            color= arcade.color.WHITE,
-            font_size= 22,
-            font_name = ("Comic Sans MS")
-        )
-
-        # ID 6
-        self.text_6 = arcade.Text(
-            "Mechatronik",
-            start_x = 4560,
-            start_y = 2170,
-            color= arcade.color.WHITE,
-            font_size= 22,
-            font_name = ("Comic Sans MS")
-        )
-
-        # ID 7
-        self.text_7 = arcade.Text(
-            "Industriemeachaniker",
-            start_x = 6000,
-            start_y = 2000,
-            color= arcade.color.WHITE,
-            font_size= 22,
-            font_name = ("Comic Sans MS")
-        )
-
-        # ID 8
-        self.text_8 = arcade.Text(
-            "Werkzeugmechaniker",
-            start_x = 6500,
-            start_y = 2200,
-            color= arcade.color.WHITE,
-            font_size= 22,
-            font_name = ("Comic Sans MS")
-        )
-
-        # ID 9
-        self.text_9 = arcade.Text(
-            "Zerspanner",
-            start_x = 7000,
-            start_y = 1200,
-            color= arcade.color.WHITE,
-            font_size= 22,
-            font_name = ("Comic Sans MS")
-        )
-
-        self.count_texts = 9
+        self.to1 = TextObj("Fachkraft - Lagerlogistik", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to2 = TextObj("Kaufmännisch", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj("Fachinformatiker", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj("Elektro - IT", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj("Elektro", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj("Mechatronik", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj("Industriemeachaniker", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj("Werkzeugmechaniker", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj("Zerspanner", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawFachkraftLagerlogistik(self):
-        self.count_texts = 0
+        
+        self.to1 = TextObj("Willkommen!", "Arial", 26, 500, 430, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawKaufmännisch(self):
-        self.count_texts = 0
+
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawFachinformatiker(self):
-        self.count_texts = 0
+        
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawElectroIT(self):
-        self.count_texts = 0
+        
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawElectro(self):
-        self.count_texts = 0
+        
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawMechatronik(self):
-        self.count_texts = 0
+        
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawIndustriemechanik(self):
-        self.count_texts = 0
+        
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawWerkzeugmechanik(self):
-        self.count_texts = 0
+
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawZerspannung(self):
-        self.count_texts = 0
+        
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+
     
     
 def main():

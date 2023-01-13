@@ -55,6 +55,7 @@ LAYER_NAME_LEVEL_PORTAL = "level_portal"
 LAYER_NAME_INFO_BOXES = "info_boxes"
 LAYER_NAME_WIZZARD = "wizzard"
 LAYER_NAME_DONT_TOUCH = "enemies"
+LAYER_NAME_PORTAL_KEY = "portal_key"
 
 #-----------------------------------------------------------------
 
@@ -181,6 +182,9 @@ class MyGame(arcade.Window):
             },
 
             LAYER_NAME_DONT_TOUCH: {
+                "use spatial hash": True
+            },
+            LAYER_NAME_PORTAL_KEY: {
                 "use spatial hash": True
             }
         }
@@ -450,6 +454,15 @@ class MyGame(arcade.Window):
             else:
                 self.player_sprite.center_x = PLAYER_START_X
                 self.player_sprite.center_y = PLAYER_START_Y
+
+        # Portalkey in Zerspannungsmechaniker map
+        if arcade.check_for_collision_with_list(
+            self.player_sprite, self.scene[LAYER_NAME_PORTAL_KEY]
+        ):
+                self.player_sprite.center_x = 2340
+                self.player_sprite.center_y = 800
+
+
 
 
         # Did the player fall off the map?

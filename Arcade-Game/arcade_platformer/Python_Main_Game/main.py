@@ -99,16 +99,14 @@ class MyGame(arcade.Window):
         #Level
         self.level = 0
 
-<<<<<<< HEAD
-        # Life
+        #Life
         self.life = 3
 
-        # Reset Life
+        #Reset Life
         self.reset_life = True
-=======
+        
         #Score 
         self.score = 0
->>>>>>> 898dc5286eba61b675447f55be77af34d89ad3bf
 
         #Level entering Key (Enter)
         self.level_key = False

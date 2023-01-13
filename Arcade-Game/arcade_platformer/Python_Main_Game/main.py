@@ -606,7 +606,7 @@ class MyGame(arcade.Window):
 
     def drawWelcomeArea(self):
 
-        self.to1 = TextObj("Fachkraft - Lagerlogistik", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to1 = TextObj("Fachkraft - Lagerlogistik", "Arial", 26, 1630, 440, arcade.color.WHITE)
         self.to2 = TextObj("Kaufmännisch", "Arial", 26, 2930, 880, arcade.color.WHITE)
         self.to3 = TextObj("Fachinformatiker", "Arial", 26, 1700, 1400, arcade.color.WHITE)
         self.to4 = TextObj("Elektro - IT", "Arial", 26, 330, 1400, arcade.color.WHITE)
@@ -642,7 +642,7 @@ class MyGame(arcade.Window):
 
     def drawFachinformatiker(self):
         
-        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 25, 430, arcade.color.WHITE)
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 70, 530, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)

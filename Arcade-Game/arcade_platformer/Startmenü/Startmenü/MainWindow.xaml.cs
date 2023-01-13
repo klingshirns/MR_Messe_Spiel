@@ -9,7 +9,6 @@ namespace Startmenü
     {
         //path to antimicro file
         public const string Filename = @"..\..\..\..\..\..\Controller-Software\antimicro\antimicro.exe";
-        public const string Filename2 = @"..\..\..\..\..\..\Bedienungsanleitung.pptx";
 
         public MainWindow()
         {

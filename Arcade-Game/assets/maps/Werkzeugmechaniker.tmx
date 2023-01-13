@@ -107,7 +107,6 @@
 </data>
  </layer>
  <objectgroup id="3" name="coins">
-  <object id="17" gid="263" x="768" y="3072" width="128" height="127"/>
   <object id="18" gid="263" x="1792" y="2176" width="128" height="127"/>
   <object id="20" gid="263" x="3200" y="256" width="128" height="127"/>
   <object id="21" gid="263" x="3072" y="2304" width="128" height="127"/>

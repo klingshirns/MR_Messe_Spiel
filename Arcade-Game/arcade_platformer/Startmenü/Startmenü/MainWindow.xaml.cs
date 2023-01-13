@@ -37,7 +37,7 @@ namespace Startmenü
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Process.Start(Filename);
-            Process.Start(@"..\..\..\..\Python_Main_Game\main.py");
+            Process.Start(@"..\..\..\..\Python_Main_Game\main.exe");
         }
     }
 }

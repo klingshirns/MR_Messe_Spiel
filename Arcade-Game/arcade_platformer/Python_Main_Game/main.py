@@ -630,7 +630,7 @@ class MyGame(arcade.Window):
 
     def drawKaufmännisch(self):
 
-        self.to1 = TextObj("Herzlich\n\nWillkommen!", "Arial", 26, 25, 530, arcade.color.WHITE, )
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 60, 430, arcade.color.WHITE, )
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)

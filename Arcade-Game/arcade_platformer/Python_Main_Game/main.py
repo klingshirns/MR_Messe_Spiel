@@ -19,12 +19,12 @@ import quiz
 #SCREEN_HEIGHT = 600
 #or
 #Portrait Format
-#SCREEN_WIDTH = 1400
-#SCREEN_HEIGHT = 2400
+SCREEN_WIDTH = 1400
+SCREEN_HEIGHT = 2400
 
 # Constants
-SCREEN_WIDTH = 1600
-SCREEN_HEIGHT = 1000
+#SCREEN_WIDTH = 1600
+#SCREEN_HEIGHT = 1000
 SCREEN_TITLE = "MR Messe Spiel"
 
 # Viewpoint margins
@@ -116,12 +116,13 @@ class MyGame(arcade.Window):
         # Hold the loaded info Box to give it to draw element
         self.load_info_box = None
 
-        # Should load Info Box?
+        # Should Info box beeing loaded
         self.should_load_info_box = False
 
         #setting the background-color for the map
         arcade.set_background_color(arcade.csscolor.CORNFLOWER_BLUE)
 
+        # cache text objects for drawing
         self.text_1 = None
         self.text_2 = None
         self.text_3 = None
@@ -132,6 +133,7 @@ class MyGame(arcade.Window):
         self.text_8 = None
         self.text_9 = None
 
+        # variable for text objects 
         self.to1 = None
         self.to2 = None
         self.to3 = None
@@ -150,6 +152,7 @@ class MyGame(arcade.Window):
         self.camera = arcade.Camera(self.width, self.height)
         self.gui_camera = arcade.Camera(self.width, self.height)
 
+        # initiating texts, that are drawn on the screen 
         self.init_text()
 
 

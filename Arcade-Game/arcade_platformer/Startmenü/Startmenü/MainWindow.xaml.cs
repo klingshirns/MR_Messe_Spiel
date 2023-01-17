@@ -1,5 +1,8 @@
-﻿using System.Diagnostics;
+﻿using DocumentFormat.OpenXml.Drawing;
+using System.Diagnostics;
 using System.Windows;
+using System;
+using System.IO;
 namespace Startmenü
 {
     /// <summary>
@@ -7,10 +10,6 @@ namespace Startmenü
     /// </summary>
     public partial class MainWindow : Window
     {
-        //path to antimicro file
-        //public const string Filename = @"..\..\..\..\..\..\Controller-Software\antimicro\antimicro.exe";
-        public const string Filename2 = @"C:\Users\klingshirns\OneDrive - Reinhausen Group\Dokumente\Programmieren\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Python_Main_Game\main.exe";
-
         public MainWindow()
         {
             InitializeComponent();
@@ -33,8 +32,18 @@ namespace Startmenü
         //game and antimicro will open
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            //Process.Start(Filename);
-            Process.Start(Filename2);
+            string mainDir = @"..\..\..\..\Python_Main_Game";
+            string mainExe = @"main";
+            string antimicro = @"..\..\..\..\..\..\Controller-Software\antimicro\antimicro.exe";
+
+            Process.Start(antimicro);
+
+            // Set current directory where main.exe for the game is located 
+            Directory.SetCurrentDirectory(mainDir);
+
+            Process main = new Process();
+            main.StartInfo.FileName = mainExe;
+            main.Start();
         }
     }
 }

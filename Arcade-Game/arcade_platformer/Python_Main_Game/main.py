@@ -205,6 +205,8 @@ class MyGame(arcade.Window):
         # /2 because tile scaling is 0.5
         self.map_width = ((self.tile_map.tiled_map.map_size.width) * self.tile_map.tiled_map.tile_size.width) / 2
 
+        self.map_height = ((self.tile_map.tiled_map.map_size.height) * self.tile_map.tiled_map.tile_size.height) / 2
+
 
         # Initialize Scene with our TileMap, this will automatically add all layers
         # from the map as SpriteLists in the scene in the proper order.
@@ -346,10 +348,13 @@ class MyGame(arcade.Window):
 
         # Consts to stop camera at the end
         
-        stop_camera = self.map_width - SCREEN_WIDTH
-        if screen_center_x > stop_camera:
-            screen_center_x = stop_camera
-
+        stopCameraSide = self.map_width - SCREEN_WIDTH
+        if screen_center_x > stopCameraSide:
+            screen_center_x = stopCameraSide
+        
+        stopCameraTopBottom = self.map_height - SCREEN_HEIGHT
+        if screen_center_y > stopCameraTopBottom:
+            screen_center_y = stopCameraTopBottom
 
         player_centered = screen_center_x, screen_center_y
 

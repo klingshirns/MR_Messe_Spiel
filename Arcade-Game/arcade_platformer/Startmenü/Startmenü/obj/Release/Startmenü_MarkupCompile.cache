@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Release\
+=======
+C:\Users\klingshirns\OneDrive - Reinhausen Group\Dokumente\Programmieren\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\obj\Release\
+>>>>>>> 3f36fcb0cc1796d230cafde11286f118a39f64eb
 Startmenü
 none
 false
 TRACE
+<<<<<<< HEAD
 C:\Users\steinbergerd\OneDrive - Reinhausen Group\Dokumente\Messe-Spiel-Local\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\App.xaml
 4-1599517463
 
 91255197022
 341806555579
+=======
+C:\Users\klingshirns\OneDrive - Reinhausen Group\Dokumente\Programmieren\MR_Messe_Spiel\Arcade-Game\arcade_platformer\Startmenü\Startmenü\App.xaml
+4-1599517463
+
+91255197022
+341594950602
+>>>>>>> 3f36fcb0cc1796d230cafde11286f118a39f64eb
 Logout.xaml;MainWindow.xaml;SettingWindow.xaml;WrongPassword.xaml;
 
 False

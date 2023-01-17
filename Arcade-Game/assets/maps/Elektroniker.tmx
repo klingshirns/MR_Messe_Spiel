@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="60" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="9" nextobjectid="25">
+<map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="60" height="30" tilewidth="128" tileheight="128" infinite="0" nextlayerid="10" nextobjectid="26">
  <tileset firstgid="1" source="Tilesets/ground.tsx"/>
  <tileset firstgid="129" source="Tilesets/interactives.tsx"/>
  <tileset firstgid="257" source="Tilesets/alienBlue_front.tsx"/>
@@ -116,8 +116,9 @@
   <object id="22" gid="264" x="2248" y="2136" width="128" height="127"/>
   <object id="23" gid="264" x="6656" y="1152" width="128" height="127"/>
  </objectgroup>
- <objectgroup id="8" name="portal_key">
-  <object id="24" gid="36" x="7296" y="3840" width="128" height="128"/>
+ <objectgroup id="8" name="portal_key"/>
+ <objectgroup id="9" name="exit">
+  <object id="25" gid="36" x="7040" y="3840" width="128" height="128"/>
  </objectgroup>
  <objectgroup id="4" name="wizzard">
   <object id="11" gid="257" x="3456" y="768" width="131" height="188">

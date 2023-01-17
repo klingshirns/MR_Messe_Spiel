@@ -55,7 +55,6 @@ LAYER_NAME_LEVEL_PORTAL = "level_portal"
 LAYER_NAME_INFO_BOXES = "info_boxes"
 LAYER_NAME_WIZZARD = "wizzard"
 LAYER_NAME_DONT_TOUCH = "enemies"
-LAYER_NAME_PORTAL_KEY = "portal_key"
 
 #-----------------------------------------------------------------
 
@@ -100,12 +99,11 @@ class MyGame(arcade.Window):
         #Level
         self.level = 0
 
-        #Life
+        # Life
         self.life = 3
 
-        #Reset Life
+        # Reset Life
         self.reset_life = True
-        
         #Score 
         self.score = 0
 
@@ -182,9 +180,6 @@ class MyGame(arcade.Window):
             },
 
             LAYER_NAME_DONT_TOUCH: {
-                "use spatial hash": True
-            },
-            LAYER_NAME_PORTAL_KEY: {
                 "use spatial hash": True
             }
         }
@@ -387,8 +382,13 @@ class MyGame(arcade.Window):
         # If portal was hit, check if key was pressed and load next level if so
         if len(portal_hit) > 0:
             if self.level_key:
-                self.level = int(portal_hit[0].properties["ID"])
-                self.setup()
+                portal_id = int(portal_hit[0].properties["ID"])
+
+                if portal_id == 99:
+                    arcade.close_window()
+                else:
+                    self.level = portal_id
+                    self.setup()
 
         # Is the player standing in front of a Info Box?
         # If yes, put it in a variable
@@ -455,12 +455,6 @@ class MyGame(arcade.Window):
                 self.player_sprite.center_x = PLAYER_START_X
                 self.player_sprite.center_y = PLAYER_START_Y
 
-        # Teleportation in Zerpanner map
-        if arcade.check_for_collision_with_list(
-            self.player_sprite, self.scene[LAYER_NAME_PORTAL_KEY]
-        ):
-                self.player_sprite.center_x = 2340
-                self.player_sprite.center_y = 800
 
         # Did the player fall off the map?
         if self.player_sprite.center_y < -100:
@@ -606,19 +600,19 @@ class MyGame(arcade.Window):
 
     def drawWelcomeArea(self):
 
-        self.to1 = TextObj("Fachkraft - Lagerlogistik", "Arial", 26, 1630, 440, arcade.color.WHITE)
-        self.to2 = TextObj("Kaufmännisch", "Arial", 26, 2930, 880, arcade.color.WHITE)
-        self.to3 = TextObj("Fachinformatiker", "Arial", 26, 1700, 1400, arcade.color.WHITE)
-        self.to4 = TextObj("Elektro - IT", "Arial", 26, 330, 1400, arcade.color.WHITE)
-        self.to5 = TextObj("Elektro", "Arial", 26, 2985, 2300, arcade.color.WHITE)
-        self.to6 = TextObj("Mechatronik", "Arial", 26, 4545, 2170, arcade.color.WHITE)
-        self.to7 = TextObj("Industriemechaniker", "Arial", 26, 5887, 1980, arcade.color.WHITE)
-        self.to8 = TextObj("Zerspanner", "Arial", 26, 6720, 2240, arcade.color.WHITE)
-        self.to9 = TextObj("Werkzeugmechaniker", "Arial", 26, 7342, 1280, arcade.color.WHITE)
+        self.to1 = TextObj("Fachkraft - Lagerlogistik", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to2 = TextObj("Kaufmännisch", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj("Fachinformatiker", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj("Elektro - IT", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj("Elektro", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj("Mechatronik", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj("Industriemeachaniker", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj("Werkzeugmechaniker", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj("Zerspanner", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawFachkraftLagerlogistik(self):
         
-        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 90, 530, arcade.color.WHITE)
+        self.to1 = TextObj("Willkommen!", "Arial", 26, 500, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -630,7 +624,7 @@ class MyGame(arcade.Window):
 
     def drawKaufmännisch(self):
 
-        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 60, 430, arcade.color.WHITE, )
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -642,7 +636,7 @@ class MyGame(arcade.Window):
 
     def drawFachinformatiker(self):
         
-        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 70, 530, arcade.color.WHITE)
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -654,7 +648,7 @@ class MyGame(arcade.Window):
 
     def drawElectroIT(self):
         
-        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 90, 830, arcade.color.WHITE)
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -666,7 +660,7 @@ class MyGame(arcade.Window):
 
     def drawElectro(self):
         
-        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 55, 430, arcade.color.WHITE)
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -678,7 +672,7 @@ class MyGame(arcade.Window):
 
     def drawMechatronik(self):
         
-        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 50, 530, arcade.color.WHITE)
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -690,7 +684,7 @@ class MyGame(arcade.Window):
 
     def drawIndustriemechanik(self):
         
-        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 90, 330, arcade.color.WHITE)
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -702,7 +696,7 @@ class MyGame(arcade.Window):
 
     def drawWerkzeugmechanik(self):
 
-        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 90, 430, arcade.color.WHITE)
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -714,7 +708,7 @@ class MyGame(arcade.Window):
 
     def drawZerspannung(self):
         
-        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 90, 830, arcade.color.WHITE)
+        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)

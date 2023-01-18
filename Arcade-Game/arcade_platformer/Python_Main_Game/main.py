@@ -7,6 +7,7 @@ import arcade
 from player import Player
 from TextConstructor import TextObj
 import quiz
+import os
 
 #-----------------------------------------------------------------
 #Constans
@@ -19,18 +20,14 @@ import quiz
 #SCREEN_HEIGHT = 600
 #or
 #Portrait Format
-SCREEN_WIDTH = 1400
-SCREEN_HEIGHT = 2400
+SCREEN_WIDTH = 1540
+SCREEN_HEIGHT = 850
 
 # Constants
 #SCREEN_WIDTH = 1600
 #SCREEN_HEIGHT = 1000
 SCREEN_TITLE = "MR Messe Spiel"
 
-# Viewpoint margins
-LEFT_VIEWPORT_MARGIN = 0
-RIGHT_VIEWPORT_MARGIN = 5000
-TOP_VIEWPORT_MARGIN = 1440
 
 # Constants used to scale our sprites from their original size
 TILE_SCALING = 0.5
@@ -67,7 +64,7 @@ class MyGame(arcade.Window):
     def __init__(self):
 
         # Call the parent class and set up the windowich
-        super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
+        super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE, fullscreen=True)
 
         # Our TileMap Object
         self.tile_map = None
@@ -289,7 +286,7 @@ class MyGame(arcade.Window):
         arcade.draw_text(
             life_text,
             25,
-            1000,
+            800,
             arcade.color.WHITE,
             35,
             font_name = ("Comic Sans MS"),
@@ -321,6 +318,10 @@ class MyGame(arcade.Window):
         # Set bool value for loading info box to false when pressing Escape
         elif key == arcade.key.ESCAPE: 
             self.should_load_info_box = False
+
+        elif key == arcade.key.F10:
+            self.set_fullscreen(not self.fullscreen)
+            
         
     
     def on_key_release(self, key, modifiers):
@@ -411,9 +412,9 @@ class MyGame(arcade.Window):
                 info_box_id = int(info_box.properties["ID"]) 
 
                 #Array for info_boxes (filename)
-                info_boxes = ["Fachkraft für Lagerlogistik", "Industriekaufleute mit Fremdsprachenkorrespondent", 
-                             "Fachinformatiker", "info_electro_it", "info_electro", "Mechatroniker", 
-                             "Industriemechaniker", "Werkzeugmechaniker", "Zerspannungsmechaniker"] 
+                info_boxes = ["Fachkraft_Lagerlogistik", "Industriekaufleute", 
+                             "Fachinformatiker", "IT_Systemelektroniker", 
+                             "Elektroniker_für_Betriebstechnik", "Mechatroniker", "Zerspanungsmechaniker"] 
 
                 # Get info box from arrays
                 info_box = info_boxes[info_box_id] 
@@ -451,7 +452,7 @@ class MyGame(arcade.Window):
             self.life -= 1
 
             # checks if life is under 1
-            if self.life <= 0:
+            if self.life <= 1:
                 
                 self.level = 0
                 self.life = 3
@@ -610,13 +611,13 @@ class MyGame(arcade.Window):
 
         self.to1 = TextObj("Fachkraft - Lagerlogistik", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj("Kaufmännisch", "Arial", 26, 2940, 880, arcade.color.WHITE)
-        self.to3 = TextObj("Fachinformatiker", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to3 = TextObj("Fachinformatiker - Systemintegration", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj("Elektro - IT", "Arial", 26, 350, 1400, arcade.color.WHITE)
         self.to5 = TextObj("Elektro", "Arial", 26, 2980, 2300, arcade.color.WHITE)
         self.to6 = TextObj("Mechatronik", "Arial", 26, 4560, 2170, arcade.color.WHITE)
-        self.to7 = TextObj("Industriemeachaniker", "Arial", 26, 6000, 2000, arcade.color.WHITE)
-        self.to8 = TextObj("Werkzeugmechaniker", "Arial", 26, 6500, 2200, arcade.color.WHITE)
-        self.to9 = TextObj("Zerspanner", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+        self.to7 = TextObj("Industriemechaniker", "Arial", 26, 5860, 1990, arcade.color.WHITE)
+        self.to8 = TextObj("Werkzeugmechaniker", "Arial", 26, 6625, 2250, arcade.color.WHITE)
+        self.to9 = TextObj("Zerspaner", "Arial", 26, 7420, 1270, arcade.color.WHITE)
 
     def drawFachkraftLagerlogistik(self):
         

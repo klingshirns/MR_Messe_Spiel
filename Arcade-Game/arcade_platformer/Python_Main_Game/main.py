@@ -7,6 +7,7 @@ import arcade
 from player import Player
 from TextConstructor import TextObj
 import quiz
+import os
 
 #-----------------------------------------------------------------
 #Constans
@@ -27,10 +28,6 @@ SCREEN_HEIGHT = 2400
 #SCREEN_HEIGHT = 1000
 SCREEN_TITLE = "MR Messe Spiel"
 
-# Viewpoint margins
-LEFT_VIEWPORT_MARGIN = 0
-RIGHT_VIEWPORT_MARGIN = 5000
-TOP_VIEWPORT_MARGIN = 1440
 
 # Constants used to scale our sprites from their original size
 TILE_SCALING = 0.5
@@ -321,6 +318,10 @@ class MyGame(arcade.Window):
         # Set bool value for loading info box to false when pressing Escape
         elif key == arcade.key.ESCAPE: 
             self.should_load_info_box = False
+
+        elif key == arcade.key.F10:
+            self.set_fullscreen(not self.fullscreen)
+            
         
     
     def on_key_release(self, key, modifiers):

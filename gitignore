@@ -251,18 +251,3 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /.idea/
-
-# VF3
-#PackageLocations.json
-/BusinessComponents/NcDatabase/Adapters/MR.CM3Core.Bc.NcDatabase.Adapters.EXAPTpdo/ImportTool/AppConfigHash.txt
-/BusinessComponents/ToolDatabase/Adapters/MR.CM3Core.Bc.ToolDatabase.Adapters.WinTool/ExportTool/AppConfigHash.txt
-/BusinessComponents/ToolDatabase/Adapters/MR.CM3Core.Bc.ToolDatabase.Adapters.WinTool/ExportTool/AutoMapper.dll
-/BusinessComponents/ToolDatabase/Adapters/MR.CM3Core.Bc.ToolDatabase.Adapters.WinTool/ExportTool/Castle.Core.dll
-/BusinessComponents/ToolDatabase/Adapters/MR.CM3Core.Bc.ToolDatabase.Adapters.WinTool/ExportTool/Castle.Windsor.dll
-/BusinessComponents/ToolDatabase/Adapters/MR.CM3Core.Bc.ToolDatabase.Adapters.WinTool/ExportTool/MR.Common.Tools.ToolDatabase.WinToolGraphExp.exe.config
-/BusinessComponents/ToolDatabase/Adapters/MR.CM3Core.Bc.ToolDatabase.Adapters.WinTool/ExportTool/MR.DataPlatform.Api.Authorization.dll
-/BusinessComponents/ToolDatabase/Adapters/MR.CM3Core.Bc.ToolDatabase.Adapters.WinTool/ExportTool/MR.DataPlatform.Api.Common.dll
-/BusinessComponents/ToolDatabase/Adapters/MR.CM3Core.Bc.ToolDatabase.Adapters.WinTool/ExportTool/MR.DataPlatform.Common.dll
-/BusinessComponents/ToolDatabase/Adapters/MR.CM3Core.Bc.ToolDatabase.Adapters.WinTool/ExportTool/Newtonsoft.Json.dll
-/BusinessComponents/ToolDatabase/Adapters/MR.CM3Core.Bc.ToolDatabase.Adapters.WinTool/ExportTool/System.Net.Http.Formatting.dll
-#/PackageLocations.json

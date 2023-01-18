@@ -1,1 +1,2 @@
-.vs/
+# ignore the .vs Ordner
+*.vs/

@@ -19,11 +19,11 @@ namespace Startmenü
 
         private void Logoutbutton_Click(object sender, RoutedEventArgs e)
         {
-            if (pasbox.Password == "1111")
+            if (pasbox.Password == "4090")
             {
                 Application.Current.Shutdown();
             }
-            else if (pasbox.Password != "1111")
+            else if (pasbox.Password != "4090")
             {
                 WrongPassword wrongPassword = new WrongPassword();
                 wrongPassword.Show();

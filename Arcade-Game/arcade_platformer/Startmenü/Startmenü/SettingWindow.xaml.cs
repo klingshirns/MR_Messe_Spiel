@@ -51,6 +51,9 @@ namespace Startmenü
         //Einfachmacher
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
+            EinfachmacherLabel.Foreground = System.Windows.Media.Brushes.Red;
+            //ChoosButton1.BorderThickness = "2";
+
             label.Content = "Technische Ausbildung:\n";
             label2.Content = "- setzten auf 80 Prozent Lösungen und verbessern bei Bedarf\n- Lösungen klein und kompakt, kein Schnickschnack";
             label3.Content = "- eindeutige Prioritäten\n- denken und handeln ergebnisorientiert";

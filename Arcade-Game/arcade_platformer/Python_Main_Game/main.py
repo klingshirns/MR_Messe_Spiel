@@ -451,8 +451,8 @@ class MyGame(arcade.Window):
             # Remove life
             self.life -= 1
 
-            # checks if life is under 1
-            if self.life <= 1:
+            # checks if life is under 0
+            if self.life <= 0:
                 
                 self.level = 0
                 self.life = 3
@@ -606,7 +606,131 @@ class MyGame(arcade.Window):
                 #Default
                 pass
 
+#Notebook:
 
+    def drawWelcomeArea(self):
+
+        self.to1 = TextObj("Fachkraft - Lagerlogistik", "Arial", 26, 1635, 430, arcade.color.WHITE)
+        self.to2 = TextObj("Kaufmännisch", "Arial", 26, 2925, 880, arcade.color.WHITE)
+        self.to3 = TextObj("Fachinformatiker - Systemintegration", "Arial", 26, 1540, 1400, arcade.color.WHITE)
+        self.to4 = TextObj("Elektro - IT", "Arial", 26, 330, 1400, arcade.color.WHITE)
+        self.to5 = TextObj("Elektro", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj("Mechatronik", "Arial", 26, 4545, 2170, arcade.color.WHITE)
+        self.to7 = TextObj("Industriemechaniker", "Arial", 26, 5888, 1990, arcade.color.WHITE)
+        self.to8 = TextObj("Werkzeugmechaniker", "Arial", 26, 7343, 1270, arcade.color.WHITE)
+        self.to9 = TextObj("Zerspaner", "Arial", 26, 6734, 2240, arcade.color.WHITE)
+
+    def drawFachkraftLagerlogistik(self):
+        
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 80, 500, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+
+    def drawKaufmännisch(self):
+
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 55, 400, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+
+    def drawFachinformatiker(self):
+        
+        self.to1 = TextObj("Herzlich Willkommmen!", "Arial", 26, 39, 500, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+
+    def drawElectroIT(self):
+        
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 90, 800, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+
+    def drawElectro(self):
+        
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 55, 400, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+
+    def drawMechatronik(self):
+        
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 52, 500, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+
+    def drawIndustriemechanik(self):
+        
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 50, 300, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+
+    def drawWerkzeugmechanik(self):
+
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 86, 400, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+
+    def drawZerspannung(self):
+        
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 215, 800, arcade.color.WHITE)
+        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
+        self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
+        self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj(" ", "Arial", 26, 4560, 2170, arcade.color.WHITE)
+        self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
+        self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
+        self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+
+
+#Monitor:
+"""
     def drawWelcomeArea(self):
 
         self.to1 = TextObj("Fachkraft - Lagerlogistik", "Arial", 26, 1630, 430, arcade.color.WHITE)
@@ -621,7 +745,7 @@ class MyGame(arcade.Window):
 
     def drawFachkraftLagerlogistik(self):
         
-        self.to1 = TextObj("Willkommen!", "Arial", 26, 500, 430, arcade.color.WHITE)
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 500, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -633,7 +757,7 @@ class MyGame(arcade.Window):
 
     def drawKaufmännisch(self):
 
-        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -645,7 +769,7 @@ class MyGame(arcade.Window):
 
     def drawFachinformatiker(self):
         
-        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to1 = TextObj("Herzlich Willkommmen!", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -657,7 +781,7 @@ class MyGame(arcade.Window):
 
     def drawElectroIT(self):
         
-        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -669,7 +793,7 @@ class MyGame(arcade.Window):
 
     def drawElectro(self):
         
-        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -681,7 +805,7 @@ class MyGame(arcade.Window):
 
     def drawMechatronik(self):
         
-        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -693,7 +817,7 @@ class MyGame(arcade.Window):
 
     def drawIndustriemechanik(self):
         
-        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -705,7 +829,7 @@ class MyGame(arcade.Window):
 
     def drawWerkzeugmechanik(self):
 
-        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -717,7 +841,7 @@ class MyGame(arcade.Window):
 
     def drawZerspannung(self):
         
-        self.to1 = TextObj(" ", "Arial", 26, 1630, 430, arcade.color.WHITE)
+        self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 1630, 430, arcade.color.WHITE)
         self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
@@ -726,8 +850,7 @@ class MyGame(arcade.Window):
         self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
         self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
         self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
-
-    
+"""
     
 def main():
     """Main function"""

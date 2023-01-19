@@ -113,12 +113,18 @@
             </Button.Resources>
         </Button>
         <Label x:Name="EinfachmacherLabel" Content="Einfachmacher" Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="160" FontFamily="Arial" FontSize="22" Height="35" Foreground="#FFDDDDDD"/>
-        <Label Content="Vorangeher" Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="150" FontFamily="Arial" FontSize="22" Foreground="#FFDDDDDD" HorizontalContentAlignment="Right"/>
-        <Label Content="Kundenversteher" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" RenderTransformOrigin="0.712,-0.666" Foreground="#FFDDDDDD" Height="35"/>
-        <Label Content="Zusammenbringer" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="3" HorizontalAlignment="Center" Height="35" VerticalAlignment="Center" Width="202" FontFamily="Arial" FontSize="22" RenderTransformOrigin="0.654,-0.13" Foreground="#FFDDDDDD"/>
+        <Label x:Name="VorangeherLabel" Content="Vorangeher" Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="150" FontFamily="Arial" FontSize="22" Foreground="#FFDDDDDD" HorizontalContentAlignment="Right"/>
+        <Label x:Name="KundenversteherLabel" Content="Kundenversteher" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Arial" FontSize="22" RenderTransformOrigin="0.712,-0.666" Foreground="#FFDDDDDD" Height="35"/>
+        <Label x:Name="ZusammenbringerLabel" Content="Zusammenbringer" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="3" HorizontalAlignment="Center" Height="35" VerticalAlignment="Center" Width="202" FontFamily="Arial" FontSize="22" RenderTransformOrigin="0.654,-0.13" Foreground="#FFDDDDDD"/>
         <Label Content="Powered by MR - Azubis - 2021" Grid.Row="6" Grid.Column="6" HorizontalAlignment="Center" Height="31" VerticalAlignment="Bottom" Width="222" FontFamily="Arial" FontWeight="Bold" FontSize="14" Foreground="#FFDDDDDD"/>
-        <Label x:Name="label" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Top" Height="33" Width="1252" FontFamily="Arial Black" FontSize="18" HorizontalContentAlignment="Center" Background="#FFDDDDDD"/>
+        <!--Monitor-->
+        <!--<Label x:Name="label" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Top" Height="33" Width="1252" FontFamily="Arial Black" FontSize="18" HorizontalContentAlignment="Center" Background="#FFDDDDDD"/>
         <Label x:Name="label2" Grid.Column="3" Content="" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="85" Grid.Row="4" VerticalAlignment="Bottom" Width="763" FontFamily="Arial" FontSize="16" HorizontalContentAlignment="Center" Background="#FFDDDDDD"/>
-        <Label x:Name="label3" Grid.Column="1" Content="" Grid.ColumnSpan="2" HorizontalAlignment="Right" Height="85" Grid.Row="4" VerticalAlignment="Bottom" Width="489" FontFamily="Arial" FontSize="16" HorizontalContentAlignment="Center" Background="#FFDDDDDD"/>
+        <Label x:Name="label3" Grid.Column="1" Content="" Grid.ColumnSpan="2" HorizontalAlignment="Right" Height="85" Grid.Row="4" VerticalAlignment="Bottom" Width="489" FontFamily="Arial" FontSize="16" HorizontalContentAlignment="Center" Background="#FFDDDDDD"/>-->
+        
+        <!--Notebook-->
+        <Label x:Name="label" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Top" Height="33" Width="1252" FontFamily="Arial Black" FontSize="18" HorizontalContentAlignment="Center" Background="#FFDDDDDD"/>
+        <Label x:Name="label2" Grid.Column="3" Content="" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="58" Grid.Row="4" VerticalAlignment="Bottom" Width="659" FontFamily="Arial" FontSize="16" HorizontalContentAlignment="Center" Background="#FFDDDDDD"/>
+        <Label x:Name="label3" Grid.Column="1" Content="" Grid.ColumnSpan="2" HorizontalAlignment="Right" Height="58" Grid.Row="4" VerticalAlignment="Bottom" Width="439" FontFamily="Arial" FontSize="16" HorizontalContentAlignment="Center" Background="#FFDDDDDD"/>
     </Grid>
 </Window>

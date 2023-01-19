@@ -153,12 +153,12 @@
  <objectgroup id="4" name="wizzard">
   <object id="11" gid="257" x="3456" y="2048" width="131" height="188">
    <properties>
-    <property name="ID" type="int" value="0"/>
+    <property name="ID" type="int" value="4"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="info_boxes">
-  <object id="1" gid="163" x="3199.15" y="4226.42" width="128" height="128">
+  <object id="1" gid="163" x="3381.98" y="4352.42" width="293" height="190">
    <properties>
     <property name="ID" type="int" value="4"/>
    </properties>

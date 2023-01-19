@@ -146,9 +146,6 @@
  <objectgroup id="8" name="portal_key">
   <object id="41" gid="36" x="7296" y="4992" width="128" height="128"/>
  </objectgroup>
- <objectgroup id="9" name="exit">
-  <object id="42" gid="36" x="7168" y="4992" width="128" height="128"/>
- </objectgroup>
  <objectgroup id="4" name="wizzard">
   <object id="5" gid="264" x="7040" y="2048" width="131" height="188">
    <properties>

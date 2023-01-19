@@ -7,9 +7,11 @@ import json
 # ----------------------------------
 
 class Controller():
-    def __init__(self, root):
+
+    def __init__(self, root, quiz_id):
+
         self.root = root
-        self.model = Model(self)
+        self.model = Model(self, quiz_id)
         self.view = View(self)
         self.quiz_end = False
     
@@ -45,7 +47,7 @@ class View():
         self.style = Style()
         self.frame.grid(row=0, column=0)
 
-        self.controller.root.geometry('600x275')
+        self.controller.root.geometry('600x300')
 
         #------------------------------------------
         #Variables for Questions and Answers (need to be changed)
@@ -86,7 +88,7 @@ class View():
         # Question
         #--------------------------
 
-        self.question_label = Label(self.frame, textvariable=self.Question_text, style='Qu.TLabel').grid(row=0, column= 0, columnspan=2)
+        self.question_label = Label(self.frame, textvariable=self.Question_text, style='Qu.TLabel', wraplength = 440).grid(row=0, column= 0, columnspan=2)
         
         #--------------------------
         # Answers + Buttons
@@ -143,6 +145,8 @@ class View():
 
     def setLabelText(self):
 
+        currentQuiz = self.controller.model.currentQuiz
+
         # Current Question Number
         currentQuNo = self.controller.model.currentQuNo
 
@@ -150,15 +154,15 @@ class View():
         quiz_Data = self.controller.model.quiz_Data
 
         # Set Question text
-        self.Question_text.set(quiz_Data['general'][currentQuNo]['Question'].encode('utf-8'))
+        self.Question_text.set(quiz_Data[currentQuiz][currentQuNo]['Question'].encode('utf-8'))
 
         # Set Answer texts
-        self.Aw1_text.set(quiz_Data['general'][currentQuNo]['answers'][0]['Answer'])
-        self.Aw2_text.set(quiz_Data['general'][currentQuNo]['answers'][1]['Answer'])
-        self.Aw3_text.set(quiz_Data['general'][currentQuNo]['answers'][2]['Answer'])
+        self.Aw1_text.set(quiz_Data[currentQuiz][currentQuNo]['answers'][0]['Answer'])
+        self.Aw2_text.set(quiz_Data[currentQuiz][currentQuNo]['answers'][1]['Answer'])
+        self.Aw3_text.set(quiz_Data[currentQuiz][currentQuNo]['answers'][2]['Answer'])
 
         # Set Result Info Text
-        self.result_info_text.set(quiz_Data['general'][currentQuNo]["answer_info"])
+        self.result_info_text.set(quiz_Data[currentQuiz][currentQuNo]["answer_info"])
 
     def styleWidgets(self):
         
@@ -198,15 +202,20 @@ class View():
 
 class Model():
 
-    def __init__(self, Controller):
+    def __init__(self, Controller, quiz_id):
+
+        self.quiz_id = quiz_id
         self.quiz_Data = None
         self.currentQuNo = 0
+        self.currentQuiz = None
         self.controller = Controller
         self.score = 0
         self.maxScore = 0
 
         self.loadJSON()
+        self.getCurrentQuiz()
         self.getNumberOfQuestions()
+
 
     def loadJSON(self):
 
@@ -222,7 +231,7 @@ class Model():
 
         if id_answered in myList:
 
-            bool_answer = self.quiz_Data['general'][self.currentQuNo]['answers'][id_answered]['truth']
+            bool_answer = self.quiz_Data[self.currentQuiz][self.currentQuNo]['answers'][id_answered]['truth']
 
             if bool_answer == True:
                 
@@ -235,7 +244,7 @@ class Model():
 
     def getNumberOfQuestions(self):
         
-        numberOfQuestions = len(self.quiz_Data['general'])
+        numberOfQuestions = len(self.quiz_Data[self.currentQuiz])
 
         self.maxScore = numberOfQuestions
 
@@ -255,16 +264,24 @@ class Model():
         else:
             self.controller.endOfQuiz(self.score, self.maxScore)
 
+    def getCurrentQuiz(self):
+
+        quizList = ['fachkraftLagerlogistik', 'industriekaufleute', 'fachinformatiker', 'it_systemelektroniker', 
+                    'elektroniker', 'mechatroniker', 'industriemechaniker', 'werkzeugmechaniker', 'zerspaner']
+
+        # Get the correct Quiz
+        self.currentQuiz = quizList[self.quiz_id]
+
 
 
 #----------------------------------
 # Main
 #----------------------------------
-def main():
+def main(quiz_id):
     root = Tk()
     Frame(root)
     root.title('Quiz')
-    Controller(root)
+    Controller(root, quiz_id)
     root.mainloop()
 
 if __name__ == "__main__":

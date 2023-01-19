@@ -1,276 +1,685 @@
 {
-    "general":
+    "fachkraftLagerlogistik":
     [
         {
             "No" : "0",
-            "Keyword" : "Founding",
-            "Question": "Wann wurde die Maschinenfabrik Reinhausen gegruendet?",
+            "Keyword" : "Ausbildungsdauer",
+            "Question": "Wie lange dauert die Ausbildung fuer die Fachkraft fuer Lagerlogistik?",
             "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "1929",
+                    "Answer": "4 Jahre",
                     "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "1886",
+                    "Answer": "3 Jahre",
                     "truth" : true
                 },
                 {
                     "ID" : "c",
-                    "Answer": "1999",
+                    "Answer": "3,5 Jahre",
                     "truth" : false
                 }
             ],
-            "answer_info": "Im Jahr 1886 wurde das Unternehmen als Reparaturbetrieb zur Herstellung von Voll- und Spaltgattersaegen gegruendet"
+            "answer_info": "Die Ausbildung dauert 3 Jahre"
         },
         {
             "No" : "1",
-            "Keyword" : "Founding Members",
-            "Question" : "Wer waren die Gruendungsmitglieder der MR?",
+            "Keyword" : "Einsatzbereich",
+            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
             "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "Karl Rapp und Gustav Otto",
+                    "Answer": "Wareneingang/Warenausgang, Transport, Einkauf",
                     "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Nikola Teasla und Thomas Edison",
+                    "Answer": "Fertigung, Zerspanung, Werkzeugschleiferei",
                     "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "Die Gebrueder Scheubeck",
+                    "Answer": "Montage, Instandhaltung",
                     "truth" : true
                 }
             ],
-            "answer_info": "Die Gebrueder Scheubeck legten den Grundstein fuer die Maschinenfabrik Reinhausen"
+            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Wareneingang, Warenausgangsprüfung, lagerhaltung und -verwaltung, Transport, Export, Einkauf und Disposition kennen"
         },
         {
             "No": "2",
-            "Keyword" : "Invention Tap Changer",
-            "Question" : "Wann wurde der erste Laststufenschalter erfunden?",
+            "Keyword" : "Voraussetzungen",
+            "Question" : "Voraussetzungen",
             "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "1929",
+                    "Answer": "Organisationstalent",
                     "truth": true
                 },
                 {
                     "ID" : "b",
-                    "Answer": "1672",
+                    "Answer": "Technisches Interesse und Verständnis",
                     "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "1847",
+                    "Answer": "Programmierkenntnisse",
                     "truth" : false
                 }
             ],
-            "answer_info": "Die Gebrueder Scheubeck entwickelten 1929 den ersten Prototypen eines Laststufenschalters"
-        },
-        {
-            "No": "3",
-            "Keyword" : "Company Locations",
-            "Question" : "In wie vielen Laendern sind wir vertreten?",
-            "answers":
-            [
-                {
-                    "ID" : "a",
-                    "Answer": "130",
-                    "truth": false
-                },
-                {
-                    "ID" : "b",
-                    "Answer": "13",
-                    "truth" : false
-                },
-                {
-                    "ID" : "c",
-                    "Answer": "49",
-                    "truth" : true
-                }
-            ],
-            "answer_info": "Mit 49 Niederlassungen sowie Tochterunternehmen sind wir auf der ganzen Welt vertreten"
-        },
-        {
-            "No": "4",
-            "Keyword" : "Training offers",
-            "Question" : "Wie viele Ausbildungsangebote gibt es?",
-            "answers":
-            [
-                {
-                    "ID" : "a",
-                    "Answer": "13",
-                    "truth": false
-                },
-                {
-                    "ID" : "b",
-                    "Answer": "5",
-                    "truth" : false
-                },
-                {
-                    "ID" : "c",
-                    "Answer": "9",
-                    "truth" : true
-                }
-            ],
-            "answer_info": "Derzeit bietet die Maschinenfabrik Reinhausen 9 verschiedene Ausbildungsangebote an"
-        },
-        {
-            "No": "5",
-            "Keyword" : "Advantages",
-            "Question" : "Was sind deine Vorteile waehrend der Ausbildung?",
-            "answers":
-            [
-                {
-                    "ID" : "a",
-                    "Answer": "35-Stunden Woche",
-                    "truth": true
-                },
-                {
-                    "ID" : "b",
-                    "Answer": "iPad oder Laptop",
-                    "truth" : true
-                },
-                {
-                    "ID" : "c",
-                    "Answer": "attraktive Verguenstigungen",
-                    "truth" : true
-                }
-            ],
-            "answer_info": "Alle! Bei uns erhältst die zu Beginn ein iPad bzw. ein Notebook, hast eine angenehme 35 Stunden Woche und erhältst attraktive Vergünstigungen"
-        },
-        {
-            "No": "6",
-            "Keyword" : "Number of trainees",
-            "Question" : "Wie viele Auszubildende werden derzeit ausgebildet?",
-            "answers":
-            [
-                {
-                    "ID" : "a",
-                    "Answer": "103",
-                    "truth": true
-                },
-                {
-                    "ID" : "b",
-                    "Answer": "34",
-                    "truth" : false
-                },
-                {
-                    "ID" : "c",
-                    "Answer": "73",
-                    "truth" : false
-                }
-            ],
-            "answer_info": "Derzeit bilden wir 103 Azubis aus"
+            "answer_info": "Du solltest "
         }
     ],
 
-    "Electro_IT":
+    "industriekaufleute":
     [
         {
             "No" : "0",
-            "Keyword" : "Hardware",
-            "Question": "Was versteht man unter Hardware?",
+            "Keyword" : "Ausbildungsdauer",
+            "Question": "Wie lange dauert die Ausbildung als Industriekaufmann/-frau ",
             "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "Eisen, Kunststoff, ...",
+                    "Answer": "4 Jahre",
                     "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Elektronische Bauteile eines Computers",
+                    "Answer": "2,5 Jahre",
                     "truth" : true
                 },
                 {
                     "ID" : "c",
-                    "Answer": "Betriebssysteme wie Windows oder Linux",
+                    "Answer": "3,5 Jahre",
                     "truth" : false
                 }
             ],
-            "answer_info": "none"
+            "answer_info": "Die Ausbildung dauert 2,5 Jahre"
         },
-
         {
             "No" : "1",
-            "Keyword" : "Software",
-            "Question": "Was versteht man unter Software?",
+            "Keyword" : "Einsatzbereich",
+            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
             "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "Betriebssystem, Programme und Anwendungen",
+                    "Answer": "Einkauf, Logistik, Vertrieb",
                     "truth": true
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Schaumstoff",
+                    "Answer": "Fertigung, Zerspanung, Werkzeugschleiferei",
                     "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "Lüfter",
+                    "Answer": "Montage, Instandhaltung",
                     "truth" : false
                 }
             ],
-            "answer_info": "none"
+            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Einkauf, Logistik, Vertrieb, Export, controlling, Personal und die Buchhaltung kennen"
         },
-
         {
-            "No" : "2",
-            "Keyword" : "CPU",
-            "Question": "Was bedeutet CPU?",
+            "No": "2",
+            "Keyword" : "Voraussetzungen",
+            "Question" : "Voraussetzungen",
             "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "Grafikkarte",
+                    "Answer": "Vorliebe für betriebswirtschaftliche Zusammenhänge",
+                    "truth": true
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Technisches Interesse und Verständnis",
+                    "truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Programmierkenntnisse",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Du solltest eine Vorliebe für betriebswirtschaftliche Zusammenhänge und Motiviation zur Einbringung in Projekten mitbringen"
+        }
+    ],
+
+    "fachinformatiker":
+    [
+        {
+            "No" : "0",
+            "Keyword" : "Ausbildungsdauer",
+            "Question": "Wie lange dauert die Ausbildung als ",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "3 Jahre",
                     "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Prozessor",
+                    "Answer": "2 Jahre",
                     "truth" : true
                 },
                 {
                     "ID" : "c",
-                    "Answer": "Netzteil",
+                    "Answer": "3,5 Jahre",
                     "truth" : false
                 }
             ],
-            "answer_info": "none"
+            "answer_info": "Die Ausbildung dauert 3 Jahre"
         },
-
         {
-            "No" : "3",
-            "Keyword" : "Storage",
-            "Question": "Worauf kann man Daten dauerhaft abspeichern?",
+            "No" : "1",
+            "Keyword" : "Einsatzbereich",
+            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
             "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "Arbeitsspeicher",
+                    "Answer": "Einkauf, Logistik, Vertrieb",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "IT-Support",
+                    "truth" : true
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Fertigung, Zerspanung, Werkzeugschleiferei",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Während Deiner Ausbildung lernst Du hauptsächlich den IT-Support kennen"
+        },
+        {
+            "No": "2",
+            "Keyword" : "Voraussetzungen",
+            "Question" : "Voraussetzungen",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Vorliebe für betriebswirtschaftliche Zusammenhänge",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Lösungsorientiertes Arbeiten, Lösung kniffliger Aufgaben",
+                    "truth" : true
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Technisches Interesse und Verständnis",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Du solltest eine Pgrammierleidenschaft und Spaß an der Lösung kniffliger Aufgaben mitbringen"
+        }
+    ],
+
+    "it_systemelektroniker":
+    [
+        {
+            "No" : "0",
+            "Keyword" : "Ausbildungsdauer",
+            "Question": "Wie lange dauert die Ausbildung als IT-Systemelektronker?",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "3 Jahre",
                     "truth": true
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Festplatte (SSD, HDD)",
+                    "Answer": "2 Jahre",
                     "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "Cache",
+                    "Answer": "3,5 Jahre",
                     "truth" : false
                 }
             ],
-            "answer_info": "none"
+            "answer_info": "Die Ausbildung dauert 3 Jahre"
+        },
+        {
+            "No" : "1",
+            "Keyword" : "Einsatzbereich",
+            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "IT-Support, Softwaretesting, IT-Infrastruktur",
+                    "truth": true
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Einkauf, Logistik, Vertrieb",
+                    "truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Fertigung, Zerspanung, Werkzeugschleiferei",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen IT-Support, IT-Infrastruktur, Instandhaltung, Produktprogrammierung kennen"
+        },
+        {
+            "No": "2",
+            "Keyword" : "Voraussetzungen",
+            "Question" : "Voraussetzungen",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Vorliebe für betriebswirtschaftliche Zusammenhänge",
+                    "truth": true
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Technisches Interesse und Verständnis",
+                    "truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Begeisterung für IT und Elektronik",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Du solltest eine Begeisterung für It und ELektornik sowie Spaß an Themen der DIgitalisierung mitbringen"
+        }
+    ],
+
+    "elektroniker":
+    [
+        {
+            "No" : "0",
+            "Keyword" : "Ausbildungsdauer",
+            "Question": "Wie lange dauert die Ausbildung als Elektroniker für Betriebstechnik?",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "3 Jahre",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "3,5 Jahre",
+                    "truth" : true
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "2 Jahre",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Die Ausbildung dauert 3,5 Jahre"
+        },
+        {
+            "No" : "1",
+            "Keyword" : "Einsatzbereich",
+            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "IT-Support, Softwaretesting, IT-Infrastruktur",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Montage, Elektroinstandhaltung, Versuchsfeld",
+                    "truth" : true
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Fertigung, Zerspanung, Werkzeugschleiferei",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Montage, Elektroninstandhalung, Versuchsfeld sowie die Prüftechnik kennen"
+        },
+        {
+            "No": "2",
+            "Keyword" : "Voraussetzungen",
+            "Question" : "Voraussetzungen",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Begeisterung für IT und Elektronik",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Technisches Interesse und Verständnis",
+                    "truth" : true
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Vorliebe für betriebswirtschaftliche Zusammenhänge",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Du solltest technisches Verständnis und Spaß an Lösung kniffliger Aufgaben mitbringen"
+        }
+    ],
+
+    "meachatroniker":
+    [
+        {
+            "No" : "0",
+            "Keyword" : "Ausbildungsdauer",
+            "Question": "Wie lange dauert die Ausbildung als Mechatroniker?",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "3 Jahre",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "3,5 Jahre",
+                    "truth" : true
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "2 Jahre",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Die Ausbildung dauert 3,5 Jahre"
+        },
+        {
+            "No" : "1",
+            "Keyword" : "Einsatzbereich",
+            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "IT-Support, Softwaretesting, IT-Infrastruktur",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Montage, Mechanikinstandhaltug, Prüftechnik",
+                    "truth" : true
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Fertigung, Zerspanung, Werkzeugschleiferei",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Montage, Mechanik- und Elektroninstandhaltung, Versuchsfeld sowie die Prüftechnik kennen"
+        },
+        {
+            "No": "2",
+            "Keyword" : "Voraussetzungen",
+            "Question" : "Voraussetzungen",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Organisationstalent",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Technisches Interesse und Verständnis",
+                    "truth" : true
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Vorliebe für betriebswirtschaftliche Zusammenhänge",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Du solltest technisches Verständnis und Spaß an Lösung kniffliger Aufgaben mitbringen"
+        }
+    ],
+
+    "industriemechaniker":
+    [
+        {
+            "No" : "0",
+            "Keyword" : "Ausbildungsdauer",
+            "Question": "Wie lange dauert die Ausbildung als Industriemechaniker",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "4 Jahre",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "2,5 Jahre",
+                    "truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "3,5 Jahre",
+                    "truth" : true
+                }
+            ],
+            "answer_info": "Die Ausbildung dauert 3,5 Jahre"
+        },
+        {
+            "No" : "1",
+            "Keyword" : "Einsatzbereich",
+            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Betriebsmittelbau, Prototypenbau, Qualitätskontrolle",
+                    "truth": true
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Fertigung, Zerspanung, Werkzeugschleiferei",
+                    "truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Montage, Instandhaltung",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Betriebsmittelbau, Montage, Prototypenbau, Instandhaltung und Qualitätskontrolle kennen"
+        },
+        {
+            "No": "2",
+            "Keyword" : "Voraussetzungen",
+            "Question" : "Voraussetzungen",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Technisches Interesse, Auge für Details",
+                    "truth": true
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "orliebe für betriebswirtschaftliche Zusammenhänge",
+                    "truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Programmierkenntnisse",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Du solltest ein technisches Interesse und ein Auge für Details mitbringen"
+        }
+    ],
+
+    "werkzeugmechaniker":
+    [
+        {
+            "No" : "0",
+            "Keyword" : "Ausbildungsdauer",
+            "Question": "Wie lange dauert die Ausbildung als IT-Systemelektronker?",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "3 Jahre",
+                    "truth": true
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "2 Jahre",
+                    "truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "3,5 Jahre",
+                    "truth" : true
+                }
+            ],
+            "answer_info": "Die Ausbildung dauert 3,5 Jahre"
+        },
+        {
+            "No" : "1",
+            "Keyword" : "Einsatzbereich",
+            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "CNC-Drehen und Fräsen, Prototypenbau, Betriebsmittelbau",
+                    "truth": true
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Einkauf, Logistik, Vertrieb",
+                    "truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Fertigung, Zerspanung, Werkzeugschleiferei",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Betriebsmittelbau, Montage, Prototypenbau und Qualitätskontrolle kennen"
+        },
+        {
+            "No": "2",
+            "Keyword" : "Voraussetzungen",
+            "Question" : "Voraussetzungen",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Vorliebe für betriebswirtschaftliche Zusammenhänge",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Begeisterung für IT und Elektronik",
+                    "truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Technisches Interesse, Auge für Details",
+                    "truth" : true
+                }
+            ],
+            "answer_info": "Du solltest eine Begeisterung für It und ELektornik sowie Spaß an Themen der DIgitalisierung mitbringen"
+        }
+    ],
+
+    "zerspaner":
+    [
+        {
+            "No" : "0",
+            "Keyword" : "Ausbildungsdauer",
+            "Question": "Wie lange dauert die Ausbildung als Zerspaner?",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "4 Jahre",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "3 Jahre",
+                    "truth" : false
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "3,5 Jahre",
+                    "truth" : true
+                }
+            ],
+            "answer_info": "Die Ausbildung dauert 3 Jahre"
+        },
+        {
+            "No" : "1",
+            "Keyword" : "Einsatzbereich",
+            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Wareneingang/Warenausgang, Transport, Einkauf",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Fertigung",
+                    "truth" : true
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Montage, Instandhaltung, Export",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Fertigung, Prüflabor/Qualitätskontrolle kennen"
+        },
+        {
+            "No": "2",
+            "Keyword" : "Voraussetzungen",
+            "Question" : "Voraussetzungen",
+            "answers":
+            [
+                {
+                    "ID" : "a",
+                    "Answer": "Organisationstalent",
+                    "truth": false
+                },
+                {
+                    "ID" : "b",
+                    "Answer": "Technisches Interesse, Auge für Details",
+                    "truth" : true
+                },
+                {
+                    "ID" : "c",
+                    "Answer": "Programmierkenntnisse",
+                    "truth" : false
+                }
+            ],
+            "answer_info": "Du solltest ein technisches Verständnis sowie ein Auge für Details wie Unebenheiten und scharfe Kanten mitbringen"
         }
     ]
 }

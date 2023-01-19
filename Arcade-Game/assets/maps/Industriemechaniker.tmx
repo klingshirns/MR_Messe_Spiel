@@ -121,7 +121,7 @@
  <objectgroup id="5" name="wizzard">
   <object id="4" gid="257" x="3072" y="3328" width="131" height="188">
    <properties>
-    <property name="ID" type="int" value="0"/>
+    <property name="ID" type="int" value="6"/>
    </properties>
   </object>
  </objectgroup>

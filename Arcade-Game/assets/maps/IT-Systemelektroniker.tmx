@@ -146,7 +146,7 @@
  <objectgroup id="3" name="wizzard">
   <object id="1" gid="257" x="7296" y="4096" width="131" height="188">
    <properties>
-    <property name="ID" type="int" value="0"/>
+    <property name="ID" type="int" value="3"/>
    </properties>
   </object>
  </objectgroup>

@@ -129,6 +129,7 @@ class MyGame(arcade.Window):
         self.text_7 = None
         self.text_8 = None
         self.text_9 = None
+        self.text_10 = None
 
         # variable for text objects 
         self.to1 = None
@@ -140,6 +141,7 @@ class MyGame(arcade.Window):
         self.to7 = None
         self.to8 = None
         self.to9 = None
+        self.to10 = None
 
 
     def setup(self):
@@ -263,6 +265,7 @@ class MyGame(arcade.Window):
         self.text_7.draw()
         self.text_8.draw()
         self.text_9.draw()
+        self.text_10.draw()
         
         #------------------------------------------------------
 
@@ -432,11 +435,13 @@ class MyGame(arcade.Window):
         for wizzard in wizzard_hit:
             if self.level_key: 
 
-                quiz.main()
+                Quiz = quiz
 
                 wizzard_id = int(wizzard.properties["ID"])
 
-                self.level = wizzard_id
+                Quiz.main(wizzard_id)
+
+                self.level = 0
                 self.level_key = False
 
                 self.setup()
@@ -568,6 +573,15 @@ class MyGame(arcade.Window):
         self.to9._font_size,
         font_name= self.to9._font_name
         )
+
+        self.text_10 = arcade.Text(
+        self.to10._text,
+        self.to10._startx,
+        self.to10._starty,
+        self.to10._color,
+        self.to10._font_size,
+        font_name= self.to10._font_name
+        )
         
     
     def selectText(self):
@@ -615,9 +629,11 @@ class MyGame(arcade.Window):
         self.to4 = TextObj("Elektro - IT", "Arial", 26, 350, 1400, arcade.color.WHITE)
         self.to5 = TextObj("Elektro", "Arial", 26, 2980, 2300, arcade.color.WHITE)
         self.to6 = TextObj("Mechatronik", "Arial", 26, 4560, 2170, arcade.color.WHITE)
-        self.to7 = TextObj("Industriemechaniker", "Arial", 26, 5860, 1990, arcade.color.WHITE)
+        self.to7 = TextObj("Industriemechaniker", "Arial", 26, 5870, 1990, arcade.color.WHITE)
         self.to8 = TextObj("Werkzeugmechaniker", "Arial", 26, 6625, 2250, arcade.color.WHITE)
-        self.to9 = TextObj("Zerspaner", "Arial", 26, 7420, 1270, arcade.color.WHITE)
+        self.to9 = TextObj("Zerspaner", "Arial", 26, 7430, 1270, arcade.color.WHITE)
+        self.to10 = TextObj(" ", "Arial", 26, 7170, 880, arcade.color.WHITE)
+
 
     def drawFachkraftLagerlogistik(self):
         

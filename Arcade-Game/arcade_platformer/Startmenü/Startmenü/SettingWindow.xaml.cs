@@ -52,7 +52,9 @@ namespace Startmenü
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
             EinfachmacherLabel.Foreground = System.Windows.Media.Brushes.Red;
-            //ChoosButton1.BorderThickness = "2";
+            KundenversteherLabel.Foreground = (System.Windows.Media.SolidColorBrush)new System.Windows.Media.BrushConverter().ConvertFrom("#FFDDDDDD");
+            VorangeherLabel.Foreground = (System.Windows.Media.SolidColorBrush)new System.Windows.Media.BrushConverter().ConvertFrom("#FFDDDDDD");
+            ZusammenbringerLabel.Foreground = (System.Windows.Media.SolidColorBrush)new System.Windows.Media.BrushConverter().ConvertFrom("#FFDDDDDD");
 
             label.Content = "Technische Ausbildung:\n";
             label2.Content = "- setzten auf 80 Prozent Lösungen und verbessern bei Bedarf\n- Lösungen klein und kompakt, kein Schnickschnack";
@@ -64,9 +66,14 @@ namespace Startmenü
         //Kundenversteher
         private void ChoosButton2_Click(object sender, RoutedEventArgs e)
         {
+            EinfachmacherLabel.Foreground = (System.Windows.Media.SolidColorBrush)new System.Windows.Media.BrushConverter().ConvertFrom("#FFDDDDDD");
+            KundenversteherLabel.Foreground = System.Windows.Media.Brushes.Red;
+            VorangeherLabel.Foreground = (System.Windows.Media.SolidColorBrush)new System.Windows.Media.BrushConverter().ConvertFrom("#FFDDDDDD");
+            ZusammenbringerLabel.Foreground = (System.Windows.Media.SolidColorBrush)new System.Windows.Media.BrushConverter().ConvertFrom("#FFDDDDDD");
+
             label.Content = "Duale Studium-Richtung";
-            label2.Content = "- Bei Entscheidungen in Kunden hinein versetzen\n- Einsetzung für verlässliche und gewinnbringende Partnerschaften";
-            label3.Content = "- genaues Hinhören bei Kunden\n- aktive Entwicklungen mit Kunden teilen\n- professionelles Auftreten bei internen und externen Kunden";
+            label2.Content = "- genaues Hinhören, hinein versetzen, aktive Entwicklungen teilen\n  und professionelles Auftreten bei internen und externen Kunden";
+            label3.Content = "- Einsetzung für verlässliche und\n  gewinnbringende Partnerschaften";
 
             setting.SelectedPlayer = 2;
         }
@@ -74,9 +81,14 @@ namespace Startmenü
         //Vorangeher
         private void ChoosButton3_Click(object sender, RoutedEventArgs e)
         {
+            EinfachmacherLabel.Foreground = (System.Windows.Media.SolidColorBrush)new System.Windows.Media.BrushConverter().ConvertFrom("#FFDDDDDD");
+            KundenversteherLabel.Foreground = (System.Windows.Media.SolidColorBrush)new System.Windows.Media.BrushConverter().ConvertFrom("#FFDDDDDD");
+            VorangeherLabel.Foreground = System.Windows.Media.Brushes.Red;
+            ZusammenbringerLabel.Foreground = (System.Windows.Media.SolidColorBrush)new System.Windows.Media.BrushConverter().ConvertFrom("#FFDDDDDD");
+
             label.Content = "Kaufmänische Ausbildung:\n";
-            label2.Content = "- strategische Leitplanken\n- Engagement und Zuverlässigkeit bei neuen Themen\n- echter Kämpfer, der so schnell nichts aufhält\n- Mitziehung anderer durch Begeisterung";
-            label3.Content = "- treffen schnelle Entscheidungen\n- unterstützen zielstrebige KollegInnen\n- setzen entschiedene Themen zielstrebig um";
+            label2.Content = "- Engagement, Zuverlässigkeit und Zielstrebigkeit bei neuen Themen\n- unterstützen und Mitziehung zielstrebige KollegInnen durch Begeisterung";
+            label3.Content = "- strategische Leitplanken\n- treffen schnelle Entscheidungen";
 
             setting.SelectedPlayer = 1;
         }
@@ -84,9 +96,14 @@ namespace Startmenü
         //Zusammenbringer
         private void ChoosButton4_Click(object sender, RoutedEventArgs e)
         {
+            EinfachmacherLabel.Foreground = (System.Windows.Media.SolidColorBrush)new System.Windows.Media.BrushConverter().ConvertFrom("#FFDDDDDD");
+            KundenversteherLabel.Foreground = (System.Windows.Media.SolidColorBrush)new System.Windows.Media.BrushConverter().ConvertFrom("#FFDDDDDD");
+            VorangeherLabel.Foreground = (System.Windows.Media.SolidColorBrush)new System.Windows.Media.BrushConverter().ConvertFrom("#FFDDDDDD");
+            ZusammenbringerLabel.Foreground = System.Windows.Media.Brushes.Red;
+
             label.Content = "Maschinenfabrik Reinhausen";
-            label2.Content = "- Informationen schnell und verständlich verteilen\n- gegenseitig einbringen passend zu unseren Kompetenzen und Fähigkeiten\n- Feedback bei fehlende Zusammenarbeit und suchen gemeinsame Lösungen";
-            label3.Content = "- Vertretung gemeinsamer getroffene Entscheidungen\n- Leistung anderer wertschätzen\n- vertrauenswürdige Ausstrahlung";
+            label2.Content = "- Feedback geben, gemeinsame Lösungssuche und vertrauenswürdige Ausstrahlung\n- Leistung anderer wertschätzen und Kompetenzen und Fähigkeiten passend einsetzen";
+            label3.Content = "- Informationen schnell und verständlich verteilen\n- Vertretung gemeinsamer getroffene Entscheidungen";
 
             setting.SelectedPlayer = 3;
         }

@@ -652,6 +652,7 @@ class MyGame(arcade.Window):
         self.to7 = TextObj("Industriemechaniker", "Arial", 26, 5888, 1990, arcade.color.WHITE)
         self.to8 = TextObj("Werkzeugmechaniker", "Arial", 26, 7343, 1270, arcade.color.WHITE)
         self.to9 = TextObj("Zerspaner", "Arial", 26, 6734, 2240, arcade.color.WHITE)
+        self.to10 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
         self.to10 = TextObj(" ", "Arial", 26, 7170, 880, arcade.color.WHITE)
 
     def drawFachkraftLagerlogistik(self):
@@ -665,6 +666,7 @@ class MyGame(arcade.Window):
         self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
         self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
         self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+        self.to10 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawKaufmännisch(self):
 
@@ -677,6 +679,7 @@ class MyGame(arcade.Window):
         self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
         self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
         self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+        self.to10 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawFachinformatiker(self):
         
@@ -689,6 +692,7 @@ class MyGame(arcade.Window):
         self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
         self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
         self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+        self.to10 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawElectroIT(self):
         
@@ -701,6 +705,7 @@ class MyGame(arcade.Window):
         self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
         self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
         self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+        self.to10 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawElectro(self):
         
@@ -713,6 +718,7 @@ class MyGame(arcade.Window):
         self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
         self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
         self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+        self.to10 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawMechatronik(self):
         
@@ -725,6 +731,7 @@ class MyGame(arcade.Window):
         self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
         self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
         self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+        self.to10 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawIndustriemechanik(self):
         
@@ -737,6 +744,7 @@ class MyGame(arcade.Window):
         self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
         self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
         self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+        self.to10 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawWerkzeugmechanik(self):
 
@@ -749,6 +757,7 @@ class MyGame(arcade.Window):
         self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
         self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
         self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+        self.to10 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
     def drawZerspannung(self):
         
@@ -761,6 +770,7 @@ class MyGame(arcade.Window):
         self.to7 = TextObj(" ", "Arial", 26, 6000, 2000, arcade.color.WHITE)
         self.to8 = TextObj(" ", "Arial", 26, 6500, 2200, arcade.color.WHITE)
         self.to9 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
+        self.to10 = TextObj(" ", "Arial", 26, 7000, 1200, arcade.color.WHITE)
 
 
 #Monitor:

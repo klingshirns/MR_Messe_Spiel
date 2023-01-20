@@ -161,7 +161,7 @@
   <object id="29" gid="2" x="0" y="5120" width="128" height="128"/>
  </objectgroup>
  <objectgroup id="6" name="info_boxes">
-  <object id="11" gid="163" x="640" y="4608" width="128" height="128">
+  <object id="11" gid="163" x="512" y="4608.67" width="300.667" height="189.333">
    <properties>
     <property name="ID" type="int" value="1"/>
    </properties>

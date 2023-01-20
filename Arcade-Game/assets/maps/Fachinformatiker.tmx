@@ -152,7 +152,7 @@
   </object>
  </objectgroup>
  <objectgroup id="5" name="info_boxes">
-  <object id="12" gid="163" x="1293.45" y="4481.64" width="128" height="128">
+  <object id="12" gid="163" x="1194.45" y="4482.64" width="292" height="190">
    <properties>
     <property name="ID" type="int" value="2"/>
    </properties>

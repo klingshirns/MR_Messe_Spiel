@@ -95,7 +95,7 @@ class MyGame(arcade.Window):
         self.gui_camera = None
 
         #Level
-        self.level = 0
+        self.level = 8
 
         # Life
         self.life = 3
@@ -658,7 +658,7 @@ class MyGame(arcade.Window):
     def drawFachkraftLagerlogistik(self):
         
         self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 80, 500, arcade.color.WHITE)
-        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to2 = TextObj("Info (B)", "Comic Sans MS", 26, 1030, 365, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
         self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
@@ -671,7 +671,7 @@ class MyGame(arcade.Window):
     def drawKaufmännisch(self):
 
         self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 55, 400, arcade.color.WHITE)
-        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to2 = TextObj("Info (B)", "Comic Sans MS", 26, 265, 300, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
         self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
@@ -684,7 +684,7 @@ class MyGame(arcade.Window):
     def drawFachinformatiker(self):
         
         self.to1 = TextObj("Herzlich Willkommmen!", "Arial", 26, 39, 500, arcade.color.WHITE)
-        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to2 = TextObj("Info (B)", "Comic Sans MS", 26, 605, 360, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
         self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
@@ -697,7 +697,7 @@ class MyGame(arcade.Window):
     def drawElectroIT(self):
         
         self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 90, 800, arcade.color.WHITE)
-        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to2 = TextObj("Info (B)", "Comic Sans MS", 26, 2120, 810, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
         self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
@@ -710,7 +710,7 @@ class MyGame(arcade.Window):
     def drawElectro(self):
         
         self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 55, 400, arcade.color.WHITE)
-        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to2 = TextObj("Info (B)", "Comic Sans MS", 26, 1700, 425, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
         self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
@@ -723,7 +723,7 @@ class MyGame(arcade.Window):
     def drawMechatronik(self):
         
         self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 52, 500, arcade.color.WHITE)
-        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to2 = TextObj("Info (B)", "Comic Sans MS", 26, 260, 365, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
         self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
@@ -736,7 +736,7 @@ class MyGame(arcade.Window):
     def drawIndustriemechanik(self):
         
         self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 50, 300, arcade.color.WHITE)
-        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to2 = TextObj("Info (B)", "Comic Sans MS", 26, 235, 170, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
         self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
@@ -749,7 +749,7 @@ class MyGame(arcade.Window):
     def drawWerkzeugmechanik(self):
 
         self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 86, 400, arcade.color.WHITE)
-        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to2 = TextObj("Info (B)", "Comic Sans MS", 26, 245, 295, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
         self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)
@@ -762,7 +762,7 @@ class MyGame(arcade.Window):
     def drawZerspannung(self):
         
         self.to1 = TextObj("Herzlich Willkommen!", "Arial", 26, 215, 800, arcade.color.WHITE)
-        self.to2 = TextObj(" ", "Arial", 26, 2940, 880, arcade.color.WHITE)
+        self.to2 = TextObj("Info (B)", "Comic Sans MS", 26, 1610, 490, arcade.color.WHITE)
         self.to3 = TextObj(" ", "Arial", 26, 1680, 1400, arcade.color.WHITE)
         self.to4 = TextObj(" ", "Arial", 26, 350, 1400, arcade.color.WHITE)
         self.to5 = TextObj(" ", "Arial", 26, 2980, 2300, arcade.color.WHITE)

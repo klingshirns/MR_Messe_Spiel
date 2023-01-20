@@ -137,7 +137,7 @@
 </data>
  </layer>
  <objectgroup id="6" name="info_boxes">
-  <object id="10" gid="163" x="4224" y="3584" width="128" height="128">
+  <object id="10" gid="163" x="4224" y="3584" width="296" height="190.667">
    <properties>
     <property name="ID" type="int" value="3"/>
    </properties>

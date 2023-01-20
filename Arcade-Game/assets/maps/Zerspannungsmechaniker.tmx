@@ -144,7 +144,7 @@
   <object id="37" gid="263" x="5632" y="3328" width="128" height="127"/>
  </objectgroup>
  <objectgroup id="4" name="info_boxes">
-  <object id="23" gid="163" x="384" y="3840" width="128" height="128">
+  <object id="23" gid="163" x="3200" y="4224" width="294" height="190.667">
    <properties>
     <property name="ID" type="int" value="8"/>
    </properties>

@@ -126,7 +126,7 @@
   </object>
  </objectgroup>
  <objectgroup id="6" name="info_boxes">
-  <object id="3" gid="163" x="384" y="3584" width="128" height="128">
+  <object id="3" gid="163" x="450.167" y="3584.42" width="290.667" height="188">
    <properties>
     <property name="ID" type="int" value="6"/>
    </properties>

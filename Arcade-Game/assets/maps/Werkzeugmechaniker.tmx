@@ -153,7 +153,7 @@
   <properties>
    <property name="ID" type="int" value="7"/>
   </properties>
-  <object id="12" gid="163" x="384" y="4608" width="128" height="128">
+  <object id="12" gid="163" x="481.697" y="4611.03" width="288" height="186">
    <properties>
     <property name="ID" type="int" value="7"/>
    </properties>

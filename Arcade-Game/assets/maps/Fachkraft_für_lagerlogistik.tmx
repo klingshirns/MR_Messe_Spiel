@@ -154,7 +154,7 @@
   </object>
  </objectgroup>
  <objectgroup id="5" name="info_boxes">
-  <object id="8" gid="163" x="512" y="4352" width="128" height="128">
+  <object id="8" gid="163" x="2048" y="4352" width="294.667" height="194.667">
    <properties>
     <property name="ID" type="int" value="0"/>
    </properties>

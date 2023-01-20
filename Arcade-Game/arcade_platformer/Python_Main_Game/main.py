@@ -646,7 +646,7 @@ class MyGame(arcade.Window):
         self.to1 = TextObj("Fachkraft - Lagerlogistik", "Arial", 26, 1635, 430, arcade.color.WHITE)
         self.to2 = TextObj("Kaufmännisch", "Arial", 26, 2925, 880, arcade.color.WHITE)
         self.to3 = TextObj("Fachinformatiker - Systemintegration", "Arial", 26, 1540, 1400, arcade.color.WHITE)
-        self.to4 = TextObj("Elektro - IT", "Arial", 26, 330, 1400, arcade.color.WHITE)
+        self.to4 = TextObj("IT-Systemelektroniker", "Arial", 26, 330, 1400, arcade.color.WHITE)
         self.to5 = TextObj("Elektro", "Arial", 26, 2980, 2300, arcade.color.WHITE)
         self.to6 = TextObj("Mechatronik", "Arial", 26, 4545, 2170, arcade.color.WHITE)
         self.to7 = TextObj("Industriemechaniker", "Arial", 26, 5888, 1990, arcade.color.WHITE)

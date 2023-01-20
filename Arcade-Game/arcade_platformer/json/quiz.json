@@ -162,12 +162,12 @@
                 {
                     "ID" : "a",
                     "Answer": "3 Jahre",
-                    "truth": false
+                    "truth": true
                 },
                 {
                     "ID" : "b",
                     "Answer": "2 Jahre",
-                    "truth" : true
+                    "truth" : false
                 },
                 {
                     "ID" : "c",
@@ -286,7 +286,7 @@
                 {
                     "ID" : "a",
                     "Answer": "Vorliebe f\u00FCr betriebswirtschaftliche Zusammenh\u00e4nge",
-                    "truth": true
+                    "truth": false
                 },
                 {
                     "ID" : "b",
@@ -296,10 +296,10 @@
                 {
                     "ID" : "c",
                     "Answer": "Begeisterung f\u00FCr IT und Elektronik",
-                    "truth" : false
+                    "truth" : true
                 }
             ],
-            "answer_info": "Du solltest eine Begeisterung f\u00FCr It und ELektornik sowie Spa\u00df an Themen der DIgitalisierung mitbringen"
+            "answer_info": "Du solltest eine Begeisterung f\u00FCr IT und Elektronik sowie Spa\u00df an Themen der DIgitalisierung mitbringen"
         }
     ],
 
@@ -379,7 +379,7 @@
         }
     ],
 
-    "meachatroniker":
+    "mechatroniker":
     [
         {
             "No" : "0",
@@ -536,13 +536,13 @@
         {
             "No" : "0",
             "Keyword" : "Ausbildungsdauer",
-            "Question": "Wie lange dauert die Ausbildung als IT-Systemelektronker?",
+            "Question": "Wie lange dauert die Ausbildung als Werkzeugmechaniker?",
             "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "3 Jahre",
-                    "truth": true
+                    "truth": false
                 },
                 {
                     "ID" : "b",
@@ -603,7 +603,7 @@
                     "truth" : true
                 }
             ],
-            "answer_info": "Du solltest eine Begeisterung f\u00FCr It und ELektornik sowie Spa\u00df an Themen der DIgitalisierung mitbringen"
+            "answer_info": "Du solltest Technisches Verst\u00e4ndnis und ein Auge f\u00FCr Details mitbringen"
         }
     ],
 
@@ -631,7 +631,7 @@
                     "truth" : true
                 }
             ],
-            "answer_info": "Die Ausbildung dauert 3 Jahre"
+            "answer_info": "Die Ausbildung dauert 3,5 Jahre"
         },
         {
             "No" : "1",

@@ -95,7 +95,7 @@ class MyGame(arcade.Window):
         self.gui_camera = None
 
         #Level
-        self.level = 8
+        self.level = 0
 
         # Life
         self.life = 3
@@ -306,7 +306,7 @@ class MyGame(arcade.Window):
 
         # Checks bool value "should_load_info_box" and draws the image
         if self.should_load_info_box:
-            arcade.draw_lrwh_rectangle_textured(0,0,SCREEN_WIDTH, SCREEN_HEIGHT, self.load_info_box)
+            arcade.draw_lrwh_rectangle_textured(0,0, 1560, 870, self.load_info_box)
 
 
     def on_key_press(self, key, modifiers):
@@ -426,7 +426,8 @@ class MyGame(arcade.Window):
                 #Array for info_boxes (filename)
                 info_boxes = ["Fachkraft_Lagerlogistik", "Industriekaufleute", 
                              "Fachinformatiker", "IT_Systemelektroniker", 
-                             "Elektroniker_für_Betriebstechnik", "Mechatroniker", "Zerspanungsmechaniker"] 
+                             "Elektroniker_für_Betriebstechnik", "Mechatroniker", "Zerspanungsmechaniker",
+                             "Industriemechaniker", "Werkzeugmechaniker"] 
 
                 # Get info box from arrays
                 info_box = info_boxes[info_box_id] 
@@ -644,11 +645,11 @@ class MyGame(arcade.Window):
     def drawWelcomeArea(self):
 
         self.to1 = TextObj("Fachkraft - Lagerlogistik", "Arial", 26, 1635, 430, arcade.color.WHITE)
-        self.to2 = TextObj("Kaufmännisch", "Arial", 26, 2925, 880, arcade.color.WHITE)
+        self.to2 = TextObj("Industriekaufleute", "Arial", 26, 2925, 880, arcade.color.WHITE)
         self.to3 = TextObj("Fachinformatiker - Systemintegration", "Arial", 26, 1540, 1400, arcade.color.WHITE)
         self.to4 = TextObj("IT-Systemelektroniker", "Arial", 26, 330, 1400, arcade.color.WHITE)
-        self.to5 = TextObj("Elektro", "Arial", 26, 2980, 2300, arcade.color.WHITE)
-        self.to6 = TextObj("Mechatronik", "Arial", 26, 4545, 2170, arcade.color.WHITE)
+        self.to5 = TextObj("Elektroniker", "Arial", 26, 2980, 2300, arcade.color.WHITE)
+        self.to6 = TextObj("Mechatroniker", "Arial", 26, 4545, 2170, arcade.color.WHITE)
         self.to7 = TextObj("Industriemechaniker", "Arial", 26, 5888, 1990, arcade.color.WHITE)
         self.to8 = TextObj("Werkzeugmechaniker", "Arial", 26, 7343, 1270, arcade.color.WHITE)
         self.to9 = TextObj("Zerspaner", "Arial", 26, 6734, 2240, arcade.color.WHITE)

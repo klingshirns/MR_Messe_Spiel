@@ -129,7 +129,7 @@ class View():
         score = str(intScore)
         maxScore = str(intMaxScore)
 
-        scoreDisplay = "Du hast von " + maxScore + " möglichen Punkten " + score + " Punkte erreicht"
+        scoreDisplay = "Du hast von " + maxScore + " möglichen Punkten " + score + " Punkt(e) erreicht"
         
         Label(self.frame, text="Quiz Ende!", style = 'End.TLabel').grid(row=0, padx= 220, pady=20)
         Label(self.frame, text=scoreDisplay, style = 'Score.TLabel') .grid(row=1, pady=20)

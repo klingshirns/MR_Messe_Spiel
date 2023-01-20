@@ -80,7 +80,7 @@
         {
             "No" : "0",
             "Keyword" : "Ausbildungsdauer",
-            "Question": "Wie lange dauert die Ausbildung als Industriekaufmann/-frau ",
+            "Question": "Wie lange dauert die Ausbildung als Industriekaufmann/-frau?",
             "answers":
             [
                 {
@@ -123,7 +123,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du unter anderem die Abteilungen Einkauf, Logistik, Vertrieb, Export, controlling, Personal und die Buchhaltung kennen"
+            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du unter anderem die Abteilungen Einkauf, Logistik, Vertrieb, Export, Controlling, Personal und die Buchhaltung kennen"
         },
         {
             "No": "2",
@@ -156,7 +156,7 @@
         {
             "No" : "0",
             "Keyword" : "Ausbildungsdauer",
-            "Question": "Wie lange dauert die Ausbildung als Fachinformatiker",
+            "Question": "Wie lange dauert die Ausbildung als Fachinformatiker?",
             "answers":
             [
                 {
@@ -223,7 +223,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Du solltest eine Pgrammierleidenschaft und Spa\u00df an der L\u00F6sung kniffliger Aufgaben mitbringen"
+            "answer_info": "Du solltest eine Programmierleidenschaft und Spa\u00df an der L\u00F6sung kniffliger Aufgaben mitbringen"
         }
     ],
 
@@ -275,7 +275,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du unter anderem die Abteilungen IT-Support, IT-Infrastruktur, Instandhaltung, Produktprogrammierung kennen"
+            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du unter anderem die Abteilungen IT-Support, IT-Infrastruktur, Instandhaltung und Produktprogrammierung kennen"
         },
         {
             "No": "2",
@@ -299,7 +299,7 @@
                     "truth" : true
                 }
             ],
-            "answer_info": "Du solltest eine Begeisterung f\u00FCr IT und Elektronik sowie Spa\u00df an Themen der DIgitalisierung mitbringen"
+            "answer_info": "Du solltest eine Begeisterung f\u00FCr IT und Elektronik sowie Spa\u00df an Themen der Digitalisierung mitbringen"
         }
     ],
 
@@ -494,7 +494,7 @@
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Fertigung, Zerspanung, Werkzeugschleiferei",
+                    "Answer": "Buchhaltung, Einkauf, Logistik",
                     "truth" : false
                 },
                 {
@@ -518,7 +518,7 @@
                 },
                 {
                     "ID" : "b",
-                    "Answer": "orliebe f\u00FCr betriebswirtschaftliche Zusammenh\u00e4nge",
+                    "Answer": "Vorliebe f\u00FCr betriebswirtschaftliche Zusammenh\u00e4nge",
                     "truth" : false
                 },
                 {

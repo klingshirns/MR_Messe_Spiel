@@ -155,14 +155,14 @@
   </properties>
   <object id="12" gid="163" x="481.697" y="4611.03" width="288" height="186">
    <properties>
-    <property name="ID" type="int" value="7"/>
+    <property name="ID" type="int" value="8"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="wizzard">
   <object id="13" gid="264" x="5632" y="2944" width="131" height="188">
    <properties>
-    <property name="ID" type="int" value="8"/>
+    <property name="ID" type="int" value="7"/>
    </properties>
   </object>
  </objectgroup>

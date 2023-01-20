@@ -4,7 +4,7 @@
         {
             "No" : "0",
             "Keyword" : "Ausbildungsdauer",
-            "Question": "Wie lange dauert die Ausbildung fuer die Fachkraft fuer Lagerlogistik?",
+            "Question": "Wie lange dauert die Ausbildung als Fachkraft f\u00FCr Lagerlogistik?",
             "answers":
             [
                 {
@@ -28,13 +28,13 @@
         {
             "No" : "1",
             "Keyword" : "Einsatzbereich",
-            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "Question" : "Wo k\u00F6nnten deine Einsatzbereiche liegen?",
             "answers":
             [
                 {
                     "ID" : "a",
                     "Answer": "Wareneingang/Warenausgang, Transport, Einkauf",
-                    "truth": false
+                    "truth": true
                 },
                 {
                     "ID" : "b",
@@ -44,10 +44,10 @@
                 {
                     "ID" : "c",
                     "Answer": "Montage, Instandhaltung",
-                    "truth" : true
+                    "truth" : false
                 }
             ],
-            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Wareneingang, Warenausgangsprüfung, lagerhaltung und -verwaltung, Transport, Export, Einkauf und Disposition kennen"
+            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du unter anderem die Abteilungen Wareneingang, Warenausgangspr\u00FCfung, lagerhaltung und -verwaltung, Transport, Export, Einkauf und Disposition kennen"
         },
         {
             "No": "2",
@@ -62,7 +62,7 @@
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Technisches Interesse und Verständnis",
+                    "Answer": "Technisches Interesse und Verst\u00e4ndnis",
                     "truth" : false
                 },
                 {
@@ -71,7 +71,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Du solltest "
+            "answer_info": "Du solltest ein organisatorisches Talent sein und Spa\u00df beim Umgang mit Zahlen haben"
         }
     ],
 
@@ -104,7 +104,7 @@
         {
             "No" : "1",
             "Keyword" : "Einsatzbereich",
-            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "Question" : "Wo k\u00F6nnten deine Einsatzbereiche liegen?",
             "answers":
             [
                 {
@@ -123,7 +123,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Einkauf, Logistik, Vertrieb, Export, controlling, Personal und die Buchhaltung kennen"
+            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du unter anderem die Abteilungen Einkauf, Logistik, Vertrieb, Export, controlling, Personal und die Buchhaltung kennen"
         },
         {
             "No": "2",
@@ -133,12 +133,12 @@
             [
                 {
                     "ID" : "a",
-                    "Answer": "Vorliebe für betriebswirtschaftliche Zusammenhänge",
+                    "Answer": "Vorliebe f\u00FCr betriebswirtschaftliche Zusammenh\u00e4nge",
                     "truth": true
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Technisches Interesse und Verständnis",
+                    "Answer": "Technisches Interesse und Verst\u00e4ndnis",
                     "truth" : false
                 },
                 {
@@ -147,7 +147,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Du solltest eine Vorliebe für betriebswirtschaftliche Zusammenhänge und Motiviation zur Einbringung in Projekten mitbringen"
+            "answer_info": "Du solltest eine Vorliebe f\u00FCr betriebswirtschaftliche Zusammenh\u00e4nge und Motiviation zur Einbringung in Projekten mitbringen"
         }
     ],
 
@@ -156,7 +156,7 @@
         {
             "No" : "0",
             "Keyword" : "Ausbildungsdauer",
-            "Question": "Wie lange dauert die Ausbildung als ",
+            "Question": "Wie lange dauert die Ausbildung als Fachinformatiker",
             "answers":
             [
                 {
@@ -180,7 +180,7 @@
         {
             "No" : "1",
             "Keyword" : "Einsatzbereich",
-            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "Question" : "Wo k\u00F6nnten deine Einsatzbereiche liegen?",
             "answers":
             [
                 {
@@ -199,7 +199,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Während Deiner Ausbildung lernst Du hauptsächlich den IT-Support kennen"
+            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du haupts\u00e4chlich den IT-Support kennen"
         },
         {
             "No": "2",
@@ -209,21 +209,21 @@
             [
                 {
                     "ID" : "a",
-                    "Answer": "Vorliebe für betriebswirtschaftliche Zusammenhänge",
+                    "Answer": "Vorliebe f\u00FCr betriebswirtschaftliche Zusammenh\u00e4nge",
                     "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Lösungsorientiertes Arbeiten, Lösung kniffliger Aufgaben",
+                    "Answer": "L\u00F6sungsorientiertes Arbeiten, L\u00F6sung kniffliger Aufgaben",
                     "truth" : true
                 },
                 {
                     "ID" : "c",
-                    "Answer": "Technisches Interesse und Verständnis",
+                    "Answer": "Technisches Interesse und Verst\u00e4ndnis",
                     "truth" : false
                 }
             ],
-            "answer_info": "Du solltest eine Pgrammierleidenschaft und Spaß an der Lösung kniffliger Aufgaben mitbringen"
+            "answer_info": "Du solltest eine Pgrammierleidenschaft und Spa\u00df an der L\u00F6sung kniffliger Aufgaben mitbringen"
         }
     ],
 
@@ -256,7 +256,7 @@
         {
             "No" : "1",
             "Keyword" : "Einsatzbereich",
-            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "Question" : "Wo k\u00F6nnten deine Einsatzbereiche liegen?",
             "answers":
             [
                 {
@@ -275,7 +275,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen IT-Support, IT-Infrastruktur, Instandhaltung, Produktprogrammierung kennen"
+            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du unter anderem die Abteilungen IT-Support, IT-Infrastruktur, Instandhaltung, Produktprogrammierung kennen"
         },
         {
             "No": "2",
@@ -285,21 +285,21 @@
             [
                 {
                     "ID" : "a",
-                    "Answer": "Vorliebe für betriebswirtschaftliche Zusammenhänge",
+                    "Answer": "Vorliebe f\u00FCr betriebswirtschaftliche Zusammenh\u00e4nge",
                     "truth": true
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Technisches Interesse und Verständnis",
+                    "Answer": "Technisches Interesse und Verst\u00e4ndnis",
                     "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "Begeisterung für IT und Elektronik",
+                    "Answer": "Begeisterung f\u00FCr IT und Elektronik",
                     "truth" : false
                 }
             ],
-            "answer_info": "Du solltest eine Begeisterung für It und ELektornik sowie Spaß an Themen der DIgitalisierung mitbringen"
+            "answer_info": "Du solltest eine Begeisterung f\u00FCr It und ELektornik sowie Spa\u00df an Themen der DIgitalisierung mitbringen"
         }
     ],
 
@@ -308,7 +308,7 @@
         {
             "No" : "0",
             "Keyword" : "Ausbildungsdauer",
-            "Question": "Wie lange dauert die Ausbildung als Elektroniker für Betriebstechnik?",
+            "Question": "Wie lange dauert die Ausbildung als Elektroniker f\u00FCr Betriebstechnik?",
             "answers":
             [
                 {
@@ -332,7 +332,7 @@
         {
             "No" : "1",
             "Keyword" : "Einsatzbereich",
-            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "Question" : "Wo k\u00F6nnten deine Einsatzbereiche liegen?",
             "answers":
             [
                 {
@@ -351,7 +351,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Montage, Elektroninstandhalung, Versuchsfeld sowie die Prüftechnik kennen"
+            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du unter anderem die Abteilungen Montage, Elektroninstandhalung, Versuchsfeld sowie die Pr\u00FCftechnik kennen"
         },
         {
             "No": "2",
@@ -361,21 +361,21 @@
             [
                 {
                     "ID" : "a",
-                    "Answer": "Begeisterung für IT und Elektronik",
+                    "Answer": "Begeisterung f\u00FCr IT und Elektronik",
                     "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Technisches Interesse und Verständnis",
+                    "Answer": "Technisches Interesse und Verst\u00e4ndnis",
                     "truth" : true
                 },
                 {
                     "ID" : "c",
-                    "Answer": "Vorliebe für betriebswirtschaftliche Zusammenhänge",
+                    "Answer": "Vorliebe f\u00FCr betriebswirtschaftliche Zusammenh\u00e4nge",
                     "truth" : false
                 }
             ],
-            "answer_info": "Du solltest technisches Verständnis und Spaß an Lösung kniffliger Aufgaben mitbringen"
+            "answer_info": "Du solltest technisches Verst\u00e4ndnis und Spa\u00df an L\u00F6sung kniffliger Aufgaben mitbringen"
         }
     ],
 
@@ -408,7 +408,7 @@
         {
             "No" : "1",
             "Keyword" : "Einsatzbereich",
-            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "Question" : "Wo k\u00F6nnten deine Einsatzbereiche liegen?",
             "answers":
             [
                 {
@@ -418,7 +418,7 @@
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Montage, Mechanikinstandhaltug, Prüftechnik",
+                    "Answer": "Montage, Mechanikinstandhaltug, Pr\u00FCftechnik",
                     "truth" : true
                 },
                 {
@@ -427,7 +427,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Montage, Mechanik- und Elektroninstandhaltung, Versuchsfeld sowie die Prüftechnik kennen"
+            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du unter anderem die Abteilungen Montage, Mechanik- und Elektroninstandhaltung, Versuchsfeld sowie die Pr\u00FCftechnik kennen"
         },
         {
             "No": "2",
@@ -442,16 +442,16 @@
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Technisches Interesse und Verständnis",
+                    "Answer": "Technisches Interesse und Verst\u00e4ndnis",
                     "truth" : true
                 },
                 {
                     "ID" : "c",
-                    "Answer": "Vorliebe für betriebswirtschaftliche Zusammenhänge",
+                    "Answer": "Vorliebe f\u00FCr betriebswirtschaftliche Zusammenh\u00e4nge",
                     "truth" : false
                 }
             ],
-            "answer_info": "Du solltest technisches Verständnis und Spaß an Lösung kniffliger Aufgaben mitbringen"
+            "answer_info": "Du solltest technisches Verst\u00e4ndnis und Spa\u00df an L\u00F6sung kniffliger Aufgaben mitbringen"
         }
     ],
 
@@ -484,12 +484,12 @@
         {
             "No" : "1",
             "Keyword" : "Einsatzbereich",
-            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "Question" : "Wo k\u00F6nnten deine Einsatzbereiche liegen?",
             "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "Betriebsmittelbau, Prototypenbau, Qualitätskontrolle",
+                    "Answer": "Betriebsmittelbau, Prototypenbau, Qualit\u00e4tskontrolle",
                     "truth": true
                 },
                 {
@@ -503,7 +503,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Betriebsmittelbau, Montage, Prototypenbau, Instandhaltung und Qualitätskontrolle kennen"
+            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du unter anderem die Abteilungen Betriebsmittelbau, Montage, Prototypenbau, Instandhaltung und Qualit\u00e4tskontrolle kennen"
         },
         {
             "No": "2",
@@ -513,12 +513,12 @@
             [
                 {
                     "ID" : "a",
-                    "Answer": "Technisches Interesse, Auge für Details",
+                    "Answer": "Technisches Interesse, Auge f\u00FCr Details",
                     "truth": true
                 },
                 {
                     "ID" : "b",
-                    "Answer": "orliebe für betriebswirtschaftliche Zusammenhänge",
+                    "Answer": "orliebe f\u00FCr betriebswirtschaftliche Zusammenh\u00e4nge",
                     "truth" : false
                 },
                 {
@@ -527,7 +527,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Du solltest ein technisches Interesse und ein Auge für Details mitbringen"
+            "answer_info": "Du solltest ein technisches Interesse und ein Auge f\u00FCr Details mitbringen"
         }
     ],
 
@@ -560,12 +560,12 @@
         {
             "No" : "1",
             "Keyword" : "Einsatzbereich",
-            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "Question" : "Wo k\u00F6nnten deine Einsatzbereiche liegen?",
             "answers":
             [
                 {
                     "ID" : "a",
-                    "Answer": "CNC-Drehen und Fräsen, Prototypenbau, Betriebsmittelbau",
+                    "Answer": "CNC-Drehen und Fr\u00e4sen, Prototypenbau, Betriebsmittelbau",
                     "truth": true
                 },
                 {
@@ -579,7 +579,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Betriebsmittelbau, Montage, Prototypenbau und Qualitätskontrolle kennen"
+            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du unter anderem die Abteilungen Betriebsmittelbau, Montage, Prototypenbau und Qualit\u00e4tskontrolle kennen"
         },
         {
             "No": "2",
@@ -589,21 +589,21 @@
             [
                 {
                     "ID" : "a",
-                    "Answer": "Vorliebe für betriebswirtschaftliche Zusammenhänge",
+                    "Answer": "Vorliebe f\u00FCr betriebswirtschaftliche Zusammenh\u00e4nge",
                     "truth": false
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Begeisterung für IT und Elektronik",
+                    "Answer": "Begeisterung f\u00FCr IT und Elektronik",
                     "truth" : false
                 },
                 {
                     "ID" : "c",
-                    "Answer": "Technisches Interesse, Auge für Details",
+                    "Answer": "Technisches Interesse, Auge f\u00FCr Details",
                     "truth" : true
                 }
             ],
-            "answer_info": "Du solltest eine Begeisterung für It und ELektornik sowie Spaß an Themen der DIgitalisierung mitbringen"
+            "answer_info": "Du solltest eine Begeisterung f\u00FCr It und ELektornik sowie Spa\u00df an Themen der DIgitalisierung mitbringen"
         }
     ],
 
@@ -636,7 +636,7 @@
         {
             "No" : "1",
             "Keyword" : "Einsatzbereich",
-            "Question" : "Wo koennten deine Einsatzbereiche liegen?",
+            "Question" : "Wo k\u00F6nnten deine Einsatzbereiche liegen?",
             "answers":
             [
                 {
@@ -655,7 +655,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Während Deiner Ausbildung lernst Du unter anderem die Abteilungen Fertigung, Prüflabor/Qualitätskontrolle kennen"
+            "answer_info": "W\u00e4hrend Deiner Ausbildung lernst Du unter anderem die Abteilungen Fertigung, Pr\u00FCflabor/Qualit\u00e4tskontrolle kennen"
         },
         {
             "No": "2",
@@ -670,7 +670,7 @@
                 },
                 {
                     "ID" : "b",
-                    "Answer": "Technisches Interesse, Auge für Details",
+                    "Answer": "Technisches Interesse, Auge f\u00FCr Details",
                     "truth" : true
                 },
                 {
@@ -679,7 +679,7 @@
                     "truth" : false
                 }
             ],
-            "answer_info": "Du solltest ein technisches Verständnis sowie ein Auge für Details wie Unebenheiten und scharfe Kanten mitbringen"
+            "answer_info": "Du solltest ein technisches Verst\u00e4ndnis sowie ein Auge f\u00FCr Details wie Unebenheiten und scharfe Kanten mitbringen"
         }
     ]
 }

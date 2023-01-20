@@ -154,7 +154,7 @@ class View():
         quiz_Data = self.controller.model.quiz_Data
 
         # Set Question text
-        self.Question_text.set(quiz_Data[currentQuiz][currentQuNo]['Question'].encode('utf-8'))
+        self.Question_text.set(quiz_Data[currentQuiz][currentQuNo]['Question'])
 
         # Set Answer texts
         self.Aw1_text.set(quiz_Data[currentQuiz][currentQuNo]['answers'][0]['Answer'])

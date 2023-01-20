@@ -448,7 +448,11 @@ class MyGame(arcade.Window):
 
                 wizzard_id = int(wizzard.properties["ID"])
 
+                self.set_fullscreen(not self.fullscreen)
+
                 Quiz.main(wizzard_id)
+
+                self.set_fullscreen(not self.fullscreen)
 
                 self.level = 0
                 self.level_key = False
@@ -648,6 +652,7 @@ class MyGame(arcade.Window):
         self.to7 = TextObj("Industriemechaniker", "Arial", 26, 5888, 1990, arcade.color.WHITE)
         self.to8 = TextObj("Werkzeugmechaniker", "Arial", 26, 7343, 1270, arcade.color.WHITE)
         self.to9 = TextObj("Zerspaner", "Arial", 26, 6734, 2240, arcade.color.WHITE)
+        self.to10 = TextObj(" ", "Arial", 26, 7170, 880, arcade.color.WHITE)
 
     def drawFachkraftLagerlogistik(self):
         
